@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Platform Dashboard</h1><p>Real-time overview of the PORTDA marketplace · FY 2026–27</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export</button><a class="btn btn-primary" href="broadcast.html">+ Broadcast</a></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-icon purple"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V10l7-4 7 4v11"/></svg></div><div class="kpi-label">Active Vendors</div><div class="kpi-value">1,247</div><div class="kpi-delta up">▲ 38 this month</div></div>
+      <div class="kpi"><div class="kpi-icon indigo"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="kpi-label">Active Buyers</div><div class="kpi-value">428</div><div class="kpi-delta up">▲ 12 this month</div></div>
+      <div class="kpi"><div class="kpi-icon green"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="kpi-label">GMV (MTD)</div><div class="kpi-value">₹6.2 Cr</div><div class="kpi-delta up">▲ 14% vs Apr</div></div>
+      <div class="kpi"><div class="kpi-icon orange"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94"/></svg></div><div class="kpi-label">Platform Revenue (MTD)</div><div class="kpi-value">₹38.4 L</div><div class="kpi-delta up">▲ 18%</div></div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>GMV trend · last 12 months</h3><a class="link" href="analytics.html">Detailed analytics →</a></div>
+        <div style="display:flex;align-items:flex-end;gap:8px;height:160px;margin-top:8px;">
+          <div style="flex:1;background:var(--admin-purple-light);height:30%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:38%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:42%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:48%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:55%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:50%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:62%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:68%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:75%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:82%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:90%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:95%;border-radius:6px;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text-3);margin-top:6px;"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Revenue split (MTD)</h3></div>
+        <div class="row-between mb-12"><span>Subscription</span><strong>₹22.8 L · 59%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--admin-purple);height:100%;width:59%;"></div></div>
+        <div class="row-between mb-12"><span>Commission</span><strong>₹14.2 L · 37%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--accent);height:100%;width:37%;"></div></div>
+        <div class="row-between mb-12"><span>Premium-lead unlocks</span><strong>₹1.4 L · 4%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;"><div style="background:var(--success);height:100%;width:4%;"></div></div>
+      </div>
+    </div>
+
+    <div class="grid-3 mb-20">
+      <div class="card" style="border:1.5px solid var(--admin-purple);background:linear-gradient(180deg,rgba(124,58,237,.05) 0%,#fff 60%);">
+        <div class="card-head"><h3>Quotes pending review</h3><a class="link" href="quote-moderation.html" style="color:var(--admin-purple);">12 in queue →</a></div>
+        <div class="row" style="gap:12px;align-items:center;padding:14px 0;">
+          <div style="width:48px;height:48px;background:var(--admin-purple-light);color:var(--admin-purple);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <div class="flex-1">
+            <strong style="font-size:18px;">12 quotes</strong>
+            <div class="muted" style="font-size:12px;">2 SLA-breach · 4 auto-approve eligible · avg in queue 18 min</div>
+          </div>
+        </div>
+        <a class="btn btn-primary btn-block" href="quote-moderation.html" style="background:var(--admin-purple);">Open queue</a>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Pending KYC</h3><a class="link" href="kyc.html">14 in queue →</a></div>
+        <div class="activity-item"><div class="activity-icon amber"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><div class="activity-body"><div class="activity-title">Sagarmala Pilots <time>2h</time></div><div class="activity-sub">Vendor · Mangalore · DGS pending</div></div></div>
+        <div class="activity-item"><div class="activity-icon amber"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><div class="activity-body"><div class="activity-title">Lakshmi Shipping <time>5h</time></div><div class="activity-sub">Buyer · Chennai · GST verification</div></div></div>
+        <div class="activity-item"><div class="activity-icon amber"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><div class="activity-body"><div class="activity-title">Konkan Tug Services <time>1d</time></div><div class="activity-sub">Vendor · Goa · P&amp;I insurance</div></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Open disputes</h3><a class="link" href="disputes.html">6 total →</a></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--danger-light);color:var(--danger);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg></div><div class="activity-body"><div class="activity-title">#PORT-48156 <time>4h</time></div><div class="activity-sub">Saffron Fleet vs Coastal Bunkers · ₹4.8 L</div></div></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--warning-light);color:var(--warning);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg></div><div class="activity-body"><div class="activity-title">#PORT-48092 <time>1d</time></div><div class="activity-sub">Mariner Shipping · short-delivery · USD 9.4K</div></div></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--warning-light);color:var(--warning);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg></div><div class="activity-body"><div class="activity-title">#PORT-47891 <time>2d</time></div><div class="activity-sub">Refund request · pilot delay</div></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Top vendors · MTD</h3><a class="link" href="vendors.html">All vendors →</a></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">MM</div><div class="activity-body"><div class="activity-title">Mumbai Marine <time>★ 4.9</time></div><div class="activity-sub">38 orders · ₹62 L gross</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--accent-light);color:var(--accent);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">CB</div><div class="activity-body"><div class="activity-title">Coastal Bunkers <time>★ 4.8</time></div><div class="activity-sub">24 orders · ₹48 L gross</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--success-light);color:var(--success);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">PS</div><div class="activity-body"><div class="activity-title">Port Stevedoring <time>★ 4.7</time></div><div class="activity-sub">19 orders · ₹38 L gross</div></div></div>
+      </div>
+    </div>
+
+    <div class="table-wrap mb-20">
+      <div class="table-head"><h3>Live platform activity</h3><div class="table-filters"><span class="tab active">All</span><span class="tab">Requests</span><span class="tab">Orders</span><span class="tab">Payments</span><span class="tab">KYC</span></div></div>
+      <table class="t">
+        <thead><tr><th>Time</th><th>Event</th><th>Actor</th><th>Reference</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>14:48 IST</td><td><strong>Order completed</strong> · pilot lines fast</td><td>Mumbai Marine</td><td>#PORT-48217</td><td><span class="chip chip-success">Closed</span></td></tr>
+          <tr><td>14:14 IST</td><td><strong>Quote sent</strong> · 4 vendors responded</td><td>OceanLink Shipping</td><td>#PORT-48512</td><td><span class="chip chip-primary">Quoting</span></td></tr>
+          <tr><td>13:02 IST</td><td><strong>Milestone</strong> · pilot boarded</td><td>Mumbai Marine</td><td>#PORT-48217</td><td><span class="chip chip-warning">In Progress</span></td></tr>
+          <tr><td>12:38 IST</td><td><strong>Payment received</strong> · ₹4,80,000</td><td>Saffron Fleet → Coastal Bunkers</td><td>#PORT-48156</td><td><span class="chip chip-success">Paid</span></td></tr>
+          <tr><td>11:52 IST</td><td><strong>New vendor signup</strong> · KYC pending</td><td>Sagarmala Pilots</td><td>VND-9824</td><td><span class="chip chip-warning">Pending KYC</span></td></tr>
+          <tr><td>11:14 IST</td><td><strong>Subscription renewed</strong> · Pro Quarterly</td><td>Coastal Bunkers</td><td>SUB-Q2-26</td><td><span class="chip chip-success">Active</span></td></tr>
+          <tr><td>09:42 IST</td><td><strong>Dispute opened</strong> · short-delivery</td><td>Mariner Shipping</td><td>#PORT-48092</td><td><span class="chip chip-danger">Open</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><div class="card-head"><h3>Subscription health</h3></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:center;"><div><div style="font-size:24px;font-weight:800;color:var(--admin-purple);">312</div><div class="muted" style="font-size:11px;">SUBSCRIBED</div></div><div><div style="font-size:24px;font-weight:800;">94.2%</div><div class="muted" style="font-size:11px;">RETENTION</div></div></div><div class="divider"></div><div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Pro</span><strong>189</strong></div><div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Elite</span><strong>42</strong></div><div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Starter</span><strong>81</strong></div></div>
+      <div class="card"><div class="card-head"><h3>Compliance health</h3></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Vendors KYC-current</span><strong style="color:var(--success);">99.2%</strong></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">DGS expiring &lt; 30d</span><strong style="color:var(--warning);">23</strong></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">P&amp;I expired</span><strong style="color:var(--danger);">4</strong></div><div class="row-between" style="font-size:13px;padding:6px 0;"><span class="muted">GSTR-2A match rate</span><strong style="color:var(--success);">99.7%</strong></div></div>
+      <div class="card"><div class="card-head"><h3>System status</h3><span class="chip chip-success">All systems normal</span></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span><span class="status-dot green"></span>API · core</span><span class="muted">99.99% · 24h</span></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span><span class="status-dot green"></span>Payments (Razorpay)</span><span class="muted">100% · 24h</span></div><div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span><span class="status-dot amber"></span>SMS · OTP</span><span class="muted">98.4% · 24h</span></div><div class="row-between" style="font-size:13px;padding:6px 0;"><span><span class="status-dot green"></span>Email · transactional</span><span class="muted">99.9% · 24h</span></div></div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('dashboard');</script>
+</body>
+</html>

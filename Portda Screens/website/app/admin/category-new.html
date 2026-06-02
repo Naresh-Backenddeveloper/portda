@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Add Category · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+<style>
+  .icon-picker { display:grid; grid-template-columns:repeat(8,1fr); gap:8px; }
+  .icon-picker label { aspect-ratio:1; background:#fff; border:1.5px solid var(--border); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:22px; cursor:pointer; transition:border-color .15s ease, transform .12s ease; }
+  .icon-picker label:hover { transform:translateY(-1px); }
+  .icon-picker input[type=radio]:checked + label, .icon-picker label.active { border-color:var(--admin-purple); background:var(--admin-purple-light); }
+
+  .color-picker { display:flex; gap:8px; flex-wrap:wrap; }
+  .color-picker label { width:34px; height:34px; border-radius:10px; cursor:pointer; border:3px solid transparent; transition:transform .12s ease; }
+  .color-picker label.active { border-color:#fff; box-shadow:0 0 0 2px var(--admin-purple); transform:scale(1.05); }
+</style>
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title">
+        <div class="muted" style="font-size:12px;letter-spacing:.5px;margin-bottom:4px;"><a href="categories.html" style="color:var(--text-2);">Categories</a> / <strong style="color:var(--text);">New category</strong></div>
+        <h1>Add Service Category</h1>
+        <p>Top-level service group. After creating, you'll be able to add sub-services.</p>
+      </div>
+      <div class="page-actions"><a class="btn btn-ghost" href="categories.html">Cancel</a></div>
+    </div>
+
+    <div class="builder-grid">
+      <div>
+        <div class="card mb-16">
+          <div class="card-head"><h3>1 · Basics</h3></div>
+          <div class="form-group">
+            <label class="form-label">Category name</label>
+            <input class="form-input" placeholder="e.g. Waste Reception" />
+            <div class="form-help">Shown to buyers and vendors when posting / accepting requests.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Short description</label>
+            <textarea class="form-textarea" rows="2" placeholder="MARPOL Annex I–VI waste reception services at port"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Slug</label>
+              <input class="form-input" value="waste-reception" />
+              <div class="form-help">URL-safe identifier. Auto-generated, editable.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Display order</label>
+              <input class="form-input" type="number" value="8" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-16">
+          <div class="card-head"><h3>2 · Visual identity</h3></div>
+          <div class="form-group">
+            <label class="form-label">Icon</label>
+            <div class="icon-picker">
+              <label>⚓</label><label>🚢</label><label>🛟</label><label>⛽</label>
+              <label>📦</label><label>🔧</label><label>📋</label><label>🍽</label>
+              <label>🤿</label><label>👥</label><label class="active">🌊</label><label>🛡</label>
+              <label>⚓</label><label>↔</label><label>⚡</label><label>📡</label>
+            </div>
+            <div class="form-help">Pick an icon that represents the category. Or upload a custom SVG.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Accent color</label>
+            <div class="color-picker">
+              <label style="background:#4F46E5;" title="Indigo"></label>
+              <label style="background:#F59E0B;" title="Orange"></label>
+              <label style="background:#8B5CF6;" title="Green"></label>
+              <label style="background:#F59E0B;" title="Amber"></label>
+              <label style="background:#8B5CF6;" class="active" title="Purple"></label>
+              <label style="background:#BE185D;" title="Pink"></label>
+              <label style="background:#0EA5E9;" title="Sky"></label>
+              <label style="background:#64748B;" title="Slate"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-16">
+          <div class="card-head"><h3>3 · Matching rules</h3></div>
+          <div class="form-group">
+            <label class="form-label">Required vendor compliance docs</label>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />GST</label>
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />PAN</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />FMC Agency License</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />P&amp;I Insurance</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />IACS</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />MARPOL Cert</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />IRS Survey</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Premium-lead threshold (₹)</label>
+              <input class="form-input" value="5,00,000" />
+              <div class="form-help">Requests above this budget get the BEST LEAD badge and are gated to Subscription vendors.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Default SLA (hrs)</label>
+              <input class="form-input" type="number" value="24" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Allowed urgency tiers</label>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />Standard · 24h</label>
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />Urgent · &lt; 6h</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />Critical · &lt; 2h (premium fee)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h3>4 · Availability</h3></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Status</label>
+              <select class="form-select"><option>Live · accept new vendors</option><option>Hidden · existing only</option><option>Draft · admin preview</option></select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Available at</label>
+              <select class="form-select"><option>All active ports (14)</option><option>Selected ports only…</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;">
+              <input type="checkbox" checked />
+              Announce to all vendors when published <span class="muted">(triggers broadcast to opt-in vendors)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="builder-summary">
+        <h3 style="font-size:15px;font-weight:800;margin:0 0 14px;">Preview</h3>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px;background:var(--bg);border-radius:12px;margin-bottom:14px;">
+          <div style="width:48px;height:48px;background:rgba(124,58,237,.15);color:#8B5CF6;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;">🌊</div>
+          <div class="flex-1">
+            <strong style="font-size:15px;">Waste Reception</strong>
+            <div class="muted" style="font-size:12px;">MARPOL Annex I–VI waste reception services at port</div>
+          </div>
+        </div>
+        <div class="summary-row"><span>Slug</span><span>waste-reception</span></div>
+        <div class="summary-row"><span>Display order</span><span>8</span></div>
+        <div class="summary-row"><span>Required docs</span><strong>GST · PAN</strong></div>
+        <div class="summary-row"><span>Premium threshold</span><strong>₹5,00,000</strong></div>
+        <div class="summary-row"><span>Default SLA</span><strong>24 hrs</strong></div>
+        <div class="summary-row"><span>Ports</span><span>All 14</span></div>
+        <div class="divider"></div>
+        <div class="muted" style="font-size:12px;margin-bottom:14px;">After saving, you'll be redirected to add sub-services for this category.</div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg mb-12" onclick="window.location='category-detail.html'">Create category</button>
+        <button class="btn btn-outline btn-block">Save as draft</button>
+      </aside>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('categories');
+  // Icon picker
+  document.querySelectorAll('.icon-picker label').forEach(function (l) {
+    l.addEventListener('click', function () {
+      document.querySelectorAll('.icon-picker label').forEach(function (x) { x.classList.remove('active'); });
+      l.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.color-picker label').forEach(function (l) {
+    l.addEventListener('click', function () {
+      document.querySelectorAll('.color-picker label').forEach(function (x) { x.classList.remove('active'); });
+      l.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

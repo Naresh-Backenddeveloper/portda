@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Commission · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Commission Ledger</h1><p>5% commission charged on every confirmed order across all plans (Starter / Pro / Elite).</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export ledger</button><button class="btn btn-primary">Bulk reconcile</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Collected MTD</div><div class="kpi-value">₹14.2 L</div><div class="kpi-delta up">▲ 12% vs Apr</div></div>
+      <div class="kpi"><div class="kpi-label">Vendors charged</div><div class="kpi-value">1,247</div><div class="kpi-delta">5% on conversion · all plans</div></div>
+      <div class="kpi"><div class="kpi-label">Pending Settlement</div><div class="kpi-value">₹2.8 L</div><div class="kpi-delta">42 orders</div></div>
+      <div class="kpi"><div class="kpi-label">FY 26–27 Total</div><div class="kpi-value">₹1.42 Cr</div></div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Commission by category</h3></div>
+        <div class="row-between mb-12"><span>Ship Agents</span><strong>₹4.8 L · 34%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--primary);height:100%;width:34%;"></div></div>
+        <div class="row-between mb-12"><span>Bunkering</span><strong>₹3.6 L · 25%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--accent);height:100%;width:25%;"></div></div>
+        <div class="row-between mb-12"><span>Multi Modal Transport</span><strong>₹2.4 L · 17%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--success);height:100%;width:17%;"></div></div>
+        <div class="row-between mb-12"><span>Cargo</span><strong>₹1.8 L · 13%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--warning);height:100%;width:13%;"></div></div>
+        <div class="row-between mb-12"><span>Other</span><strong>₹1.6 L · 11%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;"><div style="background:var(--admin-purple);height:100%;width:11%;"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Top commission-paying vendors</h3></div>
+        <table class="t t-compact" style="margin-top:0;">
+          <thead><tr><th>Vendor</th><th>Orders</th><th>Commission</th></tr></thead>
+          <tbody>
+            <tr><td><strong>JNPT Marine Co.</strong> <span class="muted">★ 4.7</span></td><td>32</td><td class="t-amount">₹84,250</td></tr>
+            <tr><td><strong>Deep Marine Divers</strong> <span class="muted">★ 4.9</span></td><td>14</td><td class="t-amount">₹52,400</td></tr>
+            <tr><td><strong>Sagar Pilots</strong> <span class="muted">★ 4.5</span></td><td>22</td><td class="t-amount">₹48,920</td></tr>
+            <tr><td><strong>Western Tug Co.</strong> <span class="muted">★ 4.6</span></td><td>18</td><td class="t-amount">₹42,180</td></tr>
+            <tr><td><strong>Hazira Stevedores</strong> <span class="muted">★ 4.4</span></td><td>12</td><td class="t-amount">₹38,640</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-head"><h3>Recent commission events</h3><div class="table-filters"><span class="tab active">All</span><span class="tab">Settled</span><span class="tab">Pending</span><span class="tab">Refunded</span></div></div>
+      <table class="t t-compact">
+        <thead><tr><th>Date</th><th>Order</th><th>Vendor</th><th>Order value</th><th>Rate</th><th>Commission</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>15 May 15:42</td><td>#PORT-48217</td><td>Mumbai Marine</td><td>₹2,18,300</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−₹10,915</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>14 May 14:00</td><td>#PORT-48156</td><td>Coastal Bunkers</td><td>₹4,80,000</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−calc</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>12 May 14:12</td><td>#PORT-48092</td><td>Port Stevedoring</td><td>USD 9,450</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−USD 472</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>11 May 18:30</td><td>#PORT-48045</td><td>Deep Marine</td><td>₹78,000</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−₹3,900</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>10 May 09:14</td><td>#PORT-47862</td><td>Mumbai Marine</td><td>₹2,07,385</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−calc</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>06 May</td><td>#PORT-47785</td><td>Port Stevedoring</td><td>USD 11,800</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−USD 590</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>04 May</td><td>#PORT-47702</td><td>Coastal Bunkers</td><td>₹3,42,000</td><td>0%</td><td class="muted">—</td><td><span class="chip chip-gray">Sub waiver</span></td></tr>
+          <tr><td>28 Apr</td><td>#PORT-47654</td><td>Anchor Survey</td><td>₹3,85,000</td><td>5%</td><td class="t-amount" style="color:var(--danger);">−₹19,250</td><td><span class="chip chip-warning">Held · dispute</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('commission');</script>
+</body>
+</html>

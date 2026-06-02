@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Add Sub-service · Ship Agents · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+<style>
+  .icon-picker { display:grid; grid-template-columns:repeat(10,1fr); gap:6px; }
+  .icon-picker label { aspect-ratio:1; background:#fff; border:1.5px solid var(--border); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; cursor:pointer; transition:border-color .15s ease, transform .12s ease; }
+  .icon-picker label.active { border-color:var(--admin-purple); background:var(--admin-purple-light); }
+  .field-row { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+  .field-row input { flex:1; padding:8px 12px; border:1px solid var(--border); border-radius:8px; font-size:13px; outline:none; font-family:inherit; }
+  .field-row input:focus { border-color:var(--admin-purple); }
+  .field-row .btn-ghost { padding:6px 10px; }
+</style>
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title">
+        <div class="muted" style="font-size:12px;letter-spacing:.5px;margin-bottom:4px;"><a href="categories.html" style="color:var(--text-2);">Categories</a> / <a href="category-detail.html" style="color:var(--text-2);">Ship Agents</a> / <strong style="color:var(--text);">New sub-service</strong></div>
+        <h1>Add Sub-service</h1>
+        <p>Adding under: <strong>Ship Agents</strong> · vendors offering Ship Agents will see this in their service categories.</p>
+      </div>
+      <div class="page-actions"><a class="btn btn-ghost" href="category-detail.html">Cancel</a></div>
+    </div>
+
+    <div class="builder-grid">
+      <div>
+        <div class="card mb-16">
+          <div class="card-head"><h3>1 · Basics</h3></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Sub-service name</label>
+              <input class="form-input" placeholder="e.g. Port Agency Boarding" value="Port Agency Boarding" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Slug</label>
+              <input class="form-input" value="port-agency-boarding" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Short description (shown on quote)</label>
+            <textarea class="form-textarea" rows="2">Full port agency services including customs, immigration and port disbursement for commercial vessels worldwide.</textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Icon</label>
+            <div class="icon-picker">
+              <label class="active">🚢</label><label>⛵</label><label>🛥</label><label>⚓</label>
+              <label>🛟</label><label>↔</label><label>📡</label><label>🧭</label>
+              <label>🌊</label><label>⛽</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-16">
+          <div class="card-head"><h3>2 · Pricing &amp; units</h3></div>
+          <div class="form-row-3">
+            <div class="form-group"><label class="form-label">Pricing model</label><select class="form-select"><option>LOA-based</option><option>Flat per movement</option><option>Per hour</option><option>Custom (vendor quotes)</option></select></div>
+            <div class="form-group"><label class="form-label">Starting from (₹)</label><input class="form-input" value="85,000" /></div>
+            <div class="form-group"><label class="form-label">Currency</label><select class="form-select"><option>INR (₹)</option><option>USD ($)</option><option>Either</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Unit of measure</label><select class="form-select"><option>Per movement</option><option>Per hour</option><option>Per LOA (m)</option><option>Per DWT</option><option>Per MT</option></select></div>
+            <div class="form-group"><label class="form-label">Minimum charge (₹)</label><input class="form-input" value="65,000" /></div>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;">
+              <input type="checkbox" checked />
+              GST applicable (default 18%)
+            </label>
+          </div>
+        </div>
+
+        <div class="card mb-16">
+          <div class="card-head"><h3>3 · Vendor requirements</h3></div>
+          <div class="form-group">
+            <label class="form-label">Required compliance documents</label>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />GST</label>
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />PAN</label>
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />FMC Agency License</label>
+              <label class="chip chip-success" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" checked style="margin-right:4px;" />P&amp;I Insurance ≥ USD 5M</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />Agency Liability Cert</label>
+              <label class="chip chip-gray" style="cursor:pointer;padding:6px 12px;"><input type="checkbox" style="margin-right:4px;" />FONASBA Member</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Min vendor experience</label><select class="form-select"><option>No minimum</option><option>1+ year</option><option>3+ years</option><option>5+ years</option><option>10+ years</option></select></div>
+            <div class="form-group"><label class="form-label">Min vendor rating</label><select class="form-select"><option>Any</option><option>★ 4.0+</option><option>★ 4.5+</option><option>Verified pilots only</option></select></div>
+          </div>
+        </div>
+
+        <div class="card mb-16">
+          <div class="card-head"><h3>4 · Buyer fields</h3><span class="muted" style="font-size:12px;">What buyers must fill when posting this sub-service</span></div>
+          <div id="buyer-fields">
+            <div class="field-row"><input value="Vessel LOA (m)" /><select class="form-select" style="flex:0 0 130px;"><option>Number</option><option>Text</option><option>Dropdown</option></select><span class="chip chip-success" style="font-size:10px;">Required</span><button class="btn btn-ghost btn-sm">×</button></div>
+            <div class="field-row"><input value="ETA off-pilot station" /><select class="form-select" style="flex:0 0 130px;"><option>Date+time</option><option>Date</option><option>Text</option></select><span class="chip chip-success" style="font-size:10px;">Required</span><button class="btn btn-ghost btn-sm">×</button></div>
+            <div class="field-row"><input value="Berth / anchorage" /><select class="form-select" style="flex:0 0 130px;"><option>Dropdown</option><option>Text</option></select><span class="chip chip-success" style="font-size:10px;">Required</span><button class="btn btn-ghost btn-sm">×</button></div>
+            <div class="field-row"><input value="Master contact" /><select class="form-select" style="flex:0 0 130px;"><option>Phone</option><option>Text</option></select><span class="chip chip-gray" style="font-size:10px;">Optional</span><button class="btn btn-ghost btn-sm">×</button></div>
+            <div class="field-row"><input value="Special instructions" /><select class="form-select" style="flex:0 0 130px;"><option>Long text</option><option>Text</option></select><span class="chip chip-gray" style="font-size:10px;">Optional</span><button class="btn btn-ghost btn-sm">×</button></div>
+          </div>
+          <button class="btn btn-outline btn-sm mt-8" onclick="document.getElementById('buyer-fields').insertAdjacentHTML('beforeend','<div class=&quot;field-row&quot;><input placeholder=&quot;Field name&quot;/><select class=&quot;form-select&quot; style=&quot;flex:0 0 130px;&quot;><option>Text</option><option>Number</option><option>Date+time</option><option>Dropdown</option><option>Long text</option></select><span class=&quot;chip chip-gray&quot; style=&quot;font-size:10px;&quot;>Optional</span><button class=&quot;btn btn-ghost btn-sm&quot;>×</button></div>');">+ Add buyer field</button>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h3>5 · Status</h3></div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Visibility</label><select class="form-select"><option>Live · all matching vendors</option><option>Draft · admin preview</option><option>Beta · invited vendors only</option></select></div>
+            <div class="form-group"><label class="form-label">Order in category</label><input class="form-input" type="number" value="1" /></div>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;">
+              <input type="checkbox" checked />
+              Notify all 482 Ship Agents vendors when published
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="builder-summary">
+        <h3 style="font-size:15px;font-weight:800;margin:0 0 14px;">Preview</h3>
+        <div style="padding:14px;background:var(--bg);border-radius:12px;margin-bottom:14px;">
+          <div class="row" style="gap:12px;align-items:center;">
+            <div style="width:44px;height:44px;background:var(--primary-light);color:var(--primary);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;">🚢</div>
+            <div class="flex-1">
+              <strong>Port Agency Boarding</strong>
+              <div class="muted" style="font-size:12px;">From ₹85,000 · LOA-based</div>
+            </div>
+          </div>
+          <div class="muted" style="font-size:12px;margin-top:10px;line-height:1.5;">Full port agency services including customs, immigration and port disbursement for commercial vessels worldwide.</div>
+        </div>
+        <div class="summary-row"><span>Parent</span><strong>Ship Agents</strong></div>
+        <div class="summary-row"><span>Pricing</span><strong>LOA-based</strong></div>
+        <div class="summary-row"><span>Min charge</span><strong>₹65,000</strong></div>
+        <div class="summary-row"><span>Buyer fields</span><strong>5 (3 required)</strong></div>
+        <div class="summary-row"><span>Required docs</span><strong>4</strong></div>
+        <div class="divider"></div>
+        <div class="muted" style="font-size:12px;margin-bottom:14px;">All 318 Ship Agents vendors will be notified when this sub-service goes live.</div>
+        <button class="btn btn-primary btn-block btn-lg mb-12" onclick="window.location='category-detail.html'">Publish sub-service</button>
+        <button class="btn btn-outline btn-block">Save as draft</button>
+      </aside>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('categories');
+  document.querySelectorAll('.icon-picker label').forEach(function (l) {
+    l.addEventListener('click', function () {
+      document.querySelectorAll('.icon-picker label').forEach(function (x) { x.classList.remove('active'); });
+      l.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

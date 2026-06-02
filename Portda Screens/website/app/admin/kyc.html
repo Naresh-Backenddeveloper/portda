@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KYC Queue · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>KYC Verification Queue</h1><p>Pending vendor &amp; buyer onboarding · review documents and approve.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export queue</button><button class="btn btn-primary">Bulk auto-verify (eligible)</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">In Queue</div><div class="kpi-value">14</div><div class="kpi-delta down">▼ 3 vs yesterday</div></div>
+      <div class="kpi"><div class="kpi-label">Avg TAT</div><div class="kpi-value">6.4 hrs</div><div class="kpi-delta up">SLA 24h</div></div>
+      <div class="kpi"><div class="kpi-label">Approved (MTD)</div><div class="kpi-value">82</div><div class="kpi-delta up">▲ 18%</div></div>
+      <div class="kpi"><div class="kpi-label">Rejected (MTD)</div><div class="kpi-value">4</div><div class="kpi-delta">missing docs</div></div>
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">Pending (14)</a><a href="#">Vendor (9)</a><a href="#">Buyer (5)</a><a href="#">In review (3)</a><a href="#">Approved (82)</a><a href="#">Rejected (4)</a>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="card mb-12" style="border:1.5px solid var(--admin-purple);background:linear-gradient(180deg,rgba(124,58,237,.04) 0%,#fff 60%);">
+          <div class="row" style="gap:14px;align-items:flex-start;">
+            <div class="avatar" style="width:48px;height:48px;border-radius:12px;background:var(--admin-purple-light);color:var(--admin-purple);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">SP</div>
+            <div class="flex-1">
+              <div class="row-between"><strong>Sagarmala Pilots Pvt Ltd</strong><span class="chip chip-warning">⏱ in queue 2h</span></div>
+              <div class="muted" style="font-size:12px;margin-top:2px;">Vendor · Ship Agents + Mooring · Mangalore + Cochin · Capt. Vinod M.</div>
+              <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;">
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">GST ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">PAN ✓</div></div>
+                <div style="padding:8px;background:var(--warning-light);border-radius:8px;text-align:center;font-size:11px;"><div style="color:#92400E;font-weight:800;">DGS ⏱</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">P&amp;I ✓</div></div>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:12px;"><button class="btn btn-sm btn-primary">Review</button><button class="btn btn-sm btn-outline">Approve</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Reject</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-12">
+          <div class="row" style="gap:14px;align-items:flex-start;">
+            <div class="avatar" style="width:48px;height:48px;border-radius:12px;background:var(--warning-light);color:#92400E;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">LS</div>
+            <div class="flex-1">
+              <div class="row-between"><strong>Lakshmi Shipping Pvt Ltd</strong><span class="chip chip-warning">⏱ in queue 5h</span></div>
+              <div class="muted" style="font-size:12px;margin-top:2px;">Buyer · Chennai + Tuticorin · Karthik S.</div>
+              <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+                <div style="padding:8px;background:var(--warning-light);border-radius:8px;text-align:center;font-size:11px;"><div style="color:#92400E;font-weight:800;">GST ⏱</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">PAN ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">IEC ✓</div></div>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:12px;"><button class="btn btn-sm btn-primary">Review</button><button class="btn btn-sm btn-ghost">Request more docs</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-12">
+          <div class="row" style="gap:14px;align-items:flex-start;">
+            <div class="avatar" style="width:48px;height:48px;border-radius:12px;background:var(--accent-light);color:var(--accent);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">KT</div>
+            <div class="flex-1">
+              <div class="row-between"><strong>Konkan Tug Services</strong><span class="chip chip-danger">⏱ overdue 1d</span></div>
+              <div class="muted" style="font-size:12px;margin-top:2px;">Vendor · Multi Modal Transport + Salvage · Goa · Ramesh G.</div>
+              <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;">
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">GST ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">PAN ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">DGS ✓</div></div>
+                <div style="padding:8px;background:var(--danger-light);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--danger);font-weight:800;">P&amp;I ✗</div></div>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:12px;"><button class="btn btn-sm btn-primary">Review</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Reject</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-12">
+          <div class="row" style="gap:14px;align-items:flex-start;">
+            <div class="avatar" style="width:48px;height:48px;border-radius:12px;background:#FCE7F3;color:#BE185D;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">PB</div>
+            <div class="flex-1">
+              <div class="row-between"><strong>Paradip Bunkering Co.</strong><span class="chip chip-gray">in queue 6h</span></div>
+              <div class="muted" style="font-size:12px;margin-top:2px;">Vendor · Bunkering MGO/HSFO · Paradip · Subrat M.</div>
+              <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;">
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">GST ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">PAN ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">DGS ✓</div></div>
+                <div style="padding:8px;background:var(--bg);border-radius:8px;text-align:center;font-size:11px;"><div style="color:var(--success);font-weight:800;">P&amp;I ✓</div></div>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:12px;"><button class="btn btn-sm btn-primary">Review</button><button class="btn btn-success btn-sm">✓ Auto-approve eligible</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="detail-drawer">
+        <div class="drawer-section">
+          <div class="label">Selected applicant</div>
+          <strong style="font-size:16px;">Sagarmala Pilots Pvt Ltd</strong>
+          <div class="muted" style="font-size:12px;margin-top:2px;">Vendor · Ship Agents + Mooring</div>
+        </div>
+        <div class="drawer-section">
+          <div class="label">Company info</div>
+          <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Entity</span><span>Pvt Ltd</span></div>
+          <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">CIN</span><span>U63090KA2020PTC…</span></div>
+          <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">GSTIN</span><span>29ZABCD…</span></div>
+          <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">PAN</span><span>ZABCD1234E</span></div>
+          <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Founded</span><span>2020</span></div>
+        </div>
+        <div class="drawer-section">
+          <div class="label">Documents</div>
+          <div class="row-between" style="padding:6px 0;font-size:13px;"><span>📄 GST Certificate</span><span style="color:var(--success);">Auto-verified ✓</span></div>
+          <div class="row-between" style="padding:6px 0;font-size:13px;"><span>📄 PAN Card</span><span style="color:var(--success);">Auto-verified ✓</span></div>
+          <div class="row-between" style="padding:6px 0;font-size:13px;"><span>📄 FMC Agency License</span><span style="color:var(--warning);">Needs manual review</span></div>
+          <div class="row-between" style="padding:6px 0;font-size:13px;"><span>📄 P&amp;I Insurance</span><span style="color:var(--success);">Auto-verified ✓</span></div>
+        </div>
+        <div class="drawer-section">
+          <div class="label">Auto checks</div>
+          <div class="row-between" style="padding:4px 0;font-size:12px;"><span><span class="status-dot green"></span>GSTIN format + GSTR-1 filed</span><span class="muted">PASS</span></div>
+          <div class="row-between" style="padding:4px 0;font-size:12px;"><span><span class="status-dot green"></span>PAN matches CIN signatory</span><span class="muted">PASS</span></div>
+          <div class="row-between" style="padding:4px 0;font-size:12px;"><span><span class="status-dot amber"></span>DGS reg# not in our directory</span><span class="muted">MANUAL</span></div>
+          <div class="row-between" style="padding:4px 0;font-size:12px;"><span><span class="status-dot green"></span>P&amp;I coverage ≥ USD 5M</span><span class="muted">PASS</span></div>
+          <div class="row-between" style="padding:4px 0;font-size:12px;"><span><span class="status-dot green"></span>No prior MCA flags</span><span class="muted">PASS</span></div>
+        </div>
+        <button class="btn btn-primary btn-block">Approve &amp; activate</button>
+        <button class="btn btn-outline btn-block mt-8">Request more documents</button>
+        <button class="btn btn-ghost btn-block mt-8" style="color:var(--danger);">Reject application</button>
+      </aside>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('kyc', 'Search applicants…');</script>
+</body>
+</html>

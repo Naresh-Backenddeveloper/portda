@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PORTDA — Port Services App Screens</title>
+<link rel="stylesheet" href="assets/styles.css" />
+<style>
+  body { padding: 40px 24px 80px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .hero { background: linear-gradient(135deg, #000000 0%, #8B5CF6 50%, #27272A 100%); padding: 56px 40px; border-radius: 24px; color: #fff; box-shadow: 0 20px 50px rgba(0,0,0,.34); margin-bottom: 40px; position: relative; overflow: hidden; }
+  .hero::after { content:""; position:absolute; right:-40px; bottom:-40px; width:240px; height:240px; border-radius:50%; background:rgba(255,255,255,.06); }
+  .hero::before { content:""; position:absolute; right:60px; top:-30px; width:120px; height:120px; border-radius:50%; background:rgba(255,255,255,.04); }
+  .hero .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; position:relative; z-index:1; }
+  .hero .brand-mark { width: 64px; height: 64px; background: rgba(255,255,255,.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 28px; }
+  .hero h1 { font-size: 48px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; }
+  .hero p.tag { font-size: 14px; opacity: .85; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  .hero p.lead { font-size: 18px; opacity: .95; max-width: 700px; margin-top: 16px; line-height: 1.5; position:relative; z-index:1; }
+  .hero .stats { display: flex; gap: 32px; margin-top: 32px; flex-wrap: wrap; position:relative; z-index:1; }
+  .hero .stat .n { font-size: 32px; font-weight: 800; }
+  .hero .stat .l { font-size: 12px; opacity: .8; text-transform: uppercase; letter-spacing: 1px; }
+  .modules { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .module-card { background: #fff; border-radius: 18px; padding: 24px; border: 1px solid var(--border); transition: all .2s; display: block; }
+  .module-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.16); border-color: #8B5CF6; }
+  .module-card .num { font-size: 11px; color: #8B5CF6; font-weight: 700; letter-spacing: 1px; }
+  .module-card h3 { font-size: 18px; font-weight: 700; margin: 6px 0 10px; color: var(--text); }
+  .module-card p { font-size: 13px; color: var(--text-2); line-height: 1.5; }
+  .module-card .meta { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border-2); }
+  .module-card .count { font-size: 11px; color: var(--text-2); font-weight: 600; }
+  .module-card .arrow { color: #8B5CF6; font-weight: 700; }
+  .section-head { margin: 48px 0 20px; padding: 0 8px; }
+  .section-head h2 { font-size: 24px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+  .section-head p { font-size: 14px; color: var(--text-2); margin-top: 4px; }
+  .icon-bg-1 { background: linear-gradient(135deg, #F4F4F5, #E4E4E7); color: #8B5CF6; }
+  .icon-bg-2 { background: linear-gradient(135deg, #F5F3FF, #ECDFC1); color: #10B981; }
+  .icon-bg-3 { background: linear-gradient(135deg, #F5F3FF, #DDD6FE); color: #10B981; }
+  .icon-bg-4 { background: linear-gradient(135deg, #FEE2E2, #FECACA); color: #EF4444; }
+  .icon-bg-5 { background: linear-gradient(135deg, #F5F3FF, #DDD6FE); color: #8B5CF6; }
+  .icon-bg-6 { background: linear-gradient(135deg, #FEF3C7, #FDE68A); color: #F59E0B; }
+  .ic { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="hero">
+    <div class="brand">
+      <div class="brand-mark">⚓</div>
+      <div>
+        <h1>PORTDA</h1>
+        <p class="tag">Port Services Platform · User App</p>
+      </div>
+    </div>
+    <p class="lead">Complete user-side screen designs for the PORTDA digital marketplace for port and maritime services — covering vessel arrival, berthing, pilotage, towage, bunkering, cargo handling, ship chandling, repair, surveying and crew services.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">12</div><div class="l">Modules</div></div>
+      <div class="stat"><div class="n">67</div><div class="l">Screens</div></div>
+      <div class="stat"><div class="n">12+</div><div class="l">Port Services</div></div>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <h2>Modules</h2>
+    <p>Each module opens a page with every screen rendered as a mobile mockup for ship agents, vessel operators and port logistics teams.</p>
+  </div>
+
+  <div class="modules">
+
+    <a class="module-card" href="01-onboarding.html">
+      <div class="ic icon-bg-1">⚓</div>
+      <div class="num">MODULE 01</div>
+      <h3>Splash &amp; Onboarding</h3>
+      <p>Splash, location and notification permissions, first-launch flow for shipping agents.</p>
+      <div class="meta"><span class="count">4 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="02-auth.html">
+      <div class="ic icon-bg-2">⚷</div>
+      <div class="num">MODULE 02</div>
+      <h3>Authentication</h3>
+      <p>Login for shipping companies, OTP, agent registration with IMO/company verification.</p>
+      <div class="meta"><span class="count">7 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="03-home.html">
+      <div class="ic icon-bg-3">⚓</div>
+      <div class="num">MODULE 03</div>
+      <h3>Home</h3>
+      <p>Dashboard, search, category &amp; subcategory browsing, featured marine vendors.</p>
+      <div class="meta"><span class="count">5 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="04-service-request.html">
+      <div class="ic icon-bg-4">📋</div>
+      <div class="num">MODULE 04</div>
+      <h3>Service Request</h3>
+      <p>Raise pilotage, berthing, bunkering, cargo handling or ship repair requests for your vessel.</p>
+      <div class="meta"><span class="count">10 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="05-quotations.html">
+      <div class="ic icon-bg-5">₹</div>
+      <div class="num">MODULE 05</div>
+      <h3>Quotations</h3>
+      <p>Receive, negotiate, approve or reject service quotations from marine vendors.</p>
+      <div class="meta"><span class="count">8 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="06-chat.html">
+      <div class="ic icon-bg-6">✉</div>
+      <div class="num">MODULE 06</div>
+      <h3>Chat &amp; Communication</h3>
+      <p>Direct messaging with port operators, pilots, agents and service vendors.</p>
+      <div class="meta"><span class="count">2 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="07-orders.html">
+      <div class="ic icon-bg-1">◧</div>
+      <div class="num">MODULE 07</div>
+      <h3>Orders</h3>
+      <p>Manage service orders from request to closure — status timeline, in-progress, complete, cancel, reschedule.</p>
+      <div class="meta"><span class="count">7 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="08-payments.html">
+      <div class="ic icon-bg-3">₹</div>
+      <div class="num">MODULE 08</div>
+      <h3>Payments</h3>
+      <p>Online (UPI/card/Razorpay) and offline (NEFT/RTGS with UTR verification) flows, transaction history.</p>
+      <div class="meta"><span class="count">8 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="09-reviews.html">
+      <div class="ic icon-bg-2">★</div>
+      <div class="num">MODULE 09</div>
+      <h3>Ratings &amp; Reviews</h3>
+      <p>Rate marine vendors, write reviews, browse feedback from other shipping companies.</p>
+      <div class="meta"><span class="count">3 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="10-notifications.html">
+      <div class="ic icon-bg-4">⚐</div>
+      <div class="num">MODULE 10</div>
+      <h3>Notifications</h3>
+      <p>Vessel ETA alerts, berth allocation, customs clearance, weather and tide notifications.</p>
+      <div class="meta"><span class="count">3 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="11-profile.html">
+      <div class="ic icon-bg-5">⊚</div>
+      <div class="num">MODULE 11</div>
+      <h3>User Profile</h3>
+      <p>Company profile, KYC, payment methods, help &amp; support.</p>
+      <div class="meta"><span class="count">5 screens</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="module-card" href="12-settings.html">
+      <div class="ic icon-bg-6">⚙</div>
+      <div class="num">MODULE 12</div>
+      <h3>Settings &amp; Misc</h3>
+      <p>Terms, privacy, about, logout and account deletion.</p>
+      <div class="meta"><span class="count">5 screens</span><span class="arrow">→</span></div>
+    </a>
+
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing · PORTDA</title>
+<meta name="description" content="Subscription unlocks lead access (Starter / Pro / Elite tiers). PORTDA takes 5% commission only when a lead converts to a confirmed order. Buyer side is always free." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-vendors">For Vendors</a>
+      <a href="/for-buyers">For Buyers</a>
+      <a href="/pricing" class="active">Pricing</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="/login" class="btn btn-ghost">Sign in</a>
+      <a href="/signup" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Vendor pricing</div>
+    <h1>Pick the <span class="text-gradient">subscription tier</span> that fits your business</h1>
+    <p class="lede">Subscription unlocks lead access. PORTDA earns 5% only when a lead converts. Buyer side is always free.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-head"><h3>Starter</h3><span class="price-chip gray">Solo vendors</span></div>
+        <div class="price-amount"><span>₹4,999</span><small>/ quarter</small></div>
+        <p class="price-desc">Subscription unlocks lead access. 5% commission charged on each confirmed order.</p>
+        <ul class="price-list">
+          <li>50 leads viewable / month</li>
+          <li>Up to 2 service categories</li>
+          <li>Standard support</li>
+          <li class="muted">Premium leads gated</li>
+          <li class="muted">+ 5% commission on every conversion</li>
+        </ul>
+        <a href="/for-vendors" class="btn btn-outline btn-block">Start with Starter</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">MOST POPULAR</div>
+        <div class="price-head"><h3>Pro</h3><span class="price-chip primary">Growing fleets</span></div>
+        <div class="price-amount"><span>₹12,999</span><small>/ quarter</small></div>
+        <p class="price-desc">More lead visibility, premium-lead access, priority listing in buyer search.</p>
+        <ul class="price-list">
+          <li><strong>200 leads / month</strong></li>
+          <li>All service categories</li>
+          <li>Premium leads unlocked</li>
+          <li>Priority listing in buyer search</li>
+          <li>Priority support</li>
+          <li class="muted">+ 5% commission on every conversion</li>
+        </ul>
+        <a href="/for-vendors" class="btn btn-primary btn-block">Choose Pro</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-head"><h3>Elite</h3><span class="price-chip gold">Large fleets</span></div>
+        <div class="price-amount"><span>₹29,999</span><small>/ quarter</small></div>
+        <p class="price-desc">For large operators. Featured on buyer dashboard plus dedicated account manager.</p>
+        <ul class="price-list">
+          <li><strong>Unlimited leads</strong></li>
+          <li>Premium leads unlocked</li>
+          <li>Featured on buyer dashboard</li>
+          <li>Multi-user team accounts</li>
+          <li>Dedicated account manager + API</li>
+          <li class="muted">+ 5% commission on every conversion</li>
+        </ul>
+        <a href="/contact" class="btn btn-outline btn-block">Talk to sales</a>
+      </div>
+    </div>
+
+    <p class="pricing-note">Subscription gives you lead access; PORTDA earns 5% only when a lead converts to a confirmed order. Monthly &amp; yearly billing also available. Yearly saves 20%. Buyer side is always free.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Compare tiers</div>
+      <h2>Starter vs Pro vs Elite</h2>
+    </div>
+
+    <div class="compare-table">
+      <div class="compare-row compare-head">
+        <div></div>
+        <div>Starter</div>
+        <div class="compare-featured">Pro</div>
+        <div>Elite</div>
+      </div>
+      <div class="compare-row">
+        <div>Subscription fee</div>
+        <div>₹4,999/qtr</div>
+        <div><strong>₹12,999/qtr</strong></div>
+        <div>₹29,999/qtr</div>
+      </div>
+      <div class="compare-row">
+        <div>Commission on conversion</div>
+        <div>5%</div>
+        <div>5%</div>
+        <div>5%</div>
+      </div>
+      <div class="compare-row">
+        <div>Leads viewable / month</div>
+        <div>50</div>
+        <div>200</div>
+        <div>Unlimited</div>
+      </div>
+      <div class="compare-row">
+        <div>Service categories</div>
+        <div>Up to 2</div>
+        <div>All</div>
+        <div>All</div>
+      </div>
+      <div class="compare-row">
+        <div>Premium leads</div>
+        <div class="muted">Gated</div>
+        <div>✓ Unlocked</div>
+        <div>✓ Unlocked</div>
+      </div>
+      <div class="compare-row">
+        <div>Priority listing in search</div>
+        <div class="muted">—</div>
+        <div>✓ Yes</div>
+        <div>✓ Yes</div>
+      </div>
+      <div class="compare-row">
+        <div>Featured on buyer dashboard</div>
+        <div class="muted">—</div>
+        <div class="muted">—</div>
+        <div>✓ Yes</div>
+      </div>
+      <div class="compare-row">
+        <div>Dedicated account manager</div>
+        <div class="muted">—</div>
+        <div class="muted">—</div>
+        <div>✓ Yes</div>
+      </div>
+      <div class="compare-row">
+        <div>Switch tier anytime</div>
+        <div>✓</div>
+        <div>✓</div>
+        <div>✓</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item" open>
+        <summary>Why both subscription AND commission?</summary>
+        <p>Subscription unlocks <strong>access to leads</strong> — it's what gets requests in front of you. The 5% commission applies only when a lead actually <strong>converts to a confirmed order</strong>, so PORTDA only earns when you earn. This keeps incentives aligned: we curate quality leads and you only pay extra when you close.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What counts as a "lead"?</summary>
+        <p>A lead is a request that matches your service category and at least one of your served ports. Each plan caps how many leads you can view per month. Premium (high-value) leads are gated to Pro and Elite tiers.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is the 5% commission calculated?</summary>
+        <p>It's 5% of the buyer-confirmed quote amount, deducted automatically from your settlement at order completion. You'll see every deduction in the Commission Ledger inside the app.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why does PORTDA review my quotes before sending them?</summary>
+        <p>Every quote is reviewed by PORTDA for completeness, pricing sanity and policy compliance before being released to the buyer. Median review time is <strong>18 minutes</strong>. You'll be notified once approved (and the quote goes to the buyer) or returned with feedback for edits.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I switch tiers later?</summary>
+        <p>Yes. From Plan &amp; Billing inside the app go to Change Plan. Upgrades are prorated; downgrades take effect at next renewal. No lock-in on any tier.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is GST charged on the subscription fee?</summary>
+        <p>Yes — 18% GST applies and is shown separately on the invoice. You can claim the input credit if you're GST-registered.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you charge buyers anything?</summary>
+        <p>No. The buyer side of PORTDA is free forever — sign up, post requests, compare quotes and pay vendors with no platform fee.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What payment methods are accepted?</summary>
+        <p>UPI, all major credit/debit cards, net banking, and (for subscription auto-renew) e-NACH mandates. Yearly plans can also be paid by NEFT/RTGS with UTR confirmation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2>Subscribe to start receiving leads</h2>
+    <p>Pick a tier · view leads · convert them · pay 5% only on confirmed orders. We win when you win.</p>
+    <div class="cta-buttons">
+      <a href="/for-vendors" class="btn btn-primary btn-lg">Register as Vendor</a>
+      <a href="/contact" class="btn btn-light btn-lg">Talk to sales</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+      <p>The world's first marketplace for port &amp; marine services.</p>
+      <div class="socials"><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.7-.7-1.7-1.7s.7-1.7 1.8-1.7 1.7.7 1.7 1.7-.7 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.4-.6-1.9-1.4-1.9s-1.6.5-1.6 1.9V19h-3V8h3v1.3c.3-.6 1.3-1.5 2.8-1.5 1.6 0 3.2 1 3.2 3.5V19z"/></svg></a><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a></div>
+    </div>
+    <div class="footer-col"><h5>Product</h5><a href="/how-it-works">How it works</a><a href="/for-vendors">For Vendors</a><a href="/for-buyers">For Buyers</a><a href="/pricing">Pricing</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="/contact">Contact</a></div>
+    <div class="footer-col"><h5>Resources</h5><a href="#">Help centre</a><a href="#">Vendor handbook</a><a href="#">API docs</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Terms</a><a href="#">Privacy</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 PORTDA Technologies Pvt Ltd</span>
+    <span>Made for the global marine industry ⚓</span>
+  </div>
+</footer>
+
+</body>
+</html>

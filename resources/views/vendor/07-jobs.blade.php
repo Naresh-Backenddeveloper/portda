@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PORTDA Vendor — 07 · Jobs</title>
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<div class="page-header">
+  <div class="logo"><div class="logo-mark">⚓</div><div><h1>Vendor · 07 · Jobs</h1><p>7 screens — manage confirmed work and milestones</p></div></div>
+  <a class="back-link" href="/mobile/vendor">← All modules</a>
+</div>
+<div class="module-nav"><a href="/mobile/vendor">Vendor home</a><a href="/mobile/vendor/01-onboarding">01 Onboarding</a><a href="/mobile/vendor/02-auth">02 Auth</a><a href="/mobile/vendor/03-home">03 Dashboard</a><a href="/mobile/vendor/04-rfq-inbox">04 Request Inbox</a><a href="/mobile/vendor/05-quotations">05 Quotations</a><a href="/mobile/vendor/06-chat">06 Chat</a><a href="/mobile/vendor/07-jobs">07 Jobs</a><a href="/mobile/vendor/08-payouts">08 Payouts</a><a href="/mobile/vendor/09-reviews">09 Reviews</a><a href="/mobile/vendor/10-notifications">10 Notifications</a><a href="/mobile/vendor/11-profile">11 Profile</a><a href="/mobile/vendor/12-settings">12 Settings</a></div>
+
+<div class="screens-grid">
+
+  <!-- 7.1 Jobs list -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.1 My Jobs</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><h2>My Jobs</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div></div>
+        <div class="screen-body">
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">#PORT-48217</div><div class="chip chip-primary">In Progress</div></div>
+            <div class="row gap-10 mt-8">
+              <div class="img-ph" style="width:42px;height:42px;border-radius:10px;">OL</div>
+              <div class="flex-1">
+                <div class="txt-sm semi">OceanLink Shipping</div>
+                <div class="txt-xs text-2 mt-4">Today, 13:00 IST</div>
+                <div class="txt-md bold text-primary mt-4">₹2,18,300</div>
+              </div>
+            </div>
+            <div class="row gap-8 mt-12"><button class="btn btn-outline btn-sm flex-1">Chat</button><button class="btn btn-primary btn-sm flex-1">Update Status</button></div>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">#PORT-48156</div><div class="chip chip-success">Confirmed</div></div>
+            <div class="row gap-10 mt-8">
+              <div class="img-ph accent" style="width:42px;height:42px;border-radius:10px;">SF</div>
+              <div class="flex-1">
+                <div class="txt-sm semi">Saffron Fleet Mgmt</div>
+                <div class="txt-xs text-2 mt-4">18 May, 06:00</div>
+                <div class="txt-md bold text-primary mt-4">₹4,80,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">#PORT-48022</div><div class="chip chip-success">Confirmed</div></div>
+            <div class="row gap-10 mt-8">
+              <div class="img-ph success" style="width:42px;height:42px;border-radius:10px;">MS</div>
+              <div class="flex-1">
+                <div class="txt-sm semi">Mariner Shipping Co.</div>
+                <div class="txt-xs text-2 mt-4">Sat, 17 May</div>
+                <div class="txt-md bold text-primary mt-4">₹2,50,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.2 Job Details -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.2 Job Details</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Job Details</h2><div class="icon-btn"><svg class="filled" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="5" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="12" cy="19" r="1.7"/></svg></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="border:none;">
+            <div class="row-between"><div class="txt-xs semi" style="opacity:.85;">#PORT-48217</div><span class="chip" style="background:rgba(255,255,255,.2);color:#fff;">In Progress</span></div>
+            <div class="txt-lg bold mt-8">OceanLink Shipping</div>
+            <div class="txt-xs mt-4" style="opacity:.85;">Started 38 min ago</div>
+          </div>
+          <div class="card mt-12"><div class="row gap-10"><div class="img-ph" style="width:48px;height:48px;border-radius:10px;">🚢</div><div class="flex-1"><div class="txt-sm semi">MV Sea Trader</div><div class="txt-xs text-2">IMO 9412358</div></div><div class="row gap-4"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 2 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.81.33 1.81.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div></div></div></div>
+          <div class="card">
+            <div class="txt-xs text-2 semi mb-8">SCHEDULE</div>
+            <div class="row-between"><div class="txt-xs text-2">Date</div><div class="txt-xs semi">Thu, 15 May 2026</div></div>
+            <div class="row-between mt-4"><div class="txt-xs text-2">Time</div><div class="txt-xs semi">13:00 IST</div></div>
+          </div>
+          <div class="card">
+            <div class="txt-xs text-2 semi mb-8">PAYMENT</div>
+            <div class="row-between"><div class="txt-xs">Job value</div><div class="txt-xs">₹2,18,300</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">Advance received</div><div class="txt-xs text-success">+₹43,660</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Pending</div><div class="txt-md bold text-primary">₹1,74,640</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Update Status</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.3 Update Status -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.3 Update Status</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Update Status</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card" style="display:flex;align-items:center;gap:12px;">
+            <div class="img-ph" style="width:42px;height:42px;border-radius:10px;font-size:11px;">OL</div>
+            <div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2 mt-4">#PORT-48217 · ₹2,18,300</div></div>
+          </div>
+          <div class="semi txt-md mt-16 mb-8">Select new status</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <label class="card" style="display:flex;align-items:center;gap:10px;"><div style="width:16px;height:16px;border:2px solid var(--border);border-radius:50%;"></div><div class="flex-1"><div class="txt-sm semi">Confirmed</div><div class="txt-xs text-2">Vendor confirmed schedule</div></div><span class="chip chip-success">✓</span></label>
+            <label class="card" style="display:flex;align-items:center;gap:10px;border:1.5px solid var(--primary);background:var(--primary-light);"><div style="width:16px;height:16px;border:2px solid var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:8px;height:8px;background:var(--primary);border-radius:50%;"></div></div><div class="flex-1"><div class="txt-sm semi text-primary">In Progress</div><div class="txt-xs text-primary">Service started</div></div></label>
+            <label class="card" style="display:flex;align-items:center;gap:10px;"><div style="width:16px;height:16px;border:2px solid var(--border);border-radius:50%;"></div><div class="flex-1"><div class="txt-sm semi">Completed</div><div class="txt-xs text-2">Job done · invoice ready</div></div></label>
+          </div>
+          <div class="input-wrap mt-12" style="min-height:80px;"><div class="input-label">Notes (optional)</div><div class="input-placeholder">e.g., "Pilot boarded at 13:00, transit started"</div></div>
+          <div class="semi txt-sm mt-12 mb-8">Attach proof (optional)</div>
+          <div class="grid-3">
+            <div class="card" style="height:72px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--border);"><div class="txt-xl text-primary">📷</div></div>
+            <div class="card" style="height:72px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--border);"><div class="txt-xl text-primary">📄</div></div>
+            <div class="card" style="height:72px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--border);"><div class="txt-xl text-primary">+</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Save Update</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.4 Mark Complete -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.4 Mark Complete</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Mark Complete</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="background:linear-gradient(135deg,#8B5CF6,#10B981);border:none;text-align:center;">
+            <div class="icon-box" style="background:rgba(255,255,255,.2);color:#fff;width:56px;height:56px;font-size:24px;border-radius:16px;margin:0 auto;">✓</div>
+            <div class="txt-md bold mt-8">Wrap up this job</div>
+            <div class="txt-xs mt-4" style="opacity:.85;">Final invoice will be auto-generated</div>
+          </div>
+          <div class="card mt-12" style="display:flex;align-items:center;gap:12px;">
+            <div class="img-ph" style="width:42px;height:42px;border-radius:10px;font-size:11px;">OL</div>
+            <div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2 mt-4">#PORT-48217</div></div>
+          </div>
+          <div class="card">
+            <div class="txt-xs text-2 semi mb-8">FINAL INVOICE</div>
+            <div class="row-between"><div class="txt-xs">Total</div><div class="txt-xs">₹2,18,300</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">Advance received</div><div class="txt-xs text-success">−₹43,660</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Balance to collect</div><div class="txt-md bold text-primary">₹1,74,640</div></div>
+          </div>
+          <div class="semi txt-sm mt-12 mb-8">Completion proof (optional)</div>
+          <div class="grid-3">
+            <div class="img-ph" style="height:72px;font-size:10px;">Photo 1</div>
+            <div class="img-ph accent" style="height:72px;font-size:10px;">Photo 2</div>
+            <div class="card" style="height:72px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--border);"><div class="txt-xl text-primary">+</div></div>
+          </div>
+          <div class="row gap-10 mt-12"><div style="width:18px;height:18px;border:1.5px solid var(--primary);border-radius:5px;background:var(--primary);color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div><div class="txt-xs text-2" style="line-height:1.5;">I confirm the work has been completed as per scope. Invoice will be sent to buyer.</div></div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Submit &amp; Send Invoice</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.5 Completed -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.5 Completed Job</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Job Completed</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="background:linear-gradient(135deg,#8B5CF6,#10B981);border:none;text-align:center;">
+            <div class="icon-box" style="background:rgba(255,255,255,.2);color:#fff;width:64px;height:64px;font-size:32px;border-radius:18px;margin:0 auto;">✓</div>
+            <div class="txt-lg bold mt-12">Invoice sent</div>
+            <div class="txt-xs mt-4" style="opacity:.85;">Buyer has been notified</div>
+          </div>
+          <div class="card mt-12" style="display:flex;align-items:center;gap:12px;">
+            <div class="img-ph" style="width:42px;height:42px;border-radius:10px;font-size:11px;">OL</div>
+            <div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2 mt-4">Completed 14:48 IST</div></div>
+          </div>
+          <div class="card">
+            <div class="txt-xs text-2 semi mb-8">EARNINGS</div>
+            <div class="row-between"><div class="txt-xs">Job value</div><div class="txt-xs">₹2,18,300</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">Platform fee (5%)</div><div class="txt-xs text-danger">−₹10,915</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Your earnings</div><div class="txt-md bold text-success">₹2,07,385</div></div>
+            <div class="txt-xs text-2 mt-4">Settled to wallet on payment receipt</div>
+          </div>
+          <div class="card" style="background:var(--accent-light);border:none;">
+            <div class="row gap-10"><div class="text-accent txt-xl">★</div><div class="flex-1"><div class="txt-sm semi">Awaiting buyer rating</div><div class="txt-xs text-2 mt-4">Higher ratings = more visibility</div></div></div>
+          </div>
+        </div>
+        <div class="bottom-cta" style="display:flex;flex-direction:column;gap:8px;">
+          <button class="btn btn-primary">Track Payment</button>
+          <button class="btn btn-ghost">Back to Jobs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.6 Reschedule request -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.6 Reschedule Request</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Reschedule Request</h2><div style="width:36px;"></div></div>
+        <div class="screen-body">
+          <div class="card" style="background:#FFFBEB;border:1px solid #FDE68A;padding:14px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-warning-light text-warning" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="flex-1">
+                <div class="txt-sm semi">Buyer is requesting reschedule</div>
+                <div class="txt-xs text-2 mt-4">Confirm if you can accommodate</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-12" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="img-ph accent" style="width:42px;height:42px;border-radius:10px;font-size:11px;flex-shrink:0;">SF</div>
+              <div class="flex-1">
+                <div class="txt-sm semi">Saffron Fleet Mgmt</div>
+                <div class="txt-xs text-2 mt-4">#PORT-48156 · ₹4,80,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2 mt-12" style="align-items:stretch;">
+            <div class="card" style="background:var(--bg);border:1.5px solid transparent;padding:12px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+              <div class="txt-xs text-2 semi" style="letter-spacing:.5px;">CURRENT</div>
+              <div class="txt-sm semi mt-4">18 May, 06:00</div>
+            </div>
+            <div class="card" style="background:var(--primary-light);border:1.5px solid var(--primary);padding:12px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+              <div class="txt-xs text-primary semi" style="letter-spacing:.5px;">REQUESTED</div>
+              <div class="txt-sm semi text-primary mt-4">20 May, 09:00</div>
+            </div>
+          </div>
+
+          <div class="card mt-12" style="padding:14px;">
+            <div class="txt-xs text-2 semi mb-8" style="letter-spacing:.5px;">BUYER MESSAGE</div>
+            <div class="txt-sm" style="line-height:1.5;">ETA pushed back due to weather hold at previous port. Can we shift to 20 May morning slot?</div>
+          </div>
+        </div>
+        <div class="bottom-cta" style="display:flex;gap:8px;">
+          <button class="btn btn-ghost flex-1">Decline</button>
+          <button class="btn btn-primary flex-1">Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7.7 Cancel job -->
+  <div class="screen-wrap">
+    <div class="screen-label">7.7 Cancel Job</div>
+    <div class="phone">
+      <div class="screen" data-tab="jobs">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Cancel Job</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card" style="background:#FEF2F2;border:1px solid #FECACA;"><div class="row gap-10"><div class="text-danger txt-xl">⚠</div><div class="txt-sm" style="line-height:1.5;">Cancelling now may impact your rating. ₹10,915 cancellation penalty applies (5% of job value).</div></div></div>
+          <div class="card mt-12" style="display:flex;align-items:center;gap:12px;">
+            <div class="img-ph success" style="width:42px;height:42px;border-radius:10px;font-size:11px;">MS</div>
+            <div class="flex-1"><div class="txt-sm semi">Mariner Shipping Co.</div><div class="txt-xs text-2 mt-4">#PORT-48022 · ₹2,50,000</div></div>
+          </div>
+          <div class="semi txt-md mt-16 mb-8">Reason for cancellation</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <label class="card" style="display:flex;align-items:center;gap:10px;border:1.5px solid var(--primary);background:var(--primary-light);"><div style="width:16px;height:16px;border:2px solid var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:8px;height:8px;background:var(--primary);border-radius:50%;"></div></div><div class="txt-sm">Equipment / resource unavailable</div></label>
+            <label class="card" style="display:flex;align-items:center;gap:10px;"><div style="width:16px;height:16px;border:2px solid var(--border);border-radius:50%;"></div><div class="txt-sm">Weather / operational hold</div></label>
+            <label class="card" style="display:flex;align-items:center;gap:10px;"><div style="width:16px;height:16px;border:2px solid var(--border);border-radius:50%;"></div><div class="txt-sm">Buyer non-responsive</div></label>
+            <label class="card" style="display:flex;align-items:center;gap:10px;"><div style="width:16px;height:16px;border:2px solid var(--border);border-radius:50%;"></div><div class="txt-sm">Other</div></label>
+          </div>
+          <div class="input-wrap mt-12" style="min-height:60px;"><div class="input-label">Notes (optional)</div><div class="input-placeholder">Explain to the buyer</div></div>
+        </div>
+        <div class="bottom-cta" style="display:flex;gap:8px;"><button class="btn btn-ghost flex-1">Keep Job</button><button class="btn btn-danger flex-1">Confirm Cancel</button></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/assets/tabbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="/assets/download.js"></script>
+</body>
+</html>

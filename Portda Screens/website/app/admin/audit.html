@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Audit Log · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Audit Log</h1><p>Every admin action · immutable · 7-year retention · SOC 2 compliant.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export (signed JSON)</button></div>
+    </div>
+
+    <div class="filter-strip">
+      <span class="label">Filter:</span>
+      <select><option>All admins</option><option>Aanya Sharma</option><option>Vikram Kapoor</option><option>Priya Goenka</option><option>Rohit Mehta</option><option>Neha Singh</option></select>
+      <select><option>All actions</option><option>Sign-in</option><option>KYC approve/reject</option><option>Refund issued</option><option>Plan edit</option><option>Vendor suspend</option><option>Broadcast sent</option></select>
+      <select><option>All modules</option><option>Vendors</option><option>Buyers</option><option>KYC</option><option>Finance</option><option>Plans</option><option>Broadcast</option></select>
+      <select><option>Last 7 days</option><option>Today</option><option>Last 30 days</option><option>Last 90 days</option><option>This FY</option><option>Custom range…</option></select>
+      <div class="spacer"></div>
+      <input type="search" placeholder="Search action/resource…" style="min-width:240px;" />
+    </div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th>Time</th><th>Admin</th><th>Action</th><th>Resource</th><th>Result</th><th>IP</th><th>Hash</th></tr></thead>
+        <tbody>
+          <tr><td>15:48 IST today</td><td>Aanya Sharma <span class="muted">· Super Admin</span></td><td><strong>Sign-in (2FA)</strong></td><td>Admin Console</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">a3f8e…</td></tr>
+          <tr><td>15:42 IST today</td><td>Priya Goenka <span class="muted">· KYC Reviewer</span></td><td><strong>KYC approved</strong></td><td>Vendor: Paradip Bunkering Co. · VND-9831</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">b91c2…</td></tr>
+          <tr><td>15:14 IST today</td><td>Neha Singh <span class="muted">· Finance</span></td><td><strong>Refund issued</strong> · ₹8,000</td><td>DSP-2404 · OceanLink</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">7e4a1…</td></tr>
+          <tr><td>14:48 IST today</td><td>Rohit Mehta <span class="muted">· Support</span></td><td><strong>Dispute opened</strong></td><td>#PORT-48156 · short-delivery</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">2d903…</td></tr>
+          <tr><td>14:02 IST today</td><td>Aanya Sharma</td><td><strong>Broadcast sent</strong></td><td>"Tuticorin port live" · 412 vendors</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">f0826…</td></tr>
+          <tr><td>11:38 IST today</td><td>Aanya Sharma</td><td><strong>Plan edited</strong> · Pro price ₹11,999 → ₹12,999</td><td>Plan: Pro Quarterly</td><td><span class="chip chip-success">success · grandfathered existing</span></td><td>14.142.x.x</td><td class="muted">c5b4d…</td></tr>
+          <tr><td>11:14 IST today</td><td>Priya Goenka</td><td><strong>KYC approved</strong></td><td>Vendor: Sagarmala Pilots · VND-9824</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">8a9e7…</td></tr>
+          <tr><td>09:42 IST today</td><td>Vikram Kapoor <span class="muted">· Super Admin</span></td><td><strong>Vendor suspended</strong></td><td>Konkan Tug Services · pending P&amp;I</td><td><span class="chip chip-success">success · auto-pause Requests</span></td><td>10.0.x.x · VPN</td><td class="muted">d4f8a…</td></tr>
+          <tr><td>yesterday 18:14</td><td>Aanya Sharma</td><td><strong>Admin invited</strong></td><td>Jayesh Patel · Support role</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">e2c81…</td></tr>
+          <tr><td>yesterday 16:00</td><td>Rohit Mehta</td><td><strong>Review hidden</strong></td><td>★ 1 review on Konkan Tug · TOS breach (profanity)</td><td><span class="chip chip-success">success</span></td><td>14.142.x.x</td><td class="muted">9f30b…</td></tr>
+          <tr><td>yesterday 11:14</td><td>Neha Singh</td><td><strong>Bulk reconcile</strong></td><td>Razorpay payouts · 142 transactions</td><td><span class="chip chip-success">success · 142/142 matched</span></td><td>14.142.x.x</td><td class="muted">3b5c8…</td></tr>
+          <tr><td>2d ago 14:28</td><td>Aanya Sharma</td><td><strong>Failed sign-in</strong> · wrong 2FA</td><td>—</td><td><span class="chip chip-danger">denied</span></td><td>49.205.x.x · Singapore</td><td class="muted">7d2f1…</td></tr>
+        </tbody>
+      </table>
+      <div style="padding:14px 18px;border-top:1px solid var(--border-2);font-size:12px;color:var(--text-3);text-align:center;">Each row is hash-chained to the previous — tampering is detectable. Export includes Merkle root + admin signatures.</div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('audit');</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buyers · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Buyer Management</h1><p>Ship-agents, charterers and shipping companies registered on PORTDA.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export CSV</button><button class="btn btn-primary">+ Add Buyer</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Total Buyers</div><div class="kpi-value">428</div><div class="kpi-delta up">▲ 12 this month</div></div>
+      <div class="kpi"><div class="kpi-label">Active (90d)</div><div class="kpi-value">382</div><div class="kpi-delta up">89% engagement</div></div>
+      <div class="kpi"><div class="kpi-label">Avg Spend / Buyer</div><div class="kpi-value">₹14.5 L</div><div class="kpi-delta">FY 26–27</div></div>
+      <div class="kpi"><div class="kpi-label">Dormant (&gt; 90d)</div><div class="kpi-value">46</div><div class="kpi-delta down">re-engage</div></div>
+    </div>
+
+    <div class="filter-strip">
+      <span class="label">Filter:</span>
+      <select><option>All entity types</option><option>Pvt Ltd</option><option>LLP</option><option>Proprietorship</option><option>Foreign-flag agent</option></select>
+      <select><option>All ports of call</option><option>JNPT</option><option>Mumbai</option><option>Mundra</option><option>Hazira</option></select>
+      <select><option>All statuses</option><option>Active</option><option>KYC pending</option><option>Suspended</option><option>Dormant</option></select>
+      <select><option>FY Spend · any</option><option>≥ ₹1 Cr</option><option>₹50 L – 1 Cr</option><option>₹10 – 50 L</option><option>&lt; ₹10 L</option></select>
+      <div class="spacer"></div>
+      <input type="search" placeholder="Search company, GSTIN, contact…" style="min-width:240px;" />
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">All (428)</a><a href="#">Top 50 spenders</a><a href="#">New this month (12)</a><a href="#">Dormant (46)</a><a href="#">KYC pending (8)</a>
+    </div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th><input type="checkbox" /></th><th>Buyer</th><th>Entity</th><th>Vessels</th><th>Ports of call</th><th>Orders (12m)</th><th>FY Spend</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b1">OL</div><div><div class="name">OceanLink Shipping Pvt Ltd</div><div class="sub">Capt. Rajesh K. · ops@oceanlink.in</div></div></div></td><td>Pvt Ltd · CIN U63090MH1998…</td><td>14</td><td>9 ports</td><td><strong>82</strong></td><td><strong>₹3.8 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td><a class="btn btn-sm btn-outline" href="buyer-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b2">SF</div><div><div class="name">Saffron Fleet Mgmt</div><div class="sub">Vikas K. · ops@saffronfleet.in</div></div></div></td><td>Pvt Ltd · CIN U63010MH2005…</td><td>8</td><td>6 ports</td><td><strong>54</strong></td><td><strong>₹2.4 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td><a class="btn btn-sm btn-outline" href="buyer-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b3">MS</div><div><div class="name">Mariner Shipping Co.</div><div class="sub">Anil R. · agent@mariner.co.in</div></div></div></td><td>Pvt Ltd · CIN U61100GJ2010…</td><td>11</td><td>7 ports</td><td><strong>48</strong></td><td><strong>₹1.9 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td><a class="btn btn-sm btn-outline" href="buyer-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b4">BS</div><div><div class="name">Bharat Shipping Ltd</div><div class="sub">Sunil P. · agency@bharatshipping.in</div></div></div></td><td>Ltd · CIN L63090MH1989…</td><td>22</td><td>11 ports</td><td><strong>112</strong></td><td><strong>₹5.6 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td><a class="btn btn-sm btn-outline" href="buyer-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--warning-light);color:#92400E;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">LS</div><div><div class="name">Lakshmi Shipping Pvt Ltd</div><div class="sub">Karthik S. · ops@lakshmi.co.in</div></div></div></td><td>Pvt Ltd · CIN pending</td><td>3</td><td>2 ports</td><td>—</td><td class="muted">—</td><td><span class="chip chip-warning">KYC pending</span></td><td><a class="btn btn-sm btn-primary" href="kyc.html">Review</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--bg-2);color:var(--text-2);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">CK</div><div><div class="name">Cochin Charters Inc.</div><div class="sub">Roy Antony · sales@cochincharters.com</div></div></div></td><td>Foreign-flag agent · IEC 0307…</td><td>5</td><td>3 ports</td><td><strong>18</strong></td><td><strong>USD 142K</strong></td><td><span class="chip chip-success">Active</span></td><td><a class="btn btn-sm btn-outline" href="buyer-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--bg);color:var(--text-3);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">VS</div><div><div class="name">Vizag Stevedores Ltd</div><div class="sub">Last seen 122 days ago</div></div></div></td><td>Ltd · CIN U63031AP2007…</td><td>2</td><td>1 port</td><td>0</td><td class="muted">₹4 L</td><td><span class="chip chip-gray">Dormant</span></td><td><button class="btn btn-sm btn-outline">Re-engage</button></td></tr>
+        </tbody>
+      </table>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-top:1px solid var(--border-2);font-size:13px;color:var(--text-2);">
+        <span>Showing 1–7 of <strong>428</strong> buyers</span>
+        <div style="display:flex;gap:6px;"><button class="btn btn-sm btn-outline">‹</button><button class="btn btn-sm btn-primary">1</button><button class="btn btn-sm btn-outline">2</button><button class="btn btn-sm btn-outline">3</button><button class="btn btn-sm btn-outline">…</button><button class="btn btn-sm btn-outline">62</button><button class="btn btn-sm btn-outline">›</button></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('users', 'Search buyers, GSTIN, vessels…');</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing Plans · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Pricing Plans</h1><p>Configure plan tiers, lead limits, billing cycles, commission rate &amp; pricing.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Pricing history</button><button class="btn btn-primary">+ New plan</button></div>
+    </div>
+
+    <div class="grid-3 mb-20">
+      <div class="card">
+        <div class="row-between mb-12"><h3 style="font-size:16px;margin:0;">Starter</h3><span class="chip chip-success">Live</span></div>
+        <div style="font-size:32px;font-weight:900;">₹4,999<span style="font-size:13px;font-weight:500;color:var(--text-3);">/ quarter</span></div>
+        <div class="divider"></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Active subscribers</span><strong>81</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">MRR contribution</span><strong>₹1.35 L</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Leads / month</span><strong>50</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Commission on conversion</span><strong>5%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Categories</span><strong>2 max</strong></div>
+        <button class="btn btn-outline btn-block mt-12">Edit plan</button>
+      </div>
+
+      <div class="card" style="border:2px solid var(--admin-purple);background:linear-gradient(180deg,rgba(124,58,237,.04) 0%,#fff 60%);">
+        <div class="row-between mb-12"><h3 style="font-size:16px;margin:0;color:var(--admin-purple);">Pro · Most popular</h3><span class="chip chip-success">Live</span></div>
+        <div style="font-size:32px;font-weight:900;color:var(--admin-purple);">₹12,999<span style="font-size:13px;font-weight:500;color:var(--text-3);">/ quarter</span></div>
+        <div class="divider"></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Active subscribers</span><strong>189</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">MRR contribution</span><strong>₹8.2 L</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Leads / month</span><strong>200</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Commission on conversion</span><strong>5%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Categories</span><strong>Unlimited</strong></div>
+        <button class="btn btn-primary btn-block mt-12">Edit plan</button>
+      </div>
+
+      <div class="card">
+        <div class="row-between mb-12"><h3 style="font-size:16px;margin:0;">Elite</h3><span class="chip chip-success">Live</span></div>
+        <div style="font-size:32px;font-weight:900;">₹29,999<span style="font-size:13px;font-weight:500;color:var(--text-3);">/ quarter</span></div>
+        <div class="divider"></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Active subscribers</span><strong>42</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">MRR contribution</span><strong>₹4.2 L</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Leads / month</span><strong>Unlimited</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Commission on conversion</span><strong>5%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Account manager</span><strong>✓ Dedicated</strong></div>
+        <button class="btn btn-outline btn-block mt-12">Edit plan</button>
+      </div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Conversion commission (applies to all plans)</h3><span class="chip chip-success">Live</span></div>
+        <div style="font-size:32px;font-weight:900;color:var(--accent);">5%<span style="font-size:13px;font-weight:500;color:var(--text-3);"> on every confirmed order</span></div>
+        <div class="divider"></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Subscribed vendors paying</span><strong>1,247</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Revenue MTD</span><strong>₹14.2 L</strong></div>
+        <div class="row-between" style="font-size:13px;padding:4px 0;"><span class="muted">Applies to</span><strong>Starter · Pro · Elite</strong></div>
+        <button class="btn btn-outline btn-block mt-12">Edit commission rate</button>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Billing cycle multipliers</h3></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span>Monthly</span><strong>1.20× base price</strong></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span>Quarterly</span><strong>1.00× (default)</strong></div>
+        <div class="row-between" style="padding:8px 0;"><span>Yearly</span><strong>0.80× (−20% saving)</strong></div>
+        <div class="divider"></div>
+        <button class="btn btn-outline btn-block">Edit multipliers</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>Pricing change log</h3><a class="link" href="#">View all</a></div>
+      <div class="row-between" style="padding:10px 0;border-bottom:1px solid var(--border-2);"><div><strong>Pro plan price increased</strong> · ₹11,999 → ₹12,999<div class="muted" style="font-size:12px;">15 Feb 2026 · Aanya Sharma · grandfathered existing subs to next renewal</div></div><span class="chip chip-success">Applied</span></div>
+      <div class="row-between" style="padding:10px 0;border-bottom:1px solid var(--border-2);"><div><strong>Elite plan added</strong> · ₹29,999/qtr<div class="muted" style="font-size:12px;">10 Nov 2025 · Vikram Kapoor</div></div><span class="chip chip-success">Applied</span></div>
+      <div class="row-between" style="padding:10px 0;"><div><strong>Commission rate set to 5%</strong> (was 6%)<div class="muted" style="font-size:12px;">15 Sep 2025 · Aanya Sharma · launched parallel Subscription plans</div></div><span class="chip chip-success">Applied</span></div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('plans');</script>
+</body>
+</html>

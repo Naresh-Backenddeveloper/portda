@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Vendors · PORTDA</title>
+<meta name="description" content="Grow your marine business with verified buyers. Quote, deliver, settle to bank in &lt; 2 hours." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-vendors" class="active">For Vendors</a>
+      <a href="/for-buyers">For Buyers</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="/login" class="btn btn-ghost">Sign in</a>
+      <a href="#cta" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow text-accent">For marine service vendors</div>
+    <h1>Grow your marine business with <span class="text-gradient">verified buyers</span></h1>
+    <p class="lede">Ship agents, stevedoring, ship management, repairs, chandlers, bunkering, multi-modal transport, storage, legal &amp; insurance — receive requests from KYC'd buyers the moment they post. Quote in minutes. Get paid the same day.</p>
+    <div class="hero-ctas">
+      <a href="#cta" class="btn btn-primary btn-lg">Register your company</a>
+      <a href="/pricing" class="btn btn-outline btn-lg">See vendor pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-content">
+      <div class="eyebrow text-accent">Why join</div>
+      <h2>Everything you need to win &amp; deliver more jobs</h2>
+      <p>PORTDA isn't a directory. It's the end-to-end operating system for your business — leads, quotes, jobs, payments and reputation.</p>
+      <ul class="check-list">
+        <li>Verified buyers only — every shipping company is KYC'd before posting</li>
+        <li>Built-in GST-compliant invoicing &amp; automatic reconciliation</li>
+        <li>Multi-port coverage — bid across 14 leading global ports from one inbox</li>
+        <li>Settlement to bank in under 2 hours (IMPS) after order completion</li>
+        <li>Subscription unlocks lead access · PORTDA takes 5% only when a lead converts to a confirmed order</li>
+        <li>Branded quote PDFs, milestone payment plans &amp; live job tracking</li>
+      </ul>
+      <div class="split-cta">
+        <a href="#cta" class="btn btn-primary">Register your company</a>
+        <a href="/how-it-works" class="btn btn-link">See the flow →</a>
+      </div>
+    </div>
+    <div class="split-visual">
+      <div class="feature-card">
+        <div class="feature-icon orange"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
+        <h4>Instant request alerts</h4>
+        <p>Push + email the moment a matching request is posted in your category &amp; ports. Most quotes go in under 30 minutes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon green"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h4>Wallet &amp; instant withdrawal</h4>
+        <p>Track receivables, withdraw to bank via IMPS, view full commission ledger and tax reports.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon blue"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h4>Branded quotes &amp; PDFs</h4>
+        <p>Upload your quote PDF or build one in the app. Auto-tagged with vessel + port for clean filing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow text-accent">Built for marine vendors worldwide</div>
+      <h2>Tooling that respects how you actually work</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-tile"><div class="feature-tile-icon">📥</div><h4>Smart inbox</h4><p>Filter by port, category, urgency, budget. Decline with one tap. Quote with two.</p></div>
+      <div class="feature-tile"><div class="feature-tile-icon">⚖</div><h4>Compliance vault</h4><p>Upload DGS licence, GST, P&amp;I insurance, IRS certs once — auto-attached to every quote.</p></div>
+      <div class="feature-tile"><div class="feature-tile-icon">📈</div><h4>Win-rate analytics</h4><p>See which categories &amp; ports you win most, average margin, response time SLA.</p></div>
+      <div class="feature-tile"><div class="feature-tile-icon">⭐</div><h4>Reputation that compounds</h4><p>Verified buyer reviews. Higher rating = more visibility in buyer search.</p></div>
+      <div class="feature-tile"><div class="feature-tile-icon">🔄</div><h4>Switch tiers anytime</h4><p>Upgrade or downgrade between Starter, Pro and Elite in two taps from Plan &amp; Billing.</p></div>
+      <div class="feature-tile"><div class="feature-tile-icon">🌐</div><h4>Multi-region compliance</h4><p>Built for global tax &amp; banking from day one — GST, VAT, NEFT/SWIFT all native. Multi-currency support.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonial-section">
+  <div class="container">
+    <blockquote class="testimonial">
+      <div class="quote-mark">"</div>
+      <p>We went from 12 jobs a month to 38 in our first quarter on PORTDA. The Subscription plan paid for itself in the first week — and our team finally has one place to manage everything.</p>
+      <footer>
+        <div class="avatar">SR</div>
+        <div><strong>Suresh Rao</strong><span>Director, Coastal Bunkers Pvt Ltd</span></div>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="cta" class="cta-section">
+  <div class="container cta-inner">
+    <h2>Register your company today</h2>
+    <p>5-minute signup. KYC verified in 4–24 hours. First request usually within a day.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary btn-lg">Register as Vendor</a>
+      <a href="/pricing" class="btn btn-light btn-lg">Compare plans</a>
+    </div>
+    <div class="cta-note">Subscription required to view leads · 5% commission on every confirmed order · Pick Starter, Pro or Elite after KYC</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+      <p>The world's first marketplace for port &amp; marine services.</p>
+      <div class="socials"><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.7-.7-1.7-1.7s.7-1.7 1.8-1.7 1.7.7 1.7 1.7-.7 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.4-.6-1.9-1.4-1.9s-1.6.5-1.6 1.9V19h-3V8h3v1.3c.3-.6 1.3-1.5 2.8-1.5 1.6 0 3.2 1 3.2 3.5V19z"/></svg></a><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a></div>
+    </div>
+    <div class="footer-col"><h5>Product</h5><a href="/how-it-works">How it works</a><a href="/for-vendors">For Vendors</a><a href="/for-buyers">For Buyers</a><a href="/pricing">Pricing</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="/contact">Contact</a></div>
+    <div class="footer-col"><h5>Resources</h5><a href="#">Vendor handbook</a><a href="#">Compliance &amp; KYC</a><a href="#">API docs</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Terms</a><a href="#">Privacy</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 PORTDA Technologies Pvt Ltd</span>
+    <span>Made for the global marine industry ⚓</span>
+  </div>
+</footer>
+
+</body>
+</html>

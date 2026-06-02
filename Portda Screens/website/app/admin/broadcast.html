@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Broadcast · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Broadcast &amp; Announcements</h1><p>Send platform-wide notifications, marketing pushes, system alerts.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Templates</button><button class="btn btn-primary">+ New broadcast</button></div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Compose broadcast</h3></div>
+        <div class="form-group">
+          <label class="form-label">Audience</label>
+          <select class="form-select"><option>All users (1,675)</option><option>All vendors (1,247)</option><option>All buyers (428)</option><option>Pro &amp; Elite vendors (231)</option><option>Vendors at JNPT (412)</option><option>Custom segment…</option></select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Channels</label>
+            <select class="form-select"><option>Push + Email</option><option>Push only</option><option>Email only</option><option>SMS + Push + Email</option><option>WhatsApp + Push</option></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Priority</label>
+            <select class="form-select"><option>Normal</option><option>High</option><option>Critical · system outage</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject / push title</label>
+          <input class="form-input" value="New port live · Tuticorin (V.O.C.) now accepting requests" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Body</label>
+          <textarea class="form-textarea" rows="5">Hi {{first_name}},
+
+Tuticorin (V.O.C.) is now live on PORTDA. Vendors offering Ship Agents, Multi Modal Transport, and Stevedoring at Tuticorin can add it to their Served Ports. Buyers can post requests immediately.
+
+— Team PORTDA</textarea>
+          <div class="form-help">Personalisation tokens: {{first_name}}, {{company_name}}, {{plan}}, {{port}}, {{requests_count}}.</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Send time</label>
+          <select class="form-select"><option>Send now</option><option>Schedule for…</option><option>Smart send (best engagement window per user)</option></select>
+        </div>
+        <div class="row" style="gap:8px;"><button class="btn btn-outline">Preview</button><button class="btn btn-outline">Send to me first</button><button class="btn btn-primary flex-1">Send broadcast → 412 vendors</button></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Audience preview</h3><span class="chip chip-purple">412 recipients</span></div>
+        <div class="row-between" style="font-size:13px;padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Push enabled</span><strong>398 (96%)</strong></div>
+        <div class="row-between" style="font-size:13px;padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Email subscribed</span><strong>410 (99.5%)</strong></div>
+        <div class="row-between" style="font-size:13px;padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">SMS opt-in</span><strong>312 (76%)</strong></div>
+        <div class="row-between" style="font-size:13px;padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Estimated cost</span><strong>₹468</strong></div>
+        <div class="row-between" style="font-size:13px;padding:8px 0;"><span class="muted">Est. opens</span><strong>~289 (70%)</strong></div>
+        <div class="divider"></div>
+        <div class="muted" style="font-size:12px;">Sample recipients: Mumbai Marine · Coastal Bunkers · Port Stevedoring · JNPT Marine Co. · +408 others</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-head"><h3>Recent broadcasts</h3></div>
+      <table class="t t-compact">
+        <thead><tr><th>Subject</th><th>Audience</th><th>Channels</th><th>Sent</th><th>Reach</th><th>Open rate</th><th>Sent at</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Quarterly renewal reminder — Pro</strong></td><td>189 Pro vendors</td><td>Email · Push</td><td>189</td><td>184</td><td>72%</td><td>10 May</td><td><button class="btn btn-sm btn-outline">Report</button></td></tr>
+          <tr><td><strong>New: Premium-lead unlocks</strong></td><td>All vendors</td><td>Email · Push · WA</td><td>1,247</td><td>1,189</td><td>58%</td><td>05 May</td><td><button class="btn btn-sm btn-outline">Report</button></td></tr>
+          <tr><td><strong>GSTR-2A export ready for FY 26–27</strong></td><td>All buyers</td><td>Email</td><td>428</td><td>426</td><td>81%</td><td>02 May</td><td><button class="btn btn-sm btn-outline">Report</button></td></tr>
+          <tr><td><strong>Critical · Razorpay maintenance window</strong></td><td>All users</td><td>SMS · Push · Email</td><td>1,675</td><td>1,672</td><td>94%</td><td>28 Apr</td><td><button class="btn btn-sm btn-outline">Report</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('broadcast');</script>
+</body>
+</html>

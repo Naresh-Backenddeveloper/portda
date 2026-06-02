@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Company Profile · PORTDA Buyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-head"><div class="sidebar-logo">⚓</div><div><div class="sidebar-name">PORTDA</div><div class="sidebar-role buyer">Buyer</div></div></div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section">Procurement</div>
+      <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg><span>Dashboard</span></a>
+      <a class="nav-item" href="new-request.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>New Request</span></a>
+      <a class="nav-item" href="requests.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg><span>My Requests</span><span class="nav-badge">4</span></a>
+      <a class="nav-item" href="quotations.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Quotations</span><span class="nav-badge">12</span></a>
+      <a class="nav-item" href="orders.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Orders</span><span class="nav-badge gray">5</span></a>
+      <a class="nav-item" href="chat.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span>Chat</span><span class="nav-badge">3</span></a>
+      <div class="sidebar-section">Finance</div>
+      <a class="nav-item" href="payments.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/></svg><span>Payments</span></a>
+      <a class="nav-item" href="invoices.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg><span>Invoices</span></a>
+      <div class="sidebar-section">Network</div>
+      <a class="nav-item" href="vendors.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Vendors</span></a>
+      <a class="nav-item active" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Company Profile</span></a>
+    </nav>
+    <div class="sidebar-foot"><a class="user-chip" href="profile.html"><div class="avatar" style="background:var(--accent);">OL</div><div style="min-width:0;"><div class="name">OceanLink Shipping</div><div class="role">Capt. Rajesh K.</div></div></a><a class="logout-btn" href="../login.html" title="Sign out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></a></div>
+  </aside>
+
+  <header class="topbar">
+    <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search…" /></div>
+    <div class="topbar-actions"><a class="icon-btn" href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg></a><a class="topbar-avatar" href="profile.html">RK</a></div>
+  </header>
+
+  <main class="main">
+    <div class="profile-cover" style="background:linear-gradient(135deg,#000000,#F59E0B);">
+      <div class="profile-avatar">OL</div>
+      <div class="flex-1">
+        <h2>OceanLink Shipping Pvt Ltd</h2>
+        <div class="sub">Ship-agent · Established 1998 · Mumbai HQ</div>
+        <div class="row-chips">
+          <span class="chip">✓ KYC Verified</span>
+          <span class="chip">FFFAI Member</span>
+          <span class="chip">82 orders · ₹3.8 Cr FY26-27</span>
+        </div>
+      </div>
+      <button class="btn" style="background:#fff;color:var(--accent);">Edit</button>
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">Overview</a><a href="#fleet">Vessels</a><a href="#team">Team</a><a href="#vendors">Preferred vendors</a><a href="#kyc">KYC</a>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Company info</h3><button class="btn btn-sm btn-outline">Edit</button></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Entity</span><strong>Private Limited</strong></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">CIN</span><span>U63090MH1998PTC112233</span></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">GSTIN</span><span>27ABCDF1234G1Z9</span></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Primary contact</span><span>Capt. Rajesh Kapoor · Operations Director</span></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Work email</span><span>ops@oceanlink.in</span></div>
+        <div class="row-between" style="padding:8px 0;"><span class="muted">Phone</span><span>+91 22 4567 8900</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Procurement stats</h3></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+          <div style="text-align:center;"><div style="font-size:22px;font-weight:800;">82</div><div class="muted" style="font-size:11px;letter-spacing:.5px;">ORDERS</div></div>
+          <div style="text-align:center;"><div style="font-size:22px;font-weight:800;color:var(--accent);">★ 4.8</div><div class="muted" style="font-size:11px;letter-spacing:.5px;">RATING GIVEN</div></div>
+          <div style="text-align:center;"><div style="font-size:22px;font-weight:800;">₹3.8 Cr</div><div class="muted" style="font-size:11px;letter-spacing:.5px;">FY SPEND</div></div>
+        </div>
+        <div class="divider"></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Active vessels</span><strong>14</strong></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Active vendors</span><strong>23</strong></div>
+        <div class="row-between" style="padding:8px 0;"><span class="muted">Ports of call</span><strong>9</strong></div>
+      </div>
+    </div>
+
+    <div class="card mb-20" id="fleet">
+      <div class="card-head"><h3>Vessels under management</h3><button class="btn btn-sm btn-outline">+ Add vessel</button></div>
+      <table class="t">
+        <thead><tr><th>Vessel</th><th>IMO</th><th>Type · DWT</th><th>Flag</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td><strong>MV Pacific Bridge</strong><div class="muted" style="font-size:12px;">Built 2018</div></td><td>9876543</td><td>Container · 81,200 t</td><td>🇸🇬 Singapore</td><td><span class="chip chip-warning">Berthing JNPT</span></td></tr>
+          <tr><td><strong>MV Star Voyager</strong><div class="muted" style="font-size:12px;">Built 2020</div></td><td>9543210</td><td>Container · 68,500 t</td><td>🇲🇭 Marshall Is.</td><td><span class="chip chip-primary">Inbound JNPT</span></td></tr>
+          <tr><td><strong>MV Coastal Wind</strong><div class="muted" style="font-size:12px;">Built 2017</div></td><td>9234567</td><td>Tanker MR2 · 49,800 t</td><td>🇱🇷 Liberia</td><td><span class="chip chip-warning">Rotterdam OPL</span></td></tr>
+          <tr><td><strong>MV Konkan</strong><div class="muted" style="font-size:12px;">Built 2019</div></td><td>9111222</td><td>Bulker · 58,000 t</td><td>🇵🇦 Panama</td><td><span class="chip chip-primary">Inbound Hamburg</span></td></tr>
+          <tr><td><strong>MV Indus Star</strong><div class="muted" style="font-size:12px;">Built 2016</div></td><td>9344556</td><td>Container · 71,000 t</td><td>🇲🇹 Malta</td><td><span class="chip chip-success">Sailed Felixstowe</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card" id="team">
+        <div class="card-head"><h3>Team</h3><button class="btn btn-sm btn-outline">+ Invite</button></div>
+        <div class="activity-item"><div class="avatar b1" style="width:36px;height:36px;border-radius:50%;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;">RK</div><div class="activity-body"><div class="activity-title">Capt. Rajesh Kapoor <time>Owner</time></div><div class="activity-sub">Operations Director · all access</div></div></div>
+        <div class="activity-item"><div class="avatar b2" style="width:36px;height:36px;border-radius:50%;background:var(--accent-light);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;">SP</div><div class="activity-body"><div class="activity-title">Sunil Patel <time>Approver ≥ ₹5L</time></div><div class="activity-sub">Finance Lead · payments + invoices</div></div></div>
+        <div class="activity-item"><div class="avatar b3" style="width:36px;height:36px;border-radius:50%;background:var(--success-light);color:var(--success);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;">AN</div><div class="activity-body"><div class="activity-title">Anjali Nair <time>Operator</time></div><div class="activity-sub">Port Ops · raise requests, approve quotes &lt;₹5L</div></div></div>
+        <div class="activity-item"><div class="avatar b4" style="width:36px;height:36px;border-radius:50%;background:#FCE7F3;color:#BE185D;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;">VS</div><div class="activity-body"><div class="activity-title">Vivek Sharma <time>Read-only</time></div><div class="activity-sub">Audit · reports + transactions</div></div></div>
+      </div>
+
+      <div class="card" id="vendors">
+        <div class="card-head"><h3>Preferred vendors</h3><a class="link" href="vendors.html">All vendors</a></div>
+        <div class="activity-item"><div class="avatar b1" style="width:36px;height:36px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">MM</div><div class="activity-body"><div class="activity-title">Mumbai Marine <time>★ 4.9</time></div><div class="activity-sub">Ship Agents · 12 jobs · auto-invite</div></div></div>
+        <div class="activity-item"><div class="avatar b2" style="width:36px;height:36px;border-radius:9px;background:var(--accent-light);color:var(--accent);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">CB</div><div class="activity-body"><div class="activity-title">Coastal Bunkers <time>★ 4.8</time></div><div class="activity-sub">Bunkering · 8 jobs · auto-invite</div></div></div>
+        <div class="activity-item"><div class="avatar b3" style="width:36px;height:36px;border-radius:9px;background:var(--success-light);color:var(--success);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">PS</div><div class="activity-body"><div class="activity-title">Port Stevedoring <time>★ 4.7</time></div><div class="activity-sub">Cargo · 5 jobs · auto-invite</div></div></div>
+      </div>
+    </div>
+
+    <div class="card" id="kyc">
+      <div class="card-head"><h3>KYC &amp; Compliance</h3><span class="chip chip-success">Verified · 02 Apr 2026</span></div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;">
+        <div style="padding:14px;background:var(--bg);border-radius:10px;text-align:center;"><div style="width:36px;height:36px;background:var(--danger-light);color:var(--danger);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;margin:0 auto 8px;">PDF</div><strong>GST Cert</strong><div class="muted" style="font-size:12px;">Verified ✓</div></div>
+        <div style="padding:14px;background:var(--bg);border-radius:10px;text-align:center;"><div style="width:36px;height:36px;background:var(--danger-light);color:var(--danger);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;margin:0 auto 8px;">PDF</div><strong>PAN</strong><div class="muted" style="font-size:12px;">Verified ✓</div></div>
+        <div style="padding:14px;background:var(--bg);border-radius:10px;text-align:center;"><div style="width:36px;height:36px;background:var(--danger-light);color:var(--danger);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;margin:0 auto 8px;">PDF</div><strong>IEC Code</strong><div class="muted" style="font-size:12px;">Verified ✓</div></div>
+        <div style="padding:14px;background:var(--bg);border-radius:10px;text-align:center;"><div style="width:36px;height:36px;background:var(--danger-light);color:var(--danger);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;margin:0 auto 8px;">PDF</div><strong>FFFAI Cert</strong><div class="muted" style="font-size:12px;">Verified ✓</div></div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

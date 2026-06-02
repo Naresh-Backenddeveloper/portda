@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Category · Ship Agents · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app/app.css" />
+<link rel="stylesheet" href="/app/admin/admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title">
+        <div class="muted" style="font-size:12px;letter-spacing:.5px;margin-bottom:4px;"><a href="/admin/categories" style="color:var(--text-2);">Categories</a> / <strong style="color:var(--text);">Ship Agents</strong></div>
+        <h1>Ship Agents</h1>
+        <p>4 sub-services · 318 vendors offering · 28% of total requests · live since launch</p>
+      </div>
+      <div class="page-actions"><button class="btn btn-outline">Edit category</button><button class="btn btn-outline" style="color:var(--danger);">Archive</button><a class="btn btn-primary" href="/admin/subservices/new">+ Add Sub-service</a></div>
+    </div>
+
+    <div class="card mb-20" style="background:linear-gradient(135deg,rgba(124,58,237,.06) 0%,#fff 60%);border:1.5px solid var(--admin-purple-light);">
+      <div class="row" style="gap:18px;align-items:center;">
+        <div style="width:64px;height:64px;background:var(--primary-light);color:var(--primary);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:30px;">🚢</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:18px;">Ship Agents</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;margin-top:2px;">Port agency, husbandry, crew change support and transit agency services for vessel calls.</div>
+          <div class="row" style="gap:6px;margin-top:8px;flex-wrap:wrap;"><span class="chip chip-gray">Slug: ship-agents</span><span class="chip chip-gray">Order: 1</span><span class="chip chip-success">GST required</span><span class="chip chip-success">P&amp;I required</span><span class="chip chip-gray">Premium ≥ ₹5L</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Sub-services</div><div class="kpi-value">4</div></div>
+      <div class="kpi"><div class="kpi-label">Vendors offering</div><div class="kpi-value">318</div><div class="kpi-delta up">▲ 12 this month</div></div>
+      <div class="kpi"><div class="kpi-label">Requests (MTD)</div><div class="kpi-value">684</div><div class="kpi-delta">28% of platform</div></div>
+      <div class="kpi"><div class="kpi-label">GMV (MTD)</div><div class="kpi-value">₹1.8 Cr</div><div class="kpi-delta up">▲ 18%</div></div>
+    </div>
+
+    <div class="page-header" style="margin-top:8px;"><div class="page-title"><h2 style="font-size:18px;font-weight:800;margin:0;">Sub-services</h2><p>4 active · 0 draft · reorder by dragging</p></div></div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th style="width:36px;"></th><th>Sub-service</th><th>Description</th><th>Pricing hint</th><th>Vendors</th><th>Orders MTD</th><th>Status</th><th>Updated</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="muted" style="cursor:grab;">≡</span></td>
+            <td>
+              <div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;">🚢</div><div><div class="name">Port agency</div><div class="sub">port-agency</div></div></div>
+            </td>
+            <td>Customs, immigration, port disbursement</td>
+            <td><strong>From ₹85,000</strong><div class="muted" style="font-size:11px;">Per call</div></td>
+            <td>318</td>
+            <td>284</td>
+            <td><span class="chip chip-success">Live</span></td>
+            <td>10 May</td>
+            <td><div class="row" style="gap:4px;"><button class="btn btn-sm btn-outline">Edit</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="muted" style="cursor:grab;">≡</span></td>
+            <td>
+              <div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--accent-light);color:var(--accent);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;">🤝</div><div><div class="name">Husbandry agency</div><div class="sub">husbandry-agency</div></div></div>
+            </td>
+            <td>Crew change, stores, spares logistics</td>
+            <td><strong>From ₹42,000</strong><div class="muted" style="font-size:11px;">Per call</div></td>
+            <td>264</td>
+            <td>312</td>
+            <td><span class="chip chip-success">Live</span></td>
+            <td>12 May</td>
+            <td><div class="row" style="gap:4px;"><button class="btn btn-sm btn-outline">Edit</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="muted" style="cursor:grab;">≡</span></td>
+            <td>
+              <div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--success-light);color:var(--success);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;">👥</div><div><div class="name">Crew change support</div><div class="sub">crew-change-support</div></div></div>
+            </td>
+            <td>Sign-on / sign-off coordination, transit lodging</td>
+            <td><strong>From ₹18,000</strong><div class="muted" style="font-size:11px;">Per crew</div></td>
+            <td>198</td>
+            <td>166</td>
+            <td><span class="chip chip-success">Live</span></td>
+            <td>08 May</td>
+            <td><div class="row" style="gap:4px;"><button class="btn btn-sm btn-outline">Edit</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="muted" style="cursor:grab;">≡</span></td>
+            <td>
+              <div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--warning-light);color:var(--warning);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;">↔</div><div><div class="name">Transit agency</div><div class="sub">transit-agency</div></div></div>
+            </td>
+            <td>Canal transits, short-call agency, OPL services</td>
+            <td><strong>From ₹65,000</strong><div class="muted" style="font-size:11px;">Per transit</div></td>
+            <td>142</td>
+            <td>92</td>
+            <td><span class="chip chip-success">Live</span></td>
+            <td>05 Apr</td>
+            <td><div class="row" style="gap:4px;"><button class="btn btn-sm btn-outline">Edit</button><button class="btn btn-sm btn-ghost" style="color:var(--danger);">Delete</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="padding:14px 18px;border-top:1px solid var(--border-2);text-align:center;"><a class="btn btn-outline" href="/admin/subservices/new"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Add another sub-service</a></div>
+    </div>
+
+    <div class="grid-2 mt-20">
+      <div class="card">
+        <div class="card-head"><h3>Top vendors for Ship Agents</h3><a class="link" href="vendors.html?cat=ship-agents">All 318 →</a></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">MM</div><div class="activity-body"><div class="activity-title">Mumbai Marine Agencies <time>★ 4.9 · 238 reviews</time></div><div class="activity-sub">JNPT · Mumbai · 38 orders MTD</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">JM</div><div class="activity-body"><div class="activity-title">JNPT Marine Co. <time>★ 4.7 · 98 reviews</time></div><div class="activity-sub">JNPT · 32 orders MTD</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:9px;background:var(--accent-light);color:var(--accent);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">SP</div><div class="activity-body"><div class="activity-title">Saffron Shipping Agents <time>★ 4.8 · 142 reviews</time></div><div class="activity-sub">JNPT · Mumbai · 28 orders MTD</div></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Recent activity</h3></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--primary-light);color:var(--primary);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="activity-body"><div class="activity-title">Sub-service edited · Husbandry agency <time>12 May</time></div><div class="activity-sub">Priya Goenka · price floor updated to ₹42,000</div></div></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--success-light);color:var(--success);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div><div class="activity-body"><div class="activity-title">Required doc added · P&amp;I Insurance <time>05 May</time></div><div class="activity-sub">Aanya Sharma · enforced from 1 Jun 2026</div></div></div>
+        <div class="activity-item"><div class="activity-icon" style="background:var(--admin-purple-light);color:var(--admin-purple);">↺</div><div class="activity-body"><div class="activity-title">Sub-services reordered <time>20 Apr</time></div><div class="activity-sub">Aanya Sharma · Port / Husbandry / Crew change / Transit</div></div></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="/app/admin/admin.js"></script>
+<script>AdminShell.mount('categories');</script>
+</body>
+</html>

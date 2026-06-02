@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Orders · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>All Orders</h1><p>Confirmed marketplace orders across all vendors &amp; buyers.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export CSV</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Active</div><div class="kpi-value">218</div><div class="kpi-delta">across 142 buyers</div></div>
+      <div class="kpi"><div class="kpi-label">Completed MTD</div><div class="kpi-value">1,706</div><div class="kpi-delta up">▲ 14%</div></div>
+      <div class="kpi"><div class="kpi-label">GMV MTD</div><div class="kpi-value">₹6.2 Cr</div><div class="kpi-delta up">▲ 14%</div></div>
+      <div class="kpi"><div class="kpi-label">Avg order value</div><div class="kpi-value">₹1.82 L</div></div>
+    </div>
+
+    <div class="filter-strip">
+      <span class="label">Filter:</span>
+      <select><option>All vendors</option><option>Mumbai Marine</option><option>Coastal Bunkers</option><option>Port Stevedoring</option></select>
+      <select><option>All categories</option><option>Ship Agents</option><option>Stevedores / Cargo Handling</option><option>Ship Management</option><option>Ship Repairs</option><option>Ship Chandlers</option><option>Bunkering</option><option>Multi Modal Transportation</option><option>Storage / Warehousing</option><option>Legal / Lawyers</option><option>Insurance</option></select>
+      <select><option>All statuses</option><option>Scheduled</option><option>In Progress</option><option>Completed</option><option>Cancelled</option><option>Disputed</option></select>
+      <select><option>Date · last 30d</option><option>Today</option><option>This week</option><option>This month</option><option>This FY</option></select>
+      <div class="spacer"></div>
+      <input type="search" placeholder="#PORT-…" style="min-width:200px;" />
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">All (1,924)</a><a href="#">Active (218)</a><a href="#">Completed (1,706)</a><a href="#">Disputed (6)</a><a href="#">Cancelled (15)</a>
+    </div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th>Order #</th><th>Buyer</th><th>Vendor</th><th>Category · Port</th><th>Value</th><th>Commission</th><th>Milestone</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td><a href="order-detail.html" style="color:var(--admin-purple);font-weight:800;text-decoration:none;">#PORT-48217</a></td><td>OceanLink Shipping</td><td>Mumbai Marine</td><td>Ship Agents · JNPT</td><td>₹2,18,300</td><td><span class="muted">—</span></td><td>3/5 berthing</td><td><span class="chip chip-warning">In Progress</span></td><td>15 May</td></tr>
+          <tr><td><strong>#PORT-48156</strong></td><td>Saffron Fleet Mgmt</td><td>Coastal Bunkers</td><td>Bunkering · JNPT</td><td>₹4,80,000</td><td><span class="muted">—</span></td><td>1/4 scheduled</td><td><span class="chip chip-primary">Scheduled</span></td><td>14 May</td></tr>
+          <tr><td><strong>#PORT-48092</strong></td><td>Mariner Shipping</td><td>Port Stevedoring</td><td>Cargo · Mundra</td><td>USD 9,450</td><td>USD 472</td><td>2/4 awaiting cargo</td><td><span class="chip chip-warning">Awaiting</span></td><td>12 May</td></tr>
+          <tr><td><strong>#PORT-48045</strong></td><td>Bharat Shipping</td><td>Deep Marine</td><td>Underwater · Hazira</td><td>₹78,000</td><td>₹3,900</td><td>3/4 in progress</td><td><span class="chip chip-success">On schedule</span></td><td>11 May</td></tr>
+          <tr><td><strong>#PORT-47998</strong></td><td>OceanLink Shipping</td><td>Mumbai Marine</td><td>Ship Agents · JNPT</td><td>₹1,92,000</td><td><span class="muted">—</span></td><td>4/4 documenting</td><td><span class="chip chip-warning">Documenting</span></td><td>09 May</td></tr>
+          <tr><td><strong>#PORT-47862</strong></td><td>OceanLink Shipping</td><td>Mumbai Marine</td><td>Ship Agents · JNPT</td><td>₹2,07,385</td><td><span class="muted">—</span></td><td>4/4 closed</td><td><span class="chip chip-success">Completed</span></td><td>06 May</td></tr>
+          <tr><td><strong>#PORT-47785</strong></td><td>Cochin Charters Inc.</td><td>Port Stevedoring</td><td>Cargo · Mundra</td><td>USD 11,800</td><td>USD 590</td><td>4/4 closed</td><td><span class="chip chip-success">Completed</span></td><td>04 May</td></tr>
+          <tr><td><strong>#PORT-47702</strong></td><td>Bharat Shipping</td><td>Coastal Bunkers</td><td>Bunkering · JNPT</td><td>₹3,42,000</td><td><span class="muted">—</span></td><td>4/4 closed</td><td><span class="chip chip-success">Completed</span></td><td>02 May</td></tr>
+          <tr><td><strong>#PORT-47654</strong></td><td>Mariner Shipping</td><td>Anchor Survey</td><td>Survey · Cochin</td><td>₹3,85,000</td><td>₹19,250</td><td>—</td><td><span class="chip chip-danger">Disputed</span></td><td>28 Apr</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('orders');</script>
+</body>
+</html>

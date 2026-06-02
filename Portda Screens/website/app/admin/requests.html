@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Requests · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>All Requests</h1><p>Every service request posted on PORTDA — open, quoting, awarded, expired.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export CSV</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Open</div><div class="kpi-value">87</div><div class="kpi-delta">avg SLA 4.2 h</div></div>
+      <div class="kpi"><div class="kpi-label">Posted MTD</div><div class="kpi-value">2,418</div><div class="kpi-delta up">▲ 14% vs Apr</div></div>
+      <div class="kpi"><div class="kpi-label">Awarded MTD</div><div class="kpi-value">1,924</div><div class="kpi-delta up">79.5% conv.</div></div>
+      <div class="kpi"><div class="kpi-label">Median quotes / req</div><div class="kpi-value">3.6</div></div>
+    </div>
+
+    <div class="filter-strip">
+      <span class="label">Filter:</span>
+      <select><option>All categories</option><option>Ship Agents</option><option>Stevedores / Cargo Handling</option><option>Ship Management</option><option>Ship Repairs</option><option>Ship Chandlers</option><option>Bunkering</option><option>Multi Modal Transportation</option><option>Storage / Warehousing</option><option>Legal / Lawyers</option><option>Insurance</option></select>
+      <select><option>All ports</option><option>JNPT</option><option>Mumbai</option><option>Mundra</option><option>Hazira</option></select>
+      <select><option>All statuses</option><option>Open</option><option>Quoting</option><option>Awarded</option><option>Closed</option><option>Cancelled</option><option>Expired</option></select>
+      <select><option>Urgency · any</option><option>Critical &lt; 2h</option><option>Urgent &lt; 6h</option><option>Standard</option></select>
+      <div class="spacer"></div>
+      <input type="search" placeholder="#PORT-… or buyer name" style="min-width:240px;" />
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">All (2,418)</a><a href="#">Open (87)</a><a href="#">Quoting (164)</a><a href="#">Awarded (1,924)</a><a href="#">Closed (218)</a><a href="#">Cancelled / Expired (25)</a>
+    </div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th>Request #</th><th>Buyer</th><th>Vessel</th><th>Category · Port</th><th>Budget</th><th>Quotes</th><th>Status</th><th>Posted</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>#PORT-48512</strong></td><td>OceanLink Shipping</td><td>MV Pacific Bridge</td><td>Ship Agents · JNPT T4</td><td>₹1.5–2.5 L</td><td><strong>4</strong></td><td><span class="chip chip-warning">⏱ Open (28m)</span></td><td>09:14 today</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48510</strong></td><td>Saffron Fleet Mgmt</td><td>MV Star Voyager</td><td>Multi Modal Transport · JNPT J3</td><td>₹2–3 L</td><td><strong>3</strong></td><td><span class="chip chip-warning">⏱ Open (2h)</span></td><td>yesterday</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48508</strong></td><td>Mariner Shipping</td><td>MV Coastal Wind</td><td>Bunkering VLSFO · Mundra</td><td>USD 8–12K</td><td><strong>4</strong></td><td><span class="chip chip-primary">Quoting (5h)</span></td><td>yesterday</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48503</strong></td><td>Bharat Shipping</td><td>MV Konkan</td><td>Ship Agents · JNPT</td><td>₹1.8–2.4 L</td><td><strong>5</strong></td><td><span class="chip chip-primary">Quoting (12h)</span></td><td>2 days ago</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48217</strong></td><td>OceanLink Shipping</td><td>MV Pacific Bridge</td><td>Ship Agents · JNPT T4</td><td>₹2,18,300</td><td>4</td><td><span class="chip chip-success">Awarded · Mumbai Marine</span></td><td>15 May</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48156</strong></td><td>Saffron Fleet Mgmt</td><td>MV Star Voyager</td><td>Multi Modal Transport · JNPT J3</td><td>₹4,80,000</td><td>5</td><td><span class="chip chip-success">Awarded · Coastal Bunkers</span></td><td>14 May</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+          <tr><td><strong>#PORT-48022</strong></td><td>Cochin Charters Inc.</td><td>(pre-purchase)</td><td>Survey · Cochin</td><td>₹3.5–4.5 L</td><td>0</td><td><span class="chip chip-gray">Cancelled · no quotes</span></td><td>22 Apr</td><td><a class="btn btn-sm btn-outline" href="order-detail.html">View</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('requests');</script>
+</body>
+</html>

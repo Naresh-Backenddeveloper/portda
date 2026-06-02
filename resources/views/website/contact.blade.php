@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact · PORTDA</title>
+<meta name="description" content="Get in touch with PORTDA — sales, vendor success, support, partnerships." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-vendors">For Vendors</a>
+      <a href="/for-buyers">For Buyers</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/contact" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="/login" class="btn btn-ghost">Sign in</a>
+      <a href="/signup" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Get in touch</div>
+    <h1>We'd love to <span class="text-gradient">hear from you</span></h1>
+    <p class="lede">Whether you're a vendor wanting to scale, a ship-agent looking to procure faster, or a port authority exploring partnerships — drop us a line.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <h4>Sales &amp; Onboarding</h4>
+          <p>For new vendors, large-fleet onboarding &amp; Elite tier enquiries.</p>
+          <a class="contact-link" href="mailto:sales@portda.in">sales@portda.in</a>
+          <span class="contact-sub">+91 22 6810 4500 · 09:00–19:00 IST</span>
+        </div>
+        <div class="contact-card">
+          <div class="feature-icon orange"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h4>Vendor Success</h4>
+          <p>Help with KYC, quoting, payouts, plan switches or escalations.</p>
+          <a class="contact-link" href="mailto:vendors@portda.in">vendors@portda.in</a>
+          <span class="contact-sub">Avg response &lt; 1 hour</span>
+        </div>
+        <div class="contact-card">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h4>Buyer Support</h4>
+          <p>Help posting requests, comparing quotes, payment reconciliation.</p>
+          <a class="contact-link" href="mailto:buyers@portda.in">buyers@portda.in</a>
+          <span class="contact-sub">24×7 for live jobs</span>
+        </div>
+        <div class="contact-card">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h4>Partnerships</h4>
+          <p>Port authorities, shipping associations, ERP integrations.</p>
+          <a class="contact-link" href="mailto:partners@portda.in">partners@portda.in</a>
+          <span class="contact-sub">Response within 2 business days</span>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault();">
+        <h3>Send us a message</h3>
+        <p class="form-lede">Tell us a bit about yourself — we'll route you to the right team within a business day.</p>
+
+        <label>
+          <span>Full name</span>
+          <input type="text" placeholder="Capt. Rakesh Singh" required />
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Work email</span>
+            <input type="email" placeholder="ops@yourcompany.in" required />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" placeholder="+91 22 0000 0000" />
+          </label>
+        </div>
+        <label>
+          <span>I'm reaching out as</span>
+          <select>
+            <option>Marine service vendor</option>
+            <option>Ship agent / charterer</option>
+            <option>Port authority</option>
+            <option>Press / media</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>
+          <span>How can we help?</span>
+          <textarea rows="5" placeholder="Tell us what you're looking to do…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Send message</button>
+        <p class="form-foot">We typically reply within 1 business day. For urgent live-job issues, use in-app support.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Offices</div>
+      <h2>Where to find us</h2>
+    </div>
+
+    <div class="office-grid">
+      <div class="office-card">
+        <h4>Singapore · Global HQ</h4>
+        <p>Marina Bay Financial Centre<br/>10 Marina Boulevard, Tower 3<br/>Singapore 018983</p>
+        <span class="contact-sub">Hours · Mon–Fri 09:00–19:00 SGT</span>
+      </div>
+      <div class="office-card">
+        <h4>Rotterdam · EMEA Operations</h4>
+        <p>Wilhelminakade 909<br/>Kop van Zuid<br/>3072 AP Rotterdam, Netherlands</p>
+        <span class="contact-sub">Hours · Mon–Fri 09:00–18:00 CET</span>
+      </div>
+      <div class="office-card">
+        <h4>Houston · Americas HQ</h4>
+        <p>1000 Louisiana Street, Suite 4400<br/>Downtown<br/>Houston, TX 77002, USA</p>
+        <span class="contact-sub">Hours · Mon–Fri 09:00–18:00 CST</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+      <p>The world's first marketplace for port &amp; marine services.</p>
+      <div class="socials"><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.7-.7-1.7-1.7s.7-1.7 1.8-1.7 1.7.7 1.7 1.7-.7 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.4-.6-1.9-1.4-1.9s-1.6.5-1.6 1.9V19h-3V8h3v1.3c.3-.6 1.3-1.5 2.8-1.5 1.6 0 3.2 1 3.2 3.5V19z"/></svg></a><a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a></div>
+    </div>
+    <div class="footer-col"><h5>Product</h5><a href="/how-it-works">How it works</a><a href="/for-vendors">For Vendors</a><a href="/for-buyers">For Buyers</a><a href="/pricing">Pricing</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="/contact">Contact</a></div>
+    <div class="footer-col"><h5>Resources</h5><a href="#">Help centre</a><a href="#">API docs</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Terms</a><a href="#">Privacy</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 PORTDA Technologies Pvt Ltd</span>
+    <span>Made for the global marine industry ⚓</span>
+  </div>
+</footer>
+
+</body>
+</html>

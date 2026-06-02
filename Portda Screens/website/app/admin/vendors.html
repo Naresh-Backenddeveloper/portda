@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vendors · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Vendor Management</h1><p>All marine service vendors on PORTDA · approve, suspend, edit, drill into activity.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export CSV</button><button class="btn btn-primary">+ Add Vendor</button></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Total Vendors</div><div class="kpi-value">1,247</div><div class="kpi-delta up">▲ 38 this month</div></div>
+      <div class="kpi"><div class="kpi-label">Subscription</div><div class="kpi-value">312</div><div class="kpi-delta up">25% adoption</div></div>
+      <div class="kpi"><div class="kpi-label">Commission</div><div class="kpi-value">935</div></div>
+      <div class="kpi"><div class="kpi-label">Suspended / Inactive</div><div class="kpi-value">42</div><div class="kpi-delta down">▼ 4 vs last month</div></div>
+    </div>
+
+    <div class="filter-strip">
+      <span class="label">Filter:</span>
+      <select><option>All categories</option><option>Ship Agents</option><option>Stevedores / Cargo Handling</option><option>Ship Management</option><option>Ship Repairs</option><option>Ship Chandlers</option><option>Bunkering</option><option>Multi Modal Transportation</option><option>Storage / Warehousing</option><option>Legal / Lawyers</option><option>Insurance</option></select>
+      <select><option>All ports</option><option>JNPT</option><option>Mumbai</option><option>Mundra</option><option>Hazira</option><option>Cochin</option></select>
+      <select><option>All plans</option><option>Commission</option><option>Starter</option><option>Pro</option><option>Elite</option></select>
+      <select><option>All statuses</option><option>Active</option><option>KYC pending</option><option>Suspended</option><option>Inactive</option></select>
+      <select><option>Rating · any</option><option>★ 4.5+</option><option>★ 4.0+</option><option>Below 4.0</option></select>
+      <div class="spacer"></div>
+      <input type="search" placeholder="Search vendor, GSTIN, contact…" style="min-width:240px;" />
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">All (1,247)</a><a href="#">KYC pending (14)</a><a href="#">Pro/Elite (231)</a><a href="#">Top performers</a><a href="#">Suspended (42)</a>
+    </div>
+
+    <div class="table-wrap">
+      <table class="t t-compact">
+        <thead><tr><th><input type="checkbox" /></th><th>Vendor</th><th>Categories</th><th>Ports</th><th>Plan</th><th>Rating</th><th>Lifetime GMV</th><th>Status</th><th>Joined</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b1">MM</div><div><div class="name">Mumbai Marine Agencies</div><div class="sub">GSTIN 27ABCDE… · Capt. Rakesh S.</div></div></div></td><td>Ship Agents · Multi Modal Transport · Mooring</td><td>JNPT · Mumbai · Mundra · Hazira</td><td><span class="chip chip-purple">Pro · Q</span></td><td>★ 4.9 <span class="muted">(238)</span></td><td><strong>₹3.8 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td>Mar 2024</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b2">CB</div><div><div class="name">Coastal Bunkers Pvt Ltd</div><div class="sub">GSTIN 27FGHIJ… · Suresh Rao</div></div></div></td><td>Bunkering · VLSFO/HSFO/MGO</td><td>JNPT · Mundra · Hazira</td><td><span class="chip chip-purple">Pro · Y</span></td><td>★ 4.8 <span class="muted">(142)</span></td><td><strong>₹2.4 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td>May 2024</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b3">PS</div><div><div class="name">Port Stevedoring Ltd</div><div class="sub">GSTIN 24KLMNO… · Manoj P.</div></div></div></td><td>Stevedores / Cargo Handling · Lashing</td><td>Mundra · Hazira · Pipavav</td><td><span class="chip chip-purple">Elite · Q</span></td><td>★ 4.7 <span class="muted">(98)</span></td><td><strong>₹1.8 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td>Aug 2024</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar b4">DM</div><div><div class="name">Deep Marine Divers</div><div class="sub">GSTIN 24PQRST… · Anil V.</div></div></div></td><td>Underwater · Hull cleaning</td><td>Hazira · Cochin · Chennai</td><td><span class="chip chip-gray">Commission</span></td><td>★ 4.9 <span class="muted">(62)</span></td><td><strong>₹68 L</strong></td><td><span class="chip chip-success">Active</span></td><td>Nov 2024</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--warning-light);color:#92400E;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">AS</div><div><div class="name">Anchor Survey Co.</div><div class="sub">GSTIN 32UVWXY… · Dr. Priya K.</div></div></div></td><td>Survey · IACS · Pre-purchase</td><td>Cochin · Mumbai · Chennai</td><td><span class="chip chip-purple">Pro · M</span></td><td>★ 4.6 <span class="muted">(41)</span></td><td><strong>₹42 L</strong></td><td><span class="chip chip-success">Active</span></td><td>Jan 2025</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:#FCE7F3;color:#BE185D;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">SP</div><div><div class="name">Sagarmala Pilots</div><div class="sub">GSTIN 29ZABCD… · Capt. Vinod M.</div></div></div></td><td>Ship Agents · Mooring</td><td>Mangalore · Cochin</td><td><span class="chip chip-gray">Pending</span></td><td class="muted">—</td><td class="muted">—</td><td><span class="chip chip-warning">KYC pending</span></td><td>14 May 2026</td><td><a class="btn btn-sm btn-primary" href="kyc.html">Review</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--primary-light);color:var(--primary);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">JM</div><div><div class="name">JNPT Marine Co.</div><div class="sub">GSTIN 27EFGHI… · Sandeep V.</div></div></div></td><td>Ship Agents · Multi Modal Transport</td><td>JNPT</td><td><span class="chip chip-gray">Commission</span></td><td>★ 4.7 <span class="muted">(98)</span></td><td><strong>₹1.1 Cr</strong></td><td><span class="chip chip-success">Active</span></td><td>Feb 2024</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td><div class="t-buyer"><div class="avatar" style="width:32px;height:32px;border-radius:9px;background:var(--bg-2);color:var(--text-2);font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;">KT</div><div><div class="name">Konkan Tug Services</div><div class="sub">GSTIN 30JKLMN… · Ramesh G.</div></div></div></td><td>Multi Modal Transport · Salvage</td><td>Goa · JNPT</td><td><span class="chip chip-gray">Commission</span></td><td>★ 4.2 <span class="muted">(28)</span></td><td><strong>₹24 L</strong></td><td><span class="chip chip-danger">Suspended</span></td><td>Mar 2025</td><td><a class="btn btn-sm btn-outline" href="vendor-detail.html">Open</a></td></tr>
+        </tbody>
+      </table>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-top:1px solid var(--border-2);font-size:13px;color:var(--text-2);">
+        <span>Showing 1–8 of <strong>1,247</strong> vendors</span>
+        <div style="display:flex;gap:6px;"><button class="btn btn-sm btn-outline">‹</button><button class="btn btn-sm btn-primary">1</button><button class="btn btn-sm btn-outline">2</button><button class="btn btn-sm btn-outline">3</button><button class="btn btn-sm btn-outline">…</button><button class="btn btn-sm btn-outline">156</button><button class="btn btn-sm btn-outline">›</button></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('vendors', 'Search vendors, GSTIN, ports…');</script>
+</body>
+</html>

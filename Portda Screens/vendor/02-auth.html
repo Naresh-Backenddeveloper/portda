@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PORTDA Vendor — 02 · Authentication</title>
+<link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+<div class="page-header"><div class="logo"><div class="logo-mark">⚓</div><div><h1>Vendor · 02 · Authentication</h1><p>9 screens</p></div></div><a class="back-link" href="index.html">← All modules</a></div>
+<div class="module-nav"><a href="index.html">Vendor home</a><a href="01-onboarding.html">01 Onboarding</a><a href="02-auth.html">02 Auth</a><a href="03-home.html">03 Dashboard</a><a href="04-rfq-inbox.html">04 Request Inbox</a><a href="05-quotations.html">05 Quotations</a><a href="06-chat.html">06 Chat</a><a href="07-jobs.html">07 Jobs</a><a href="08-payouts.html">08 Payouts</a><a href="09-reviews.html">09 Reviews</a><a href="10-notifications.html">10 Notifications</a><a href="11-profile.html">11 Profile</a><a href="12-settings.html">12 Settings</a></div>
+
+<div class="screens-grid">
+  <!-- 2.1 Login -->
+  <div class="screen-wrap"><div class="screen-label">2.1 Login</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div style="padding:20px 18px 0;"><div class="brand-mark lg" style="font-size:34px;">⚓</div><h2 class="txt-2xl bold mt-16">Vendor sign-in</h2><p class="txt-md text-2 mt-4">Access your dashboard</p></div>
+    <div class="screen-body" style="padding-top:20px;">
+      <div class="tabs mb-16"><div class="tab active">Mobile</div><div class="tab">Email</div></div>
+      <div class="input-wrap"><div class="input-label">Mobile Number</div><div class="row gap-8 mt-4"><div class="txt-md semi">🇮🇳 +91</div><div class="input-value">98765 43210</div></div></div>
+      <button class="btn btn-primary mt-12">Send OTP</button>
+      <div class="txt-sm center mt-16 text-2">New vendor? <span class="text-primary semi">Register your company</span></div>
+    </div>
+  </div></div></div>
+
+  <!-- 2.2 OTP -->
+  <div class="screen-wrap"><div class="screen-label">2.2 OTP Verify</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Verify OTP</h2><div style="width:36px"></div></div>
+    <div class="screen-body">
+      <div class="icon-box bg-primary-light text-primary" style="width:72px;height:72px;font-size:32px;border-radius:20px;margin:8px auto;">📱</div>
+      <h2 class="txt-xl bold center mt-12">Enter verification code</h2>
+      <p class="txt-md text-2 center mt-4" style="line-height:1.5;">6-digit code sent to<br/><span class="text bold">+91 98765 43210</span></p>
+      <div class="otp-row"><div class="otp-box filled">4</div><div class="otp-box filled">8</div><div class="otp-box filled">2</div><div class="otp-box filled">1</div><div class="otp-box"></div><div class="otp-box"></div></div>
+      <div class="txt-sm center text-2">Resend in 0:24</div>
+      <button class="btn btn-primary mt-16">Verify &amp; Continue</button>
+    </div>
+  </div></div></div>
+
+  <!-- 2.3 Register Step 1 -->
+  <div class="screen-wrap"><div class="screen-label">2.3 Register · Company Info</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Register Company</h2><div class="txt-xs text-2 semi">1/5</div></div>
+    <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="screen-body">
+      <h2 class="txt-xl bold mt-8">Tell us about your company</h2>
+      <div class="input-wrap mt-16"><div class="input-label">Company Name*</div><div class="input-value">Mumbai Marine Agencies Pvt Ltd</div></div>
+      <div class="input-wrap"><div class="input-label">Type of Entity*</div><div class="row-between"><div class="input-value">Private Limited</div><div class="text-2">▼</div></div></div>
+      <div class="input-wrap"><div class="input-label">CIN</div><div class="input-value">U72200MH2003PTC123456</div></div>
+      <div class="input-wrap"><div class="input-label">Founded</div><div class="input-value">2003</div></div>
+      <div class="input-wrap"><div class="input-label">Primary Contact*</div><div class="input-value">Capt. Rakesh Singh · Director</div></div>
+      <div class="input-wrap"><div class="input-label">Work Email*</div><div class="input-value">ops@mumbaimarine.in</div></div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Next: Services →</button></div>
+  </div></div></div>
+
+  <!-- 2.4 Register Step 2 · Services -->
+  <div class="screen-wrap"><div class="screen-label">2.4 Register · Services</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Service Categories</h2><div class="txt-xs text-2 semi">2/5</div></div>
+    <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="screen-body">
+      <p class="txt-sm text-2">Pick the top-level categories you operate in. You'll choose sub-services next.</p>
+      <div class="grid-2 mt-16">
+        <label class="card" style="border:1.5px solid var(--primary);background:var(--primary-light);"><div class="icon-box bg-card text-primary" style="margin-bottom:6px;">🚢</div><div class="txt-sm semi">Ship Agents</div><div class="txt-xs text-2 mt-4">4 sub-services</div></label>
+        <label class="card" style="border:1.5px solid var(--primary);background:var(--primary-light);"><div class="icon-box bg-card text-primary" style="margin-bottom:6px;">📦</div><div class="txt-sm semi">Stevedores / Cargo Handling</div><div class="txt-xs text-2 mt-4">5 sub-services</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">⚓</div><div class="txt-sm semi">Ship Management</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">🔧</div><div class="txt-sm semi">Ship Repairs</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">🛒</div><div class="txt-sm semi">Ship Chandlers</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card" style="border:1.5px solid var(--primary);background:var(--primary-light);"><div class="icon-box bg-card text-primary" style="margin-bottom:6px;">⛽</div><div class="txt-sm semi">Bunkering</div><div class="txt-xs text-2 mt-4">6 fuel types</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">🚛</div><div class="txt-sm semi">Multi Modal Transport</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">🏭</div><div class="txt-sm semi">Storage / Warehousing</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">⚖</div><div class="txt-sm semi">Legal / Lawyers</div><div class="txt-xs text-2 mt-4">Select</div></label>
+        <label class="card"><div class="icon-box bg-bg" style="background:var(--bg);margin-bottom:6px;">🛡</div><div class="txt-sm semi">Insurance</div><div class="txt-xs text-2 mt-4">Select</div></label>
+      </div>
+      <div class="row gap-8 mt-12"><div class="chip chip-primary">3 selected</div></div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Next: Sub-services →</button></div>
+  </div></div></div>
+
+  <!-- 2.5 Register Step 3 · Sub-categories -->
+  <div class="screen-wrap"><div class="screen-label">2.5 Register · Sub-services</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Sub-services</h2><div class="txt-xs text-2 semi">3/5</div></div>
+    <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="screen-body">
+      <p class="txt-sm text-2">Tap to add the specific services you provide.</p>
+
+      <div class="card mt-12" style="padding:0;overflow:hidden;">
+        <div class="row gap-10" style="padding:12px 14px;background:var(--bg);border-bottom:1px solid var(--border-2);">
+          <div class="icon-box bg-primary-light text-primary" style="width:32px;height:32px;font-size:14px;">🚢</div>
+          <div class="flex-1"><div class="txt-sm semi">Ship Agents</div></div>
+          <div class="chip chip-primary" style="font-size:9px;">2/3</div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">Port agency</div><div class="txt-xs text-2 mt-2">Customs · immigration · disbursement</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">Husbandry agency</div><div class="txt-xs text-2 mt-2">Crew change · stores · spares</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;">
+          <div style="width:22px;height:22px;border-radius:50%;background:#fff;border:1.5px solid var(--border-2);"></div>
+          <div class="flex-1"><div class="txt-sm">Transit agency</div><div class="txt-xs text-2 mt-2">Canal transits · short-call agency</div></div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:0;overflow:hidden;">
+        <div class="row gap-10" style="padding:12px 14px;background:var(--bg);border-bottom:1px solid var(--border-2);">
+          <div class="icon-box bg-primary-light text-primary" style="width:32px;height:32px;font-size:14px;">📦</div>
+          <div class="flex-1"><div class="txt-sm semi">Stevedores / Cargo Handling</div></div>
+          <div class="chip chip-primary" style="font-size:9px;">2/2</div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">Stevedoring</div><div class="txt-xs text-2 mt-2">Container · breakbulk · ro-ro</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">Lashing &amp; securing</div><div class="txt-xs text-2 mt-2">IMO-compliant lashings</div></div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:0;overflow:hidden;">
+        <div class="row gap-10" style="padding:12px 14px;background:var(--bg);border-bottom:1px solid var(--border-2);">
+          <div class="icon-box bg-primary-light text-primary" style="width:32px;height:32px;font-size:14px;">⛽</div>
+          <div class="flex-1"><div class="txt-sm semi">Bunkering</div></div>
+          <div class="chip chip-primary" style="font-size:9px;">3/4</div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">VLSFO</div><div class="txt-xs text-2 mt-2">Very-low-sulphur fuel oil · 0.5%</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">HSFO</div><div class="txt-xs text-2 mt-2">High-sulphur · with scrubber vessels</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;border-bottom:1px solid var(--border-2);">
+          <div style="width:22px;height:22px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;">✓</div>
+          <div class="flex-1"><div class="txt-sm semi">MGO</div><div class="txt-xs text-2 mt-2">Marine gas oil · ECA-compliant</div></div>
+        </div>
+        <div class="row gap-10" style="padding:12px 14px;">
+          <div style="width:22px;height:22px;border-radius:50%;background:#fff;border:1.5px solid var(--border-2);"></div>
+          <div class="flex-1"><div class="txt-sm">LNG</div><div class="txt-xs text-2 mt-2">Liquefied natural gas bunkering</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Next: Work Locations →</button></div>
+  </div></div></div>
+
+  <!-- 2.6 Register Step 4 · Work Locations -->
+  <div class="screen-wrap"><div class="screen-label">2.6 Register · Work Locations</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Work Locations</h2><div class="txt-xs text-2 semi">4/5</div></div>
+    <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span><span class="dot"></span></div>
+    <div class="screen-body">
+      <p class="txt-sm text-2">Add every port or anchorage you operate at. Requests will be matched by location.</p>
+
+      <div class="input-wrap mt-16" style="background:var(--bg);">
+        <div class="row gap-8"><div class="text-2">🔍</div><div class="flex-1 txt-sm text-2">Search ports, anchorages, terminals…</div></div>
+      </div>
+
+      <div class="row-between mt-16 mb-8"><div class="txt-xs text-2 semi">SELECTED · 4 LOCATIONS</div><div class="txt-xs text-primary semi">+ Add custom</div></div>
+
+      <div class="card" style="padding:12px;">
+        <div class="row gap-10"><div class="icon-box bg-primary-light text-primary" style="width:36px;height:36px;font-size:14px;">📍</div>
+          <div class="flex-1">
+            <div class="row-between"><div class="txt-sm semi">JNPT · Nhava Sheva</div><div class="chip chip-primary" style="font-size:9px;">Primary</div></div>
+            <div class="txt-xs text-2 mt-4">Mumbai, Maharashtra · Berths J1–J5</div>
+          </div>
+          <div class="text-danger txt-md">×</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px;">
+        <div class="row gap-10"><div class="icon-box bg-primary-light text-primary" style="width:36px;height:36px;font-size:14px;">📍</div>
+          <div class="flex-1">
+            <div class="txt-sm semi">Mumbai Port Trust</div>
+            <div class="txt-xs text-2 mt-4">Mumbai, Maharashtra · Indira Dock + Prince's</div>
+          </div>
+          <div class="text-danger txt-md">×</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px;">
+        <div class="row gap-10"><div class="icon-box bg-primary-light text-primary" style="width:36px;height:36px;font-size:14px;">📍</div>
+          <div class="flex-1">
+            <div class="txt-sm semi">Mundra Port</div>
+            <div class="txt-xs text-2 mt-4">Gujarat · Container + bulk terminals</div>
+          </div>
+          <div class="text-danger txt-md">×</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px;">
+        <div class="row gap-10"><div class="icon-box bg-primary-light text-primary" style="width:36px;height:36px;font-size:14px;">📍</div>
+          <div class="flex-1">
+            <div class="txt-sm semi">Hazira Anchorage</div>
+            <div class="txt-xs text-2 mt-4">Surat, Gujarat · OPL ops only</div>
+          </div>
+          <div class="text-danger txt-md">×</div>
+        </div>
+      </div>
+
+      <div class="txt-xs text-2 semi mt-16 mb-8">SUGGESTED NEARBY</div>
+      <div class="row gap-8" style="flex-wrap:wrap;">
+        <div class="chip" style="background:var(--bg);">+ Kandla</div>
+        <div class="chip" style="background:var(--bg);">+ Pipavav</div>
+        <div class="chip" style="background:var(--bg);">+ Dahej</div>
+        <div class="chip" style="background:var(--bg);">+ Cochin</div>
+      </div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Next: KYC →</button></div>
+  </div></div></div>
+
+  <!-- 2.7 Register Step 5 · KYC -->
+  <div class="screen-wrap"><div class="screen-label">2.7 Register · KYC</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>KYC Documents</h2><div class="txt-xs text-2 semi">5/5</div></div>
+    <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span></div>
+    <div class="screen-body">
+      <p class="txt-sm text-2">Upload required docs for verification. Usually takes 4–24 hrs.</p>
+      <div class="input-wrap mt-12"><div class="input-label">GSTIN*</div><div class="input-value">27ABCDE5678F1Z2</div></div>
+      <div class="input-wrap"><div class="input-label">PAN*</div><div class="input-value">ABCDE5678F</div></div>
+      <div class="semi txt-sm mt-12 mb-8">Documents</div>
+      <div class="card"><div class="row gap-10"><div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;font-size:11px;font-weight:900;">PDF</div><div class="flex-1"><div class="txt-sm semi">GST certificate</div><div class="txt-xs text-2">Uploaded ✓</div></div><div class="text-success">✓</div></div></div>
+      <div class="card"><div class="row gap-10"><div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;font-size:11px;font-weight:900;">PDF</div><div class="flex-1"><div class="txt-sm semi">PAN copy</div><div class="txt-xs text-2">Uploaded ✓</div></div><div class="text-success">✓</div></div></div>
+      <div class="card"><div class="row gap-10"><div class="icon-box bg-bg" style="background:var(--bg);width:36px;height:36px;font-size:11px;font-weight:900;color:var(--text-2);">PDF</div><div class="flex-1"><div class="txt-sm semi">Service license (e.g., DGS)</div><div class="txt-xs text-2">Required</div></div><div class="text-primary">+</div></div></div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Submit for verification</button></div>
+  </div></div></div>
+
+  <!-- 2.8 Pick Subscription (mandatory) -->
+  <div class="screen-wrap"><div class="screen-label">2.8 Register · Pick Plan</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div class="topbar no-bg"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Pick a Plan</h2><div class="txt-xs text-2 semi">Required</div></div>
+    <div class="screen-body">
+      <div class="card" style="background:var(--primary-light);border:none;">
+        <div class="row gap-10"><div class="text-primary txt-xl">ⓘ</div><div class="txt-sm" style="line-height:1.5;color:var(--text);"><strong>Subscription is required to view leads.</strong> Without an active plan, you won't see new Requests. Platform also takes <strong>5% commission</strong> when a lead converts to a confirmed order.</div></div>
+      </div>
+
+      <div class="card mt-12" style="padding:14px;">
+        <div class="row-between"><div><div class="txt-sm semi">Starter</div><div class="txt-xs text-2 mt-2">Solo vendors</div></div><div style="text-align:right;"><div class="txt-md bold">₹4,999</div><div class="txt-xs text-2">/ quarter</div></div></div>
+        <div class="divider"></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>50 leads / month</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>Up to 2 service categories</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-2">×</div><div class="text-2">Premium leads locked</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-2">+</div><div class="text-2">5% commission on conversions</div></div>
+      </div>
+
+      <div class="card" style="padding:14px;border:1.5px solid var(--primary);background:var(--primary-light);">
+        <div class="row-between"><div><div class="txt-sm semi text-primary">Pro</div><div class="txt-xs text-primary mt-2">Most popular · Growing fleets</div></div><div style="text-align:right;"><div class="txt-md bold text-primary">₹12,999</div><div class="txt-xs text-2">/ quarter</div></div></div>
+        <div class="divider"></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div><strong>200 leads / month</strong></div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>All service categories</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>Premium leads unlocked</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>Priority listing in search</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-2">+</div><div class="text-2">5% commission on conversions</div></div>
+      </div>
+
+      <div class="card" style="padding:14px;">
+        <div class="row-between"><div><div class="txt-sm semi">Elite</div><div class="txt-xs text-2 mt-2">Large fleet operators</div></div><div style="text-align:right;"><div class="txt-md bold">₹29,999</div><div class="txt-xs text-2">/ quarter</div></div></div>
+        <div class="divider"></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div><strong>Unlimited leads</strong></div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>Featured on buyer dashboard</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-success">✓</div><div>Dedicated account manager</div></div>
+        <div class="row gap-8" style="padding:4px 0;font-size:12px;"><div class="text-2">+</div><div class="text-2">5% commission on conversions</div></div>
+      </div>
+
+      <div class="txt-xs text-2 mt-12 center">First payment processed after KYC approval. 14-day trial available on Pro &amp; Elite.</div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-primary">Continue with Pro · ₹12,999</button></div>
+  </div></div></div>
+
+  <!-- 2.9 Pending -->
+  <div class="screen-wrap"><div class="screen-label">2.9 Verification Pending</div><div class="phone"><div class="screen" data-tab="none">
+    <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;gap:14px;">
+      <div class="icon-box bg-warning-light text-warning" style="width:96px;height:96px;font-size:42px;border-radius:24px;">⏳</div>
+      <h2 class="txt-2xl bold">Under review</h2>
+      <p class="txt-md text-2" style="line-height:1.5;">Our team is verifying your KYC documents. You'll get a notification when approved (usually 4–24 hrs).</p>
+      <div class="card full" style="text-align:left;"><div class="row-between"><div class="txt-xs text-2">Application ID</div><div class="txt-xs semi">VID-MM-9382</div></div><div class="row-between mt-8"><div class="txt-xs text-2">Submitted</div><div class="txt-xs semi">15 May 2026, 09:41 IST</div></div><div class="row-between mt-8"><div class="txt-xs text-2">Expected response</div><div class="txt-xs semi text-warning">By tomorrow 9 AM</div></div></div>
+    </div>
+    <div class="bottom-cta"><button class="btn btn-outline">Contact Support</button></div>
+  </div></div></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="assets/download.js"></script>
+</body></html>

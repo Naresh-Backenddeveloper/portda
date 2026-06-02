@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PORTDA Vendor — 08 · Payouts</title>
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<div class="page-header">
+  <div class="logo"><div class="logo-mark">⚓</div><div><h1>Vendor · 08 · Payouts &amp; Invoicing</h1><p>10 screens — wallet, receivables, plan &amp; billing (Subscription / Commission)</p></div></div>
+  <a class="back-link" href="/mobile/vendor">← All modules</a>
+</div>
+<div class="module-nav"><a href="/mobile/vendor">Vendor home</a><a href="/mobile/vendor/01-onboarding">01 Onboarding</a><a href="/mobile/vendor/02-auth">02 Auth</a><a href="/mobile/vendor/03-home">03 Dashboard</a><a href="/mobile/vendor/04-rfq-inbox">04 Request Inbox</a><a href="/mobile/vendor/05-quotations">05 Quotations</a><a href="/mobile/vendor/06-chat">06 Chat</a><a href="/mobile/vendor/07-jobs">07 Jobs</a><a href="/mobile/vendor/08-payouts">08 Payouts</a><a href="/mobile/vendor/09-reviews">09 Reviews</a><a href="/mobile/vendor/10-notifications">10 Notifications</a><a href="/mobile/vendor/11-profile">11 Profile</a><a href="/mobile/vendor/12-settings">12 Settings</a></div>
+
+<div class="screens-grid">
+
+  <!-- 8.1 Wallet -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.1 Wallet Overview</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><h2>Wallet</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="border:none;">
+            <div class="txt-xs semi" style="opacity:.85;letter-spacing:1px;">AVAILABLE BALANCE</div>
+            <div class="txt-3xl bold mt-4">₹2,47,385</div>
+            <div class="txt-xs mt-4" style="opacity:.85;">Last settled: 14 May · ₹4,85,000</div>
+            <button class="btn mt-12" style="background:#fff;color:var(--primary);width:100%;">Withdraw to Bank</button>
+          </div>
+          <div class="stat-strip mt-12">
+            <div class="stat-cell"><div class="stat-label">PENDING</div><div class="stat-value text-warning">₹4.2 L</div></div>
+            <div class="stat-cell"><div class="stat-label">RECEIVABLE</div><div class="stat-value text-primary">₹8.5 L</div></div>
+            <div class="stat-cell"><div class="stat-label">FY 26</div><div class="stat-value">₹38.4 L</div></div>
+          </div>
+          <div class="row-between mt-16 mb-8"><div class="semi txt-md">Recent payments</div><div class="txt-sm text-primary semi">See all</div></div>
+          <div class="card"><div class="row gap-10"><div class="icon-box bg-success-light text-success" style="width:36px;height:36px;font-size:14px;">↓</div><div class="flex-1"><div class="row-between"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-sm bold text-success">+₹1,74,640</div></div><div class="row-between mt-4"><div class="txt-xs text-2">15 May, 15:42</div><div class="chip chip-success" style="font-size:9px;">Received</div></div></div></div></div>
+          <div class="card"><div class="row gap-10"><div class="icon-box bg-warning-light text-warning" style="width:36px;height:36px;font-size:14px;">⏱</div><div class="flex-1"><div class="row-between"><div class="txt-sm semi">Saffron Fleet Mgmt</div><div class="txt-sm bold">+₹4,80,000</div></div><div class="row-between mt-4"><div class="txt-xs text-2">Due 22 May · Net 7</div><div class="chip chip-warning" style="font-size:9px;">Pending</div></div></div></div></div>
+          <div class="card"><div class="row gap-10"><div class="icon-box bg-success-light text-success" style="width:36px;height:36px;font-size:14px;">↓</div><div class="flex-1"><div class="row-between"><div class="txt-sm semi">Mariner Shipping Co.</div><div class="txt-sm bold text-success">+₹2,07,385</div></div><div class="row-between mt-4"><div class="txt-xs text-2">14 May, 11:20</div><div class="chip chip-success" style="font-size:9px;">Received</div></div></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.2 Withdraw -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.2 Withdraw to Bank</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Withdraw</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="border:none;text-align:center;">
+            <div class="txt-xs semi" style="opacity:.85;letter-spacing:1px;">AVAILABLE</div>
+            <div class="txt-2xl bold mt-4">₹2,47,385</div>
+          </div>
+          <div class="txt-xs text-2 semi mt-16" style="letter-spacing:0.5px;">WITHDRAW AMOUNT</div>
+          <div class="card mt-8" style="text-align:center;padding:18px;"><div class="row" style="align-items:baseline;justify-content:center;gap:6px;"><div class="txt-xl bold text-primary">₹</div><div class="txt-3xl bold text-primary">2,47,385</div></div><div class="row gap-6 center mt-12" style="justify-content:center;"><span class="chip chip-gray">25%</span><span class="chip chip-gray">50%</span><span class="chip chip-gray">75%</span><span class="chip chip-primary">Max</span></div></div>
+          <div class="txt-xs text-2 semi mt-16" style="letter-spacing:0.5px;">TO BANK</div>
+          <div class="card mt-8" style="display:flex;align-items:center;gap:12px;">
+            <div class="icon-box bg-primary-light text-primary" style="width:40px;height:40px;font-size:12px;font-weight:900;">HDFC</div>
+            <div class="flex-1"><div class="txt-sm semi">HDFC Bank •••• 8924</div><div class="txt-xs text-2">Mumbai Marine Agencies</div></div>
+            <div class="text-primary semi txt-xs">Change</div>
+          </div>
+          <div class="card mt-12" style="background:var(--bg);border:none;">
+            <div class="row-between"><div class="txt-xs">You'll receive</div><div class="txt-sm bold text-primary">₹2,47,385</div></div>
+            <div class="row-between mt-4"><div class="txt-xs text-2">Settlement</div><div class="txt-xs text-2">Within 2 hrs · IMPS</div></div>
+            <div class="row-between mt-4"><div class="txt-xs text-2">Fees</div><div class="txt-xs text-success">Free</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Withdraw ₹2,47,385</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.3 Withdraw Success -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.3 Withdrawal Initiated</div>
+    <div class="phone">
+      <div class="screen" data-tab="none">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;gap:14px;">
+          <div class="icon-box" style="background:linear-gradient(135deg,#8B5CF6,#10B981);color:#fff;width:96px;height:96px;font-size:48px;border-radius:24px;box-shadow:0 10px 30px rgba(124,58,237,.3);">✓</div>
+          <h2 class="txt-2xl bold">Withdrawal initiated</h2>
+          <p class="txt-md text-2" style="line-height:1.5;">₹2,47,385 will reach HDFC Bank •••• 8924 within 2 hours.</p>
+          <div class="card full" style="text-align:left;">
+            <div class="row-between"><div class="txt-xs text-2">Transaction ID</div><div class="txt-xs semi">WD-TXN-9382</div></div>
+            <div class="row-between mt-8"><div class="txt-xs text-2">Mode</div><div class="txt-xs semi">IMPS</div></div>
+            <div class="row-between mt-8"><div class="txt-xs text-2">Initiated at</div><div class="txt-xs semi">15 May 2026, 16:14 IST</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Amount</div><div class="txt-md bold text-success">₹2,47,385</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta" style="display:flex;flex-direction:column;gap:8px;"><button class="btn btn-primary">Done</button><button class="btn btn-ghost">View Transactions</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.4 Issue Invoice -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.4 Issue Invoice</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Issue Invoice</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="border:none;text-align:center;"><div class="txt-xs semi" style="opacity:.85;letter-spacing:1px;">FINAL INVOICE</div><div class="txt-3xl bold mt-4">₹2,18,300</div><div class="txt-xs mt-4" style="opacity:.85;">Including 18% GST</div></div>
+          <div class="input-wrap mt-12"><div class="input-label">Invoice number</div><div class="input-value">INV/MM/26-27/00482</div></div>
+          <div class="input-wrap"><div class="input-label">Issue date</div><div class="input-value">15 May 2026</div></div>
+          <div class="input-wrap"><div class="input-label">Due date</div><div class="input-value">22 May 2026 (Net 7)</div></div>
+          <div class="card"><div class="row gap-10"><div class="img-ph" style="width:40px;height:40px;border-radius:10px;font-size:11px;">OL</div><div class="flex-1"><div class="txt-sm semi">OceanLink Shipping Pvt Ltd</div><div class="txt-xs text-2">GSTIN: 27ABCDF1234G1Z9</div></div></div></div>
+          <div class="card"><div class="txt-xs text-2 semi mb-8">REFERENCE</div><div class="txt-sm semi">#PORT-48217</div><div class="txt-xs text-2 mt-4">Job completed 15 May 2026</div></div>
+          <div class="card"><div class="txt-xs text-2 semi mb-8">AMOUNT</div><div class="row-between"><div class="txt-xs">Subtotal</div><div class="txt-xs">₹1,85,000</div></div><div class="row-between mt-4"><div class="txt-xs">CGST (9%)</div><div class="txt-xs">₹16,650</div></div><div class="row-between mt-4"><div class="txt-xs">SGST (9%)</div><div class="txt-xs">₹16,650</div></div><div class="divider"></div><div class="row-between"><div class="txt-sm bold">Total</div><div class="txt-md bold">₹2,18,300</div></div></div>
+        </div>
+        <div class="bottom-cta" style="display:flex;gap:8px;"><button class="btn btn-outline flex-1">Preview PDF</button><button class="btn btn-primary flex-1">Send Invoice</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.5 Receivables -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.5 Receivables</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Receivables</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="9" y2="18"/></svg></div></div>
+        <div style="padding:0 16px 8px;"><div class="card hero-gradient" style="border:none;"><div class="row-between"><div><div class="txt-xs semi" style="opacity:.85;letter-spacing:1px;">PENDING RECEIVABLES</div><div class="txt-2xl bold mt-4">₹8,52,640</div><div class="txt-xs mt-4" style="opacity:.85;">6 invoices · ₹1.2L overdue</div></div><div style="font-size:36px;opacity:.4;">⏱</div></div></div></div>
+        <div class="screen-body" style="padding-top:8px;">
+          <div class="row gap-6 mt-4 mb-12" style="flex-wrap:wrap;"><span class="chip chip-primary">All</span><span class="chip chip-warning">Overdue</span><span class="chip chip-gray">Due this week</span></div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">INV-00478 · OceanLink</div><div class="chip chip-danger">2d overdue</div></div>
+            <div class="row-between mt-8"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-md bold text-danger">₹1,20,000</div></div>
+            <div class="txt-xs text-2 mt-4">Due 13 May · Net 7</div>
+            <button class="btn btn-outline btn-sm mt-12">Send reminder</button>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">INV-00482 · OceanLink</div><div class="chip chip-warning">Due in 7d</div></div>
+            <div class="row-between mt-8"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-md bold">₹2,18,300</div></div>
+            <div class="txt-xs text-2 mt-4">Due 22 May · Net 7</div>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2">INV-00485 · Saffron</div><div class="chip chip-warning">Due in 7d</div></div>
+            <div class="row-between mt-8"><div class="txt-sm semi">Saffron Fleet Mgmt</div><div class="txt-md bold">₹4,80,000</div></div>
+            <div class="txt-xs text-2 mt-4">Due 22 May · Net 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.6 Transactions -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.6 Transactions</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Transactions</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="9" y2="18"/></svg></div></div>
+        <div class="screen-body">
+          <div class="row gap-6 mt-4 mb-12" style="flex-wrap:wrap;"><span class="chip chip-primary">All</span><span class="chip chip-gray">Received</span><span class="chip chip-gray">Withdrawn</span><span class="chip chip-gray">Fees</span></div>
+
+          <div class="txt-xs text-2 semi mb-8" style="letter-spacing:.5px;">TODAY</div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-success-light text-success" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                  <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OceanLink Shipping</div>
+                  <div class="txt-sm bold text-success" style="flex-shrink:0;">+₹1,74,640</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px;">
+                  <div class="txt-xs text-2">#PORT-48217 · 15:42</div>
+                  <div class="chip chip-success" style="font-size:9px;flex-shrink:0;">Received</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-primary-light text-primary" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                  <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">HDFC •••• 8924</div>
+                  <div class="txt-sm bold" style="flex-shrink:0;">−₹2,47,385</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px;">
+                  <div class="txt-xs text-2">IMPS · 16:14</div>
+                  <div class="chip chip-success" style="font-size:9px;flex-shrink:0;">Settled</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt-xs text-2 semi mt-12 mb-8" style="letter-spacing:.5px;">YESTERDAY</div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-success-light text-success" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                  <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OceanLink · Advance</div>
+                  <div class="txt-sm bold text-success" style="flex-shrink:0;">+₹43,660</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px;">
+                  <div class="txt-xs text-2">#PORT-48217 · 10:14</div>
+                  <div class="chip chip-success" style="font-size:9px;flex-shrink:0;">Received</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                  <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Platform fee (5%)</div>
+                  <div class="txt-sm bold text-danger" style="flex-shrink:0;">−₹10,915</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px;">
+                  <div class="txt-xs text-2">#PORT-48217</div>
+                  <div class="chip chip-gray" style="font-size:9px;flex-shrink:0;">Fee</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt-xs text-2 semi mt-12 mb-8" style="letter-spacing:.5px;">10 MAY</div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-success-light text-success" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                  <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Mariner Shipping Co.</div>
+                  <div class="txt-sm bold text-success" style="flex-shrink:0;">+₹2,07,385</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px;">
+                  <div class="txt-xs text-2">#PORT-47862</div>
+                  <div class="chip chip-success" style="font-size:9px;flex-shrink:0;">Received</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.7 Plan & Billing overview -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.7 Plan &amp; Billing</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Plan &amp; Billing</h2><div style="width:36px;"></div></div>
+        <div class="screen-body">
+          <div class="card" style="background:#FFFBEB;border:1px solid #FDE68A;padding:12px;">
+            <div class="row gap-10"><div class="text-warning txt-xl">ⓘ</div><div class="txt-xs" style="line-height:1.5;color:var(--text);"><strong>How you're charged:</strong> Subscription unlocks lead access. PORTDA also takes <strong>5% commission</strong> when a lead converts to a confirmed order. Both apply.</div></div>
+          </div>
+
+          <div class="card hero-gradient mt-12" style="border:none;color:#fff;">
+            <div class="row-between"><div class="txt-xs" style="opacity:.85;letter-spacing:1px;">CURRENT PLAN</div><div class="chip" style="background:rgba(255,255,255,.2);color:#fff;font-size:9px;">Active</div></div>
+            <div class="txt-2xl bold mt-8">Pro · Quarterly</div>
+            <div class="txt-xs mt-4" style="opacity:.9;">₹12,999 / qtr · 200 leads/mo · Premium unlocked · 5% commission on conversions</div>
+            <div class="divider" style="background:rgba(255,255,255,.2);"></div>
+            <div class="row-between"><div class="txt-xs" style="opacity:.85;">Next renewal</div><div class="txt-sm bold">15 Aug 2026</div></div>
+            <div class="row-between mt-4"><div class="txt-xs" style="opacity:.85;">Leads used (mo)</div><div class="txt-sm bold">87 / 200</div></div>
+            <div class="row-between mt-4"><div class="txt-xs" style="opacity:.85;">Commission paid (FY)</div><div class="txt-sm bold">₹1.42 L</div></div>
+          </div>
+
+          <div class="row gap-8 mt-12"><button class="btn btn-outline flex-1">Change tier</button><button class="btn btn-primary flex-1">View ledger</button></div>
+
+          <div class="semi txt-md mt-16 mb-8">What's included</div>
+
+          <div class="card" style="padding:14px;">
+            <div class="row gap-10"><div class="icon-box bg-primary-light text-primary" style="width:32px;height:32px;font-size:14px;">①</div><div class="flex-1"><div class="txt-sm semi">Subscription · Pro Quarterly</div><div class="txt-xs text-2 mt-2">₹12,999 every 3 months · auto-renews · grants access to 200 leads / month + premium leads.</div></div></div>
+          </div>
+
+          <div class="card" style="padding:14px;">
+            <div class="row gap-10"><div class="icon-box bg-accent-light text-accent" style="width:32px;height:32px;font-size:14px;">②</div><div class="flex-1"><div class="txt-sm semi">Commission · 5% on conversions</div><div class="txt-xs text-2 mt-2">Applies to every confirmed order. Deducted automatically from your settlement. No commission on leads you don't win.</div></div></div>
+          </div>
+
+          <div class="card mt-12" style="padding:14px;">
+            <div class="txt-xs text-2 semi mb-8" style="letter-spacing:.5px;">RECENT COMMISSION</div>
+            <div class="row-between"><div class="txt-xs">15 May · #PORT-48217</div><div class="txt-xs bold text-danger">−₹10,915</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">14 May · #PORT-48156</div><div class="txt-xs bold text-danger">−₹24,000</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">10 May · #PORT-47862</div><div class="txt-xs bold text-danger">−₹3,505</div></div>
+            <div class="txt-xs text-primary semi mt-8">See full commission ledger →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.8 Choose Plan / Subscription tiers -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.8 Choose Subscription</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Subscription</h2><div style="width:36px;"></div></div>
+        <div class="screen-body">
+          <p class="txt-sm text-2">Subscription unlocks lead access. 5% commission applies on conversions across all tiers.</p>
+
+          <div style="display:flex;background:var(--bg);padding:4px;border-radius:999px;margin:12px 0;">
+            <div style="flex:1;padding:8px 0;text-align:center;font-size:11px;font-weight:600;color:var(--text-2);border-radius:999px;">Monthly</div>
+            <div style="flex:1;padding:8px 0;text-align:center;font-size:11px;font-weight:700;color:var(--primary);background:#fff;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.08);">Quarterly</div>
+            <div style="flex:1;padding:8px 0;text-align:center;font-size:11px;font-weight:600;color:var(--text-2);border-radius:999px;">Yearly · −20%</div>
+          </div>
+
+          <div class="card" style="padding:14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <div class="txt-sm semi">Starter</div>
+              <div class="txt-xs text-2">Solo vendors</div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:4px;margin-top:8px;">
+              <div class="txt-2xl bold" style="line-height:1;">₹4,999</div>
+              <div class="txt-xs text-2">/ quarter</div>
+            </div>
+            <div style="font-size:10px;color:var(--text-3);background:var(--bg);padding:5px 10px;border-radius:6px;text-align:center;font-weight:600;letter-spacing:.3px;margin-top:8px;">+ 5% commission on conversions</div>
+            <div class="divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">50 leads / month</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Up to 2 service categories</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Standard support</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-2" style="width:14px;text-align:center;">×</div><div class="txt-xs text-2">Premium leads locked</div></div>
+          </div>
+
+          <div class="card" style="padding:14px;border:1.5px solid var(--primary);background:var(--primary-light);position:relative;">
+            <div style="position:absolute;top:-9px;right:14px;background:var(--primary);color:#fff;font-size:9px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.4px;">MOST POPULAR</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <div class="txt-sm semi text-primary">Pro</div>
+              <div class="txt-xs text-primary">Growing fleets</div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:4px;margin-top:8px;">
+              <div class="txt-2xl bold text-primary" style="line-height:1;">₹12,999</div>
+              <div class="txt-xs text-2">/ quarter</div>
+            </div>
+            <div style="font-size:10px;color:var(--primary);background:#fff;padding:5px 10px;border-radius:6px;text-align:center;font-weight:600;letter-spacing:.3px;margin-top:8px;">+ 5% commission on conversions</div>
+            <div class="divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs"><strong>200 leads / month</strong></div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">All service categories</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Premium leads unlocked</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Priority listing in search</div></div>
+          </div>
+
+          <div class="card" style="padding:14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <div class="txt-sm semi">Elite</div>
+              <div class="txt-xs text-2">Large fleets</div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:4px;margin-top:8px;">
+              <div class="txt-2xl bold" style="line-height:1;">₹29,999</div>
+              <div class="txt-xs text-2">/ quarter</div>
+            </div>
+            <div style="font-size:10px;color:var(--text-3);background:var(--bg);padding:5px 10px;border-radius:6px;text-align:center;font-weight:600;letter-spacing:.3px;margin-top:8px;">+ 5% commission on conversions</div>
+            <div class="divider"></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs"><strong>Unlimited leads</strong></div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Premium leads unlocked</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Featured on buyer dashboard</div></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:6px;"><div class="text-success" style="width:14px;text-align:center;">✓</div><div class="txt-xs">Dedicated account manager</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Continue · Pro ₹12,999</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.9 Payment / confirm subscription -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.9 Confirm Subscription</div>
+    <div class="phone">
+      <div class="screen" data-tab="none">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Confirm &amp; Pay</h2><div style="width:36px;"></div></div>
+        <div class="screen-body">
+          <div class="card" style="padding:14px;">
+            <div class="txt-xs text-2 semi" style="letter-spacing:.5px;">PLAN</div>
+            <div class="row-between mt-8"><div class="txt-sm semi">Pro · Quarterly</div><div class="chip chip-primary" style="font-size:9px;">Active until 15 Aug</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-xs">Base price</div><div class="txt-xs">₹11,016.95</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">GST (18%)</div><div class="txt-xs">₹1,982.05</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Total due</div><div class="txt-md bold text-primary">₹12,999</div></div>
+            <div class="txt-xs text-2 mt-4">Auto-renews on 15 Aug 2026</div>
+          </div>
+
+          <div class="semi txt-md mt-16 mb-8">Pay with</div>
+          <div class="card" style="padding:0;overflow:hidden;">
+            <label style="display:flex;align-items:center;gap:10px;padding:14px;border-bottom:1px solid var(--border-2);">
+              <div style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--primary);display:flex;align-items:center;justify-content:center;"><div style="width:10px;height:10px;background:var(--primary);border-radius:50%;"></div></div>
+              <div class="icon-box bg-primary-light text-primary" style="width:32px;height:32px;font-size:14px;">UPI</div>
+              <div class="flex-1 txt-sm semi">UPI · vendor@hdfc</div>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;padding:14px;border-bottom:1px solid var(--border-2);">
+              <div style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--border-2);"></div>
+              <div class="icon-box bg-bg" style="background:var(--bg);width:32px;height:32px;font-size:12px;">▭</div>
+              <div class="flex-1"><div class="txt-sm semi">HDFC Credit •••• 4421</div><div class="txt-xs text-2">Exp 09/27</div></div>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;padding:14px;">
+              <div style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--border-2);"></div>
+              <div class="icon-box bg-bg" style="background:var(--bg);width:32px;height:32px;font-size:12px;">⇄</div>
+              <div class="flex-1 txt-sm semi">Net banking</div>
+            </label>
+          </div>
+
+          <div class="card mt-12" style="background:var(--primary-light);border:none;">
+            <div class="row gap-10"><div class="text-primary">ⓘ</div><div class="txt-xs" style="line-height:1.5;">By subscribing you switch from Commission to Subscription mode. 0% platform commission applies from next confirmed order.</div></div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Pay ₹12,999</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8.10 Commission Ledger -->
+  <div class="screen-wrap">
+    <div class="screen-label">8.10 Commission Ledger</div>
+    <div class="phone">
+      <div class="screen" data-tab="wallet">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Commission Ledger</h2><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></div></div>
+        <div class="screen-body">
+          <div class="stat-strip">
+            <div class="stat-cell"><div class="stat-label">THIS MONTH</div><div class="stat-value text-danger">₹38,420</div></div>
+            <div class="stat-cell"><div class="stat-label">YTD</div><div class="stat-value">₹2.4 L</div></div>
+            <div class="stat-cell"><div class="stat-label">RATE</div><div class="stat-value text-primary">5%</div></div>
+          </div>
+
+          <div class="row gap-6 mt-12 mb-8" style="flex-wrap:wrap;"><span class="chip chip-primary">All</span><span class="chip chip-gray">May</span><span class="chip chip-gray">Apr</span><span class="chip chip-gray">FY 26–27</span></div>
+
+          <div class="txt-xs text-2 semi mb-8" style="letter-spacing:.5px;">MAY 2026</div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div class="row-between"><div class="txt-sm semi">#PORT-48217</div><div class="txt-sm bold text-danger" style="flex-shrink:0;">−₹10,915</div></div>
+                <div class="row-between mt-4"><div class="txt-xs text-2">5% of ₹2,18,300 · 15 May</div><div class="chip chip-gray" style="font-size:9px;">Settled</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div class="row-between"><div class="txt-sm semi">#PORT-48156</div><div class="txt-sm bold text-danger" style="flex-shrink:0;">−₹24,000</div></div>
+                <div class="row-between mt-4"><div class="txt-xs text-2">5% of ₹4,80,000 · 14 May</div><div class="chip chip-gray" style="font-size:9px;">Settled</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-warning-light text-warning" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div class="row-between"><div class="txt-sm semi">#PORT-48512</div><div class="txt-sm bold text-warning" style="flex-shrink:0;">−₹3,505</div></div>
+                <div class="row-between mt-4"><div class="txt-xs text-2">5% of ₹70,100 · 12 May</div><div class="chip chip-warning" style="font-size:9px;">Pending</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt-xs text-2 semi mt-12 mb-8" style="letter-spacing:.5px;">APR 2026</div>
+
+          <div class="card" style="padding:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div class="icon-box bg-danger-light text-danger" style="width:36px;height:36px;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="flex-1" style="min-width:0;">
+                <div class="row-between"><div class="txt-sm semi">#PORT-47862</div><div class="txt-sm bold text-danger" style="flex-shrink:0;">−₹3,505</div></div>
+                <div class="row-between mt-4"><div class="txt-xs text-2">5% of ₹70,100 · 28 Apr</div><div class="chip chip-gray" style="font-size:9px;">Settled</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/assets/tabbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="/assets/download.js"></script>
+</body>
+</html>

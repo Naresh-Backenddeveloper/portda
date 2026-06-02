@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PORTDA Vendor — 05 · Quotations</title>
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<div class="page-header">
+  <div class="logo"><div class="logo-mark">⚓</div><div><h1>Vendor · 05 · Quotations</h1><p>7 screens — build and send quotes to buyers</p></div></div>
+  <a class="back-link" href="/mobile/vendor">← All modules</a>
+</div>
+<div class="module-nav"><a href="/mobile/vendor">Vendor home</a><a href="/mobile/vendor/01-onboarding">01 Onboarding</a><a href="/mobile/vendor/02-auth">02 Auth</a><a href="/mobile/vendor/03-home">03 Dashboard</a><a href="/mobile/vendor/04-rfq-inbox">04 Request Inbox</a><a href="/mobile/vendor/05-quotations">05 Quotations</a><a href="/mobile/vendor/06-chat">06 Chat</a><a href="/mobile/vendor/07-jobs">07 Jobs</a><a href="/mobile/vendor/08-payouts">08 Payouts</a><a href="/mobile/vendor/09-reviews">09 Reviews</a><a href="/mobile/vendor/10-notifications">10 Notifications</a><a href="/mobile/vendor/11-profile">11 Profile</a><a href="/mobile/vendor/12-settings">12 Settings</a></div>
+
+<div class="screens-grid">
+
+  <!-- 5.1 Quote Builder · Step 1 amounts -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.1 Quote Builder · Amount</div>
+    <div class="phone">
+      <div class="screen" data-tab="inbox">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>New Quote</h2><div class="txt-xs text-2 semi">1/4</div></div>
+        <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <div class="screen-body">
+          <div class="card" style="background:var(--bg);border:none;"><div class="row gap-10"><div class="img-ph" style="width:40px;height:40px;border-radius:10px;font-size:11px;">OL</div><div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2">#PORT-48512 · MV Pacific Bridge · JNPT T4</div></div></div></div>
+          <div class="txt-xs text-2 semi mt-16" style="letter-spacing:0.5px;">QUOTE AMOUNT</div>
+          <div class="input-wrap mt-8"><div class="input-label">Subtotal (₹)</div><div class="input-value">1,85,000</div></div>
+          <div class="card" style="background:var(--bg);border:none;">
+            <div class="row-between"><div class="txt-xs">Subtotal</div><div class="txt-xs semi">₹1,85,000</div></div>
+            <div class="row-between mt-4"><div class="txt-xs">GST (18%)</div><div class="txt-xs semi">₹33,300</div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Total</div><div class="txt-md bold text-primary">₹2,18,300</div></div>
+          </div>
+          <div class="txt-xs text-2 semi mt-16" style="letter-spacing:0.5px;">CURRENCY</div>
+          <div class="row gap-6 mt-8"><span class="chip chip-primary">INR (₹)</span><span class="chip chip-gray">USD ($)</span></div>
+          <div class="card mt-16" style="background:var(--bg);border:none;">
+            <div class="txt-xs text-2 semi mb-4">💡 MARKET REFERENCE</div>
+            <div class="txt-xs text-2">Ship Agents jobs at JNPT for this LOA typically settle at ₹1.85–2.4 L. Your quote is competitive.</div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Next: Payment Plan →</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.2 Quote Builder · Step 2 milestones -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.2 Quote Builder · Payment Plan</div>
+    <div class="phone">
+      <div class="screen" data-tab="inbox">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Payment Plan</h2><div class="txt-xs text-2 semi">2/4</div></div>
+        <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+        <div class="screen-body">
+          <div class="tabs"><div class="tab">Standard 20/80</div><div class="tab active">Milestones</div></div>
+          <div class="card mt-12" style="padding:0;">
+            <div style="padding:12px 14px;">
+              <div class="row-between"><div class="row gap-10"><div style="width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">1</div><div><div class="txt-sm semi">Booking advance</div><div class="txt-xs text-2">On approval</div></div></div><div style="text-align:right;"><div class="txt-sm bold">20%</div><div class="txt-xs text-2">₹43,660</div></div></div>
+            </div>
+            <div style="height:1px;background:var(--border-2);margin:0 14px;"></div>
+            <div style="padding:12px 14px;">
+              <div class="row-between"><div class="row gap-10"><div style="width:24px;height:24px;border-radius:50%;background:#fff;border:1.5px solid var(--border);color:var(--text-2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">2</div><div><div class="txt-sm semi">Pre-arrival</div><div class="txt-xs text-2">24 hrs before ETA</div></div></div><div style="text-align:right;"><div class="txt-sm semi">30%</div><div class="txt-xs text-2">₹65,490</div></div></div>
+            </div>
+            <div style="height:1px;background:var(--border-2);margin:0 14px;"></div>
+            <div style="padding:12px 14px;">
+              <div class="row-between"><div class="row gap-10"><div style="width:24px;height:24px;border-radius:50%;background:#fff;border:1.5px solid var(--border);color:var(--text-2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">3</div><div><div class="txt-sm semi">Service complete</div><div class="txt-xs text-2">On job done</div></div></div><div style="text-align:right;"><div class="txt-sm semi">30%</div><div class="txt-xs text-2">₹65,490</div></div></div>
+            </div>
+            <div style="height:1px;background:var(--border-2);margin:0 14px;"></div>
+            <div style="padding:12px 14px;">
+              <div class="row-between"><div class="row gap-10"><div style="width:24px;height:24px;border-radius:50%;background:#fff;border:1.5px solid var(--border);color:var(--text-2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">4</div><div><div class="txt-sm semi">Final settlement</div><div class="txt-xs text-2">Net 7 days</div></div></div><div style="text-align:right;"><div class="txt-sm semi">20%</div><div class="txt-xs text-2">₹43,660</div></div></div>
+            </div>
+            <div style="padding:12px 14px;background:var(--bg);border-top:1px solid var(--border-2);border-radius:0 0 14px 14px;"><div class="row-between"><div class="txt-xs text-2 semi">TOTAL</div><div class="txt-sm bold">₹2,18,300</div></div></div>
+          </div>
+          <button class="btn btn-outline btn-sm mt-12">+ Add milestone</button>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Next: Upload Quote →</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.3 Upload PDF -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.3 Upload PDF Quote</div>
+    <div class="phone">
+      <div class="screen" data-tab="inbox">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Upload Quote PDF</h2><div class="txt-xs text-2 semi">3/4</div></div>
+        <div class="steps" style="padding:0 16px;margin:0 0 12px;"><span class="dot active" style="background:var(--success);"></span><span class="dot active" style="background:var(--success);"></span><span class="dot active"></span><span class="dot"></span></div>
+        <div class="screen-body">
+          <p class="txt-sm text-2">Attach your branded quotation PDF. The buyer will see this when reviewing.</p>
+          <div class="card mt-12">
+            <div class="row gap-12" style="align-items:center;">
+              <div style="width:48px;height:60px;background:linear-gradient(135deg,#FEE2E2,#FECACA);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#B91C1C;font-weight:900;font-size:12px;flex-shrink:0;box-shadow:0 4px 8px rgba(185,28,28,0.12);">PDF</div>
+              <div class="flex-1" style="min-width:0;">
+                <div class="txt-sm semi" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Quote_MM_OceanLink_PORT-48512.pdf</div>
+                <div class="row gap-6 mt-4"><span class="txt-xs text-2">428 KB</span><span class="txt-xs text-3">·</span><span class="txt-xs text-2">3 pages</span><span class="txt-xs text-3">·</span><span class="txt-xs text-success">Uploaded ✓</span></div>
+              </div>
+              <div class="text-2">✕</div>
+            </div>
+          </div>
+          <div class="card" style="border:2px dashed var(--border);text-align:center;padding:24px;">
+            <div class="icon-box bg-primary-light text-primary" style="width:48px;height:48px;font-size:20px;margin:0 auto 8px;">↑</div>
+            <div class="txt-sm semi">Replace or add another</div>
+            <div class="txt-xs text-2 mt-4">PDF, max 10 MB</div>
+          </div>
+          <div class="card mt-16" style="background:var(--bg);border:none;">
+            <div class="txt-xs text-2 semi mb-4">💡 TIPS</div>
+            <div class="txt-xs text-2" style="line-height:1.6;">• Include your company letterhead<br/>• Itemize scope clearly<br/>• Add validity period and signature</div>
+          </div>
+        </div>
+        <div class="bottom-cta"><button class="btn btn-primary">Next: Review →</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.4 Review & Send -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.4 Review &amp; Send</div>
+    <div class="phone">
+      <div class="screen" data-tab="inbox">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Review Quote</h2><div class="txt-xs text-2 semi">4/4</div></div>
+        <div class="screen-body">
+          <div class="card hero-gradient" style="border:none;">
+            <div class="txt-xs semi" style="opacity:.85;letter-spacing:1px;">TOTAL</div>
+            <div class="txt-3xl bold mt-4">₹2,18,300</div>
+            <div class="txt-xs mt-4" style="opacity:.85;">Quote to OceanLink Shipping</div>
+          </div>
+          <div class="card mt-12">
+            <div class="row-between"><div class="txt-xs text-2 semi">Request</div><div class="txt-xs text-primary semi">Edit</div></div>
+            <div class="txt-sm semi mt-4">#PORT-48512 · MV Pacific Bridge</div>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2 semi">PAYMENT PLAN</div><div class="txt-xs text-primary semi">Edit</div></div>
+            <div class="txt-sm semi mt-4">Milestones (4 stages)</div>
+          </div>
+          <div class="card">
+            <div class="row-between"><div class="txt-xs text-2 semi">QUOTE PDF</div><div class="txt-xs text-primary semi">Edit</div></div>
+            <div class="row gap-8 mt-8"><div style="width:32px;height:40px;background:#FEE2E2;border-radius:6px;color:#B91C1C;font-weight:900;font-size:9px;display:flex;align-items:center;justify-content:center;">PDF</div><div class="txt-xs semi">Quote_MM_OceanLink.pdf</div></div>
+          </div>
+          <div class="input-wrap mt-12" style="min-height:70px;"><div class="input-label">Message to buyer (optional)</div><div class="input-value" style="line-height:1.5;">Thanks for the opportunity. We can confirm pilot &amp; tug allocation immediately upon approval.</div></div>
+          <div class="card" style="background:#FFFBEB;border:1px solid #FDE68A;"><div class="row gap-10"><div class="text-warning">⚠</div><div class="txt-xs text-2">Quote valid for 24 hours. Buyer is reviewing 3 other quotes.</div></div></div>
+        </div>
+        <div class="bottom-cta" style="display:flex;gap:8px;"><button class="btn btn-outline flex-1">Save Draft</button><button class="btn btn-primary flex-1">Submit for Review</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.5 Sent confirmation -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.5 Pending Admin Review</div>
+    <div class="phone">
+      <div class="screen" data-tab="none">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;gap:14px;">
+          <div class="icon-box" style="background:linear-gradient(135deg,#8B5CF6,#8B5CF6);color:#fff;width:96px;height:96px;border-radius:24px;box-shadow:0 10px 30px rgba(124,58,237,.3);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h2 class="txt-2xl bold">Submitted for review</h2>
+          <p class="txt-md text-2" style="line-height:1.5;">Your quote of <span class="bold text">₹2,18,300</span> is with PORTDA for review. It will be released to OceanLink Shipping once approved.</p>
+          <div class="card full" style="text-align:left;">
+            <div class="row-between"><div class="txt-xs text-2">Quote ID</div><div class="txt-xs semi">Q-MM-2026-0482</div></div>
+            <div class="row-between mt-8"><div class="txt-xs text-2">Submitted</div><div class="txt-xs semi">just now</div></div>
+            <div class="row-between mt-8"><div class="txt-xs text-2">Est. review time</div><div class="txt-xs semi">~18 min</div></div>
+          </div>
+          <div class="card full" style="background:rgba(124,58,237,.08);border:none;text-align:left;">
+            <div class="txt-xs semi" style="color:#8B5CF6;">⏱ NEXT STEPS</div>
+            <div class="txt-xs text-2 mt-4" style="line-height:1.5;">PORTDA checks every quote for completeness, pricing sanity and policy compliance. You'll be notified when approved &amp; released, or if revisions are needed.</div>
+          </div>
+        </div>
+        <div class="bottom-cta" style="display:flex;flex-direction:column;gap:8px;">
+          <button class="btn btn-primary">View Request</button>
+          <button class="btn btn-ghost">Back to Inbox</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.6 Negotiation incoming -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.6 Counter Offer Received</div>
+    <div class="phone">
+      <div class="screen" data-tab="inbox">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div class="topbar"><div class="icon-btn"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div><h2>Counter Offer</h2><div style="width:36px"></div></div>
+        <div class="screen-body">
+          <div class="card" style="display:flex;align-items:center;gap:12px;">
+            <div class="img-ph" style="width:40px;height:40px;border-radius:10px;font-size:11px;">OL</div>
+            <div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2">Asking for a price reduction</div></div>
+          </div>
+          <div class="grid-2 mt-12">
+            <div class="card center" style="background:var(--bg);border:none;"><div class="txt-xs text-2">YOUR QUOTE</div><div class="txt-md bold mt-4">₹1,85,000</div></div>
+            <div class="card center" style="background:var(--primary-light);border:1.5px solid var(--primary);"><div class="txt-xs text-primary semi">THEIR OFFER</div><div class="txt-md bold text-primary mt-4">₹1,65,000</div></div>
+          </div>
+          <div class="card mt-12" style="background:#FEF2F2;border:1px solid #FECACA;">
+            <div class="row gap-10"><div class="text-danger">↓</div><div><div class="txt-xs semi text-danger">11% lower</div><div class="txt-xs text-2 mt-4">Difference of ₹20,000</div></div></div>
+          </div>
+          <div class="card mt-12">
+            <div class="txt-xs text-2 semi mb-8">BUYER MESSAGE</div>
+            <div class="txt-sm" style="line-height:1.5;">Hi, we typically pay around ₹1.6–1.7L for this LOA on our annual contract. Can you do ₹1.65L with same scope? Repeat business expected.</div>
+          </div>
+          <div class="semi txt-md mt-16 mb-8">Your response</div>
+          <div class="row gap-6"><span class="chip chip-primary">Accept</span><span class="chip chip-gray">Counter</span><span class="chip chip-gray">Decline</span></div>
+        </div>
+        <div class="bottom-cta" style="display:flex;gap:8px;">
+          <button class="btn btn-outline flex-1">Counter</button>
+          <button class="btn btn-primary flex-1">Accept ₹1,65,000</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.7 Quote approved -->
+  <div class="screen-wrap">
+    <div class="screen-label">5.7 Quote Approved</div>
+    <div class="phone">
+      <div class="screen" data-tab="none">
+        <div class="status-bar"><span class="time">9:41</span><span class="icons"><svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 0C4.6 0 2 1 0 2.7l1.2 1.4C2.8 2.8 5.1 1.9 7.5 1.9s4.7.9 6.3 2.2L15 2.7C13 1 10.4 0 7.5 0z"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="1.8" fill="currentColor"/><rect x="22.5" y="4" width="1.5" height="4" rx="0.6" fill="currentColor" fill-opacity="0.4"/></svg></span></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;gap:14px;">
+          <div class="icon-box" style="background:linear-gradient(135deg,#8B5CF6,#10B981);color:#fff;width:96px;height:96px;border-radius:24px;box-shadow:0 10px 30px rgba(124,58,237,.3);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h2 class="txt-2xl bold">Quote approved!</h2>
+          <p class="txt-md text-2" style="line-height:1.5;">OceanLink Shipping just approved your quote. Get ready to deliver.</p>
+          <div class="card full" style="text-align:left;">
+            <div class="row gap-10"><div class="img-ph" style="width:40px;height:40px;border-radius:10px;font-size:11px;">OL</div><div class="flex-1"><div class="txt-sm semi">OceanLink Shipping</div><div class="txt-xs text-2">#PORT-48512 · MV Pacific Bridge</div></div></div>
+            <div class="divider"></div>
+            <div class="row-between"><div class="txt-sm bold">Order value</div><div class="txt-md bold text-success">₹2,18,300</div></div>
+          </div>
+          <div class="card full" style="background:var(--primary-light);border:none;text-align:left;">
+            <div class="txt-xs text-primary semi">⚡ ADVANCE RECEIVED</div>
+            <div class="txt-sm mt-4">₹43,660 has been transferred to your wallet</div>
+          </div>
+        </div>
+        <div class="bottom-cta" style="display:flex;flex-direction:column;gap:8px;">
+          <button class="btn btn-primary">View Job Details</button>
+          <button class="btn btn-ghost">Message Buyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/assets/tabbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="/assets/download.js"></script>
+</body>
+</html>

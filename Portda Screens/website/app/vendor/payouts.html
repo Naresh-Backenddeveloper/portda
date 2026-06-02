@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Payouts &amp; Billing · PORTDA Vendor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-head"><div class="sidebar-logo">⚓</div><div><div class="sidebar-name">PORTDA</div><div class="sidebar-role">Vendor</div></div></div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section">Operate</div>
+      <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg><span>Dashboard</span></a>
+      <a class="nav-item" href="inbox.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg><span>Request Inbox</span><span class="nav-badge">7</span></a>
+      <a class="nav-item" href="quotations.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Quotations</span></a>
+      <a class="nav-item" href="orders.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Orders</span><span class="nav-badge gray">5</span></a>
+      <a class="nav-item" href="chat.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span>Chat</span><span class="nav-badge">2</span></a>
+      <div class="sidebar-section">Finance</div>
+      <a class="nav-item active" href="payouts.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>Payouts</span></a>
+      <a class="nav-item" href="billing.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/></svg><span>Plan &amp; Billing</span></a>
+      <div class="sidebar-section">Business</div>
+      <a class="nav-item" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Company Profile</span></a>
+      <a class="nav-item" href="reviews.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>Reviews</span></a>
+    </nav>
+    <div class="sidebar-foot"><a class="user-chip" href="profile.html"><div class="avatar">MM</div><div style="min-width:0;"><div class="name">Mumbai Marine</div><div class="role">★ 4.9 · Pro</div></div></a><a class="logout-btn" href="../login.html" title="Sign out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></a></div>
+  </aside>
+
+  <header class="topbar">
+    <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search transactions…" /></div>
+    <div class="topbar-actions"><a class="icon-btn" href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="dot"></span></a><a class="topbar-avatar" href="profile.html">MM</a></div>
+  </header>
+
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Payouts &amp; Billing</h1><p>Wallet, transactions, plan management. Withdraw to bank via IMPS.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Export</button><button class="btn btn-primary">Withdraw</button></div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card" style="background:linear-gradient(135deg,#000000,#4F46E5);color:#fff;border:none;">
+        <div style="font-size:12px;opacity:.85;letter-spacing:1px;">WALLET BALANCE</div>
+        <div style="font-size:42px;font-weight:900;letter-spacing:-1px;margin:8px 0;">₹4,87,820</div>
+        <div style="display:flex;gap:24px;margin-top:14px;">
+          <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;">PENDING</div><div style="font-size:16px;font-weight:800;">₹1,80,000</div></div>
+          <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;">SETTLED</div><div style="font-size:16px;font-weight:800;">₹3,07,820</div></div>
+          <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;">BANK</div><div style="font-size:14px;font-weight:600;opacity:.9;">HDFC •••• 8924</div></div>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:8px;">
+          <button class="btn btn-block" style="background:#fff;color:var(--primary);">Withdraw to Bank</button>
+          <button class="btn btn-block" style="background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.2);">View Statement</button>
+        </div>
+      </div>
+
+      <div class="card" id="plan" style="border:1.5px solid var(--primary);">
+        <div class="row-between mb-12"><h3 style="font-size:15px;font-weight:700;margin:0;">Current plan</h3><span class="chip chip-primary">Pro · Quarterly</span></div>
+        <div style="display:flex;gap:6px;align-items:baseline;"><div style="font-size:32px;font-weight:900;">₹12,999</div><div class="muted">/ quarter</div></div>
+        <div class="muted" style="font-size:13px;margin-top:4px;">0% commission · 200 leads/mo · Premium leads unlocked</div>
+        <div class="divider"></div>
+        <div class="row-between" style="font-size:13px;"><span class="muted">Used this month</span><span><strong>87</strong> / 200 leads</span></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;margin-top:6px;"><div style="background:var(--primary);height:100%;width:43%;"></div></div>
+        <div class="row-between" style="font-size:13px;margin-top:10px;"><span class="muted">Auto-renews</span><span>15 Aug 2026</span></div>
+        <div style="display:flex;gap:8px;margin-top:16px;">
+          <a class="btn btn-outline btn-block" href="billing.html">Change plan</a>
+          <a class="btn btn-ghost btn-block" href="billing.html">Switch to Commission</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">All transactions</a>
+      <a href="#">Received</a>
+      <a href="#">Withdrawals</a>
+      <a href="#">Commission</a>
+      <a href="#">Subscription</a>
+    </div>
+
+    <div class="table-wrap mb-20">
+      <table class="t">
+        <thead><tr><th>Date</th><th>Description</th><th>Reference</th><th>Type</th><th>Amount</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>15 May, 15:42</td><td><strong>OceanLink Shipping</strong><div class="muted" style="font-size:12px;">Final payment</div></td><td>#PORT-48217</td><td><span class="chip chip-primary">In</span></td><td class="t-amount" style="color:var(--success);">+₹1,74,640</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>15 May, 16:14</td><td><strong>Withdrawal · HDFC •••• 8924</strong><div class="muted" style="font-size:12px;">IMPS</div></td><td>WD-TXN-9382</td><td><span class="chip chip-gray">Out</span></td><td class="t-amount">−₹2,47,385</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>15 May, 15:42</td><td><strong>Platform commission (5%)</strong><div class="muted" style="font-size:12px;">On ₹2,18,300</div></td><td>#PORT-48217</td><td><span class="chip chip-danger">Fee</span></td><td class="t-amount" style="color:var(--danger);">−₹10,915</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>14 May, 10:14</td><td><strong>OceanLink Shipping</strong><div class="muted" style="font-size:12px;">Advance 20%</div></td><td>#PORT-48217</td><td><span class="chip chip-primary">In</span></td><td class="t-amount" style="color:var(--success);">+₹43,660</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>14 May, 09:00</td><td><strong>Saffron Fleet · Final</strong><div class="muted" style="font-size:12px;">Multi Modal Transport job complete</div></td><td>#PORT-48156</td><td><span class="chip chip-primary">In</span></td><td class="t-amount" style="color:var(--success);">+₹3,84,000</td><td><span class="chip chip-warning">Pending</span></td></tr>
+          <tr><td>10 May, 14:12</td><td><strong>Mariner Shipping</strong><div class="muted" style="font-size:12px;">Ship Agents closed</div></td><td>#PORT-47862</td><td><span class="chip chip-primary">In</span></td><td class="t-amount" style="color:var(--success);">+₹2,07,385</td><td><span class="chip chip-success">Settled</span></td></tr>
+          <tr><td>09 May, 09:00</td><td><strong>Subscription · Pro Q1</strong><div class="muted" style="font-size:12px;">15 Feb – 15 May</div></td><td>SUB-12-Q1</td><td><span class="chip chip-gray">Plan</span></td><td class="t-amount" style="color:var(--danger);">−₹12,999</td><td><span class="chip chip-success">Paid</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" style="text-align:center;">
+        <div class="muted" style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;">Commission paid this FY</div>
+        <div style="font-size:28px;font-weight:900;color:var(--danger);margin-top:6px;">₹2.4 L</div>
+        <div class="muted" style="font-size:12px;">@5% across 18 confirmed orders</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="muted" style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;">Subscription paid this FY</div>
+        <div style="font-size:28px;font-weight:900;">₹38,997</div>
+        <div class="muted" style="font-size:12px;">Pro plan · 3 quarters</div>
+      </div>
+      <div class="card" style="text-align:center;background:linear-gradient(135deg,#FFFBEB,#fff);border:1.5px solid #FDE68A;">
+        <div class="muted" style="font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:#92400E;">Saved on Pro</div>
+        <div style="font-size:28px;font-weight:900;color:#92400E;margin-top:6px;">₹2.0 L</div>
+        <div class="muted" style="font-size:12px;color:#92400E;">vs Commission on same volume</div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

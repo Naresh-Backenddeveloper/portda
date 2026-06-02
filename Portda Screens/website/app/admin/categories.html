@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Categories · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Service Catalog</h1><p>Manage service categories &amp; sub-services that vendors offer and buyers post for.</p></div>
+      <div class="page-actions"><button class="btn btn-outline">Reorder</button><a class="btn btn-primary" href="category-new.html">+ Add category</a></div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Categories</div><div class="kpi-value">10</div></div>
+      <div class="kpi"><div class="kpi-label">Sub-services</div><div class="kpi-value">54</div></div>
+      <div class="kpi"><div class="kpi-label">Most quoted</div><div class="kpi-value">Ship Agents</div><div class="kpi-delta">28% of requests</div></div>
+      <div class="kpi"><div class="kpi-label">Coverage gap</div><div class="kpi-value">Legal / Lawyers</div><div class="kpi-delta down">only 6 vendors</div></div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--primary-light);color:var(--primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🚢</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Ship Agents</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">4 sub-services · 318 vendors offering · 28% of total requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Port agency · 318</span><span class="chip chip-gray">Husbandry · 264</span><span class="chip chip-gray">Crew change support · 198</span><span class="chip chip-gray">Transit agency · 142</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--success-light);color:var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">📦</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Stevedores / Cargo Handling</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · 198 vendors · 16% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Stevedoring · 198</span><span class="chip chip-gray">Lashing · 142</span><span class="chip chip-gray">Tally · 96</span><span class="chip chip-gray">Surveying · 64</span><span class="chip chip-gray">Tank cleaning · 28</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--primary-light);color:var(--primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚓</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Ship Management</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">4 sub-services · 142 vendors · 11% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Technical mgmt · 142</span><span class="chip chip-gray">Crew mgmt · 116</span><span class="chip chip-gray">Commercial mgmt · 78</span><span class="chip chip-gray">Safety / ISM · 92</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--warning-light);color:var(--warning);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🔧</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Ship Repairs</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">6 sub-services · 124 vendors · 10% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Hull · 124</span><span class="chip chip-gray">Engine · 96</span><span class="chip chip-gray">Electrical · 88</span><span class="chip chip-gray">Hydraulics · 54</span><span class="chip chip-gray">Welding · 72</span><span class="chip chip-gray">Painting · 48</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--accent-light);color:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🛒</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Ship Chandlers</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · 186 vendors · 9% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Provisions · 186</span><span class="chip chip-gray">Bonded stores · 142</span><span class="chip chip-gray">Deck / engine stores · 124</span><span class="chip chip-gray">Safety stores · 98</span><span class="chip chip-gray">Spare parts · 76</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--accent-light);color:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⛽</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Bunkering</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">6 fuel types · 218 vendors · 12% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">VLSFO · 198</span><span class="chip chip-gray">HSFO · 154</span><span class="chip chip-gray">MGO · 218</span><span class="chip chip-gray">LSMGO · 142</span><span class="chip chip-gray">LNG · 14</span><span class="chip chip-gray">Lubes · 96</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--success-light);color:var(--success);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🚛</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Multi Modal Transportation</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · 96 vendors · 7% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Container haulage · 96</span><span class="chip chip-gray">Project cargo · 48</span><span class="chip chip-gray">ODC · 32</span><span class="chip chip-gray">Rail freight · 38</span><span class="chip chip-gray">Coastal feeder · 28</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--warning-light);color:var(--warning);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🏭</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Storage / Warehousing</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · 84 vendors · 5% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">CFS · 84</span><span class="chip chip-gray">Bonded warehouse · 62</span><span class="chip chip-gray">Cold storage · 28</span><span class="chip chip-gray">Open yard · 54</span><span class="chip chip-gray">Container yard · 48</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card mb-12">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:#FCE7F3;color:#BE185D;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚖</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Legal / Lawyers</strong><span class="chip chip-warning">Coverage gap</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · only <strong style="color:var(--danger);">6 vendors</strong> · recruit more</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Charter party disputes</span><span class="chip chip-gray">P&amp;I claims</span><span class="chip chip-gray">Detention</span><span class="chip chip-gray">Customs</span><span class="chip chip-gray">Arbitration</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="gap:14px;align-items:center;">
+        <div style="width:48px;height:48px;background:var(--bg-2);color:var(--text-2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🛡</div>
+        <div class="flex-1">
+          <div class="row-between"><strong style="font-size:16px;">Insurance</strong><span class="chip chip-success">Live</span></div>
+          <div class="muted" style="font-size:13px;">5 sub-services · 42 vendors · 2% of requests</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;"><span class="chip chip-gray">Hull &amp; Machinery</span><span class="chip chip-gray">P&amp;I</span><span class="chip chip-gray">Cargo insurance</span><span class="chip chip-gray">War risk</span><span class="chip chip-gray">Freight insurance</span></div>
+        </div>
+        <div class="row" style="gap:6px;"><a class="btn btn-sm btn-outline" href="subservice-new.html">+ Sub-service</a><a class="btn btn-sm btn-ghost" href="category-detail.html">Open</a></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('categories');</script>
+</body>
+</html>

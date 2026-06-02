@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OceanLink · Buyer · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title">
+        <div class="muted" style="font-size:12px;letter-spacing:.5px;margin-bottom:4px;"><a href="users.html" style="color:var(--text-2);">Buyers</a> / <strong style="color:var(--text);">OceanLink Shipping Pvt Ltd</strong></div>
+        <h1>OceanLink Shipping Pvt Ltd</h1>
+        <p>BYR-0142 · Ship-agent · joined Apr 2024 · Mumbai HQ</p>
+      </div>
+      <div class="page-actions"><button class="btn btn-outline">Message</button><button class="btn btn-outline" style="color:var(--danger);">Suspend</button><button class="btn btn-primary">Edit profile</button></div>
+    </div>
+
+    <div class="card mb-20" style="background:linear-gradient(135deg,#000000,#F59E0B);color:#fff;border:none;padding:24px;">
+      <div class="row" style="gap:20px;align-items:center;">
+        <div style="width:72px;height:72px;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.25);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;flex-shrink:0;">OL</div>
+        <div class="flex-1">
+          <div style="font-size:22px;font-weight:800;">OceanLink Shipping Pvt Ltd</div>
+          <div style="font-size:13px;opacity:.85;margin-top:2px;">Capt. Rajesh Kapoor · Operations Director · ops@oceanlink.in</div>
+          <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px;">
+            <span class="chip" style="background:rgba(255,255,255,.18);color:#fff;">✓ KYC Verified</span>
+            <span class="chip" style="background:rgba(255,255,255,.18);color:#fff;">FFFAI Member</span>
+            <span class="chip" style="background:rgba(255,255,255,.18);color:#fff;">14 vessels managed</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.15);margin-top:18px;">
+        <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;font-weight:600;">FY SPEND</div><div style="font-size:20px;font-weight:800;margin-top:2px;">₹3.8 Cr</div></div>
+        <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;font-weight:600;">ORDERS · LIFETIME</div><div style="font-size:20px;font-weight:800;margin-top:2px;">82</div></div>
+        <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;font-weight:600;">PORTS OF CALL</div><div style="font-size:20px;font-weight:800;margin-top:2px;">9</div></div>
+        <div><div style="font-size:11px;opacity:.7;letter-spacing:.5px;font-weight:600;">RATING GIVEN</div><div style="font-size:20px;font-weight:800;margin-top:2px;">★ 4.8</div></div>
+      </div>
+    </div>
+
+    <div class="tab-strip">
+      <a href="#" class="active">Overview</a><a href="#">Vessels</a><a href="#">Orders</a><a href="#">Quotes</a><a href="#">Payments</a><a href="#">Team</a><a href="#">Disputes</a><a href="#">Internal notes</a>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Company info</h3></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);font-size:13px;"><span class="muted">Entity</span><strong>Private Limited</strong></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);font-size:13px;"><span class="muted">CIN</span><span>U63090MH1998PTC112233</span></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);font-size:13px;"><span class="muted">GSTIN</span><span>27ABCDF1234G1Z9</span></div>
+        <div class="row-between" style="padding:8px 0;border-bottom:1px solid var(--border-2);font-size:13px;"><span class="muted">Phone</span><span>+91 22 4567 8900</span></div>
+        <div class="row-between" style="padding:8px 0;font-size:13px;"><span class="muted">HQ</span><span>Nariman Point, Mumbai</span></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Spend by category (12m)</h3></div>
+        <div class="row-between mb-12"><span>Ship Agents</span><strong>₹1.4 Cr · 37%</strong></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;margin-bottom:12px;"><div style="background:var(--primary);height:100%;width:37%;"></div></div>
+        <div class="row-between mb-12"><span>Bunkering</span><strong>₹98 L · 26%</strong></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;margin-bottom:12px;"><div style="background:var(--accent);height:100%;width:26%;"></div></div>
+        <div class="row-between mb-12"><span>Multi Modal Transport</span><strong>₹68 L · 18%</strong></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;margin-bottom:12px;"><div style="background:var(--success);height:100%;width:18%;"></div></div>
+        <div class="row-between mb-12"><span>Ship Management</span><strong>₹42 L · 11%</strong></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;margin-bottom:12px;"><div style="background:var(--warning);height:100%;width:11%;"></div></div>
+        <div class="row-between mb-12"><span>Other</span><strong>₹30 L · 8%</strong></div>
+        <div style="background:var(--bg);height:6px;border-radius:3px;overflow:hidden;"><div style="background:var(--admin-purple);height:100%;width:8%;"></div></div>
+      </div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Vessels under management</h3><a class="link" href="#">All 14 →</a></div>
+        <table class="t t-compact"><thead><tr><th>Vessel</th><th>IMO</th><th>Type · DWT</th><th>Status</th></tr></thead><tbody>
+          <tr><td><strong>MV Pacific Bridge</strong></td><td>9876543</td><td>Container · 81,200 t</td><td><span class="chip chip-warning">Berthing JNPT</span></td></tr>
+          <tr><td><strong>MV Star Voyager</strong></td><td>9543210</td><td>Container · 68,500 t</td><td><span class="chip chip-primary">Inbound JNPT</span></td></tr>
+          <tr><td><strong>MV Coastal Wind</strong></td><td>9234567</td><td>Tanker MR2 · 49,800 t</td><td><span class="chip chip-warning">Mundra OPL</span></td></tr>
+          <tr><td><strong>MV Eastern Horizon</strong></td><td>9123456</td><td>Bulker · 58k t</td><td><span class="chip chip-primary">Inbound Hazira</span></td></tr>
+        </tbody></table>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Team (4 users)</h3><button class="btn btn-sm btn-outline">+ Invite</button></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;">RK</div><div class="activity-body"><div class="activity-title">Capt. Rajesh Kapoor <time>Owner</time></div><div class="activity-sub">All access · Mumbai HQ</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;">SP</div><div class="activity-body"><div class="activity-title">Sunil Patel <time>Approver ≥ ₹5L</time></div><div class="activity-sub">Finance Lead</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:50%;background:var(--success);color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;">AN</div><div class="activity-body"><div class="activity-title">Anjali Nair <time>Operator</time></div><div class="activity-sub">Port Ops · &lt;₹5L approval</div></div></div>
+        <div class="activity-item"><div class="avatar" style="width:36px;height:36px;border-radius:50%;background:#BE185D;color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;">VS</div><div class="activity-body"><div class="activity-title">Vivek Sharma <time>Read-only</time></div><div class="activity-sub">Audit · reports</div></div></div>
+      </div>
+    </div>
+
+    <div class="table-wrap mb-20">
+      <div class="table-head"><h3>Recent orders</h3></div>
+      <table class="t t-compact">
+        <thead><tr><th>Order #</th><th>Vendor</th><th>Service · Port</th><th>Value</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td>#PORT-48217</td><td>Mumbai Marine</td><td>Ship Agents · JNPT</td><td>₹2,18,300</td><td><span class="chip chip-warning">In Progress</span></td><td>15 May</td></tr>
+          <tr><td>#PORT-48156</td><td>Coastal Bunkers</td><td>Bunkering · JNPT</td><td>₹4,80,000</td><td><span class="chip chip-primary">Scheduled</span></td><td>14 May</td></tr>
+          <tr><td>#PORT-48092</td><td>Port Stevedoring</td><td>Cargo · Mundra</td><td>USD 9,450</td><td><span class="chip chip-warning">Awaiting</span></td><td>12 May</td></tr>
+          <tr><td>#PORT-47862</td><td>Mumbai Marine</td><td>Ship Agents · JNPT</td><td>₹2,07,385</td><td><span class="chip chip-success">Completed</span></td><td>06 May</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>Internal notes</h3><button class="btn btn-sm btn-outline">+ Add note</button></div>
+      <div class="activity-item"><div class="activity-icon" style="background:var(--admin-purple-light);color:var(--admin-purple);">RM</div><div class="activity-body"><div class="activity-title">Rohit Mehta · Support <time>10 May</time></div><div class="activity-sub">Resolved billing discrepancy (DSP-2404) · ₹8K refunded · buyer satisfied.</div></div></div>
+      <div class="activity-item"><div class="activity-icon" style="background:var(--admin-purple-light);color:var(--admin-purple);">AS</div><div class="activity-body"><div class="activity-title">Aanya Sharma · Super Admin <time>02 Apr</time></div><div class="activity-sub">Verified GST + IEC for FY 26–27 · auto-claim ITC enabled.</div></div></div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('users');</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+
+class OtpMail extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public function __construct(
+        public string $code,
+        public string $purpose = 'login',
+    ) {}
+
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: match ($this->purpose) {
+                'register' => 'Your PORTDA verification code',
+                'reset'    => 'Reset your PORTDA password',
+                'verify'   => 'Confirm your email — PORTDA',
+                default    => 'Your PORTDA login code',
+            },
+        );
+    }
+
+    public function content(): Content
+    {
+        return new Content(
+            view: 'emails.otp',
+            with: [
+                'code'    => $this->code,
+                'purpose' => $this->purpose,
+            ],
+        );
+    }
+}

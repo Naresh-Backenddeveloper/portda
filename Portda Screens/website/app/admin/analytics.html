@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Analytics · PORTDA Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+<div class="app-shell admin">
+  <div id="admin-shell"></div>
+  <main class="main">
+    <div class="page-header">
+      <div class="page-title"><h1>Analytics &amp; Reports</h1><p>Deep dive on GMV, take-rate, cohorts, retention, port-level performance.</p></div>
+      <div class="page-actions">
+        <select class="form-select" style="width:auto;"><option>Last 30 days</option><option>This FY</option><option>Last quarter</option><option>YTD</option><option>Custom range…</option></select>
+        <button class="btn btn-outline">Export PDF</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">GMV (30d)</div><div class="kpi-value">₹6.2 Cr</div><div class="kpi-delta up">▲ 14% vs prior</div></div>
+      <div class="kpi"><div class="kpi-label">Take-rate (blended)</div><div class="kpi-value">6.2%</div><div class="kpi-delta up">subscription mix improving</div></div>
+      <div class="kpi"><div class="kpi-label">Order volume</div><div class="kpi-value">1,924</div><div class="kpi-delta up">▲ 11%</div></div>
+      <div class="kpi"><div class="kpi-label">New vendors / mo</div><div class="kpi-value">38</div><div class="kpi-delta up">~1 / day</div></div>
+    </div>
+
+    <div class="grid-2 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>GMV · 12-month trend</h3></div>
+        <div style="display:flex;align-items:flex-end;gap:8px;height:180px;margin-top:8px;">
+          <div style="flex:1;background:var(--admin-purple-light);height:30%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:38%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:42%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:48%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:55%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:50%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:62%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple-light);height:68%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:75%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:82%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:90%;border-radius:6px;"></div>
+          <div style="flex:1;background:var(--admin-purple);height:95%;border-radius:6px;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text-3);margin-top:6px;"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Revenue mix (FY 26–27)</h3></div>
+        <div class="row-between mb-12"><span>Subscription</span><strong>₹22.8 L · 59%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--admin-purple);height:100%;width:59%;"></div></div>
+        <div class="row-between mb-12"><span>Commission</span><strong>₹14.2 L · 37%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;margin-bottom:14px;"><div style="background:var(--accent);height:100%;width:37%;"></div></div>
+        <div class="row-between mb-12"><span>Premium-lead unlocks</span><strong>₹1.4 L · 4%</strong></div>
+        <div style="background:var(--bg);height:8px;border-radius:4px;overflow:hidden;"><div style="background:var(--success);height:100%;width:4%;"></div></div>
+      </div>
+    </div>
+
+    <div class="grid-3 mb-20">
+      <div class="card">
+        <div class="card-head"><h3>Port performance · MTD</h3></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span>JNPT</span><strong>₹2.4 Cr</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span>Mundra</span><strong>₹1.6 Cr</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span>Mumbai Port</span><strong>₹1.2 Cr</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span>Cochin</span><strong>₹84 L</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;"><span>Chennai</span><strong>₹72 L</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Vendor cohort retention</h3></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">M1 → M3</span><strong>91%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">M1 → M6</span><strong>82%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">M1 → M12</span><strong>71%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;"><span class="muted">Avg LTV / vendor</span><strong>₹2.4 L</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Service-level metrics</h3></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Median quote time</span><strong>26 min</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">Request-to-award rate</span><strong>79.5%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;border-bottom:1px solid var(--border-2);"><span class="muted">On-time delivery</span><strong>96.2%</strong></div>
+        <div class="row-between" style="font-size:13px;padding:6px 0;"><span class="muted">Dispute rate</span><strong>0.34%</strong></div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-head"><h3>Saved reports</h3><button class="btn btn-sm btn-outline">+ New report</button></div>
+      <table class="t t-compact">
+        <thead><tr><th>Report</th><th>Owner</th><th>Schedule</th><th>Last run</th><th>Format</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Weekly executive summary</strong></td><td>Aanya Sharma</td><td>Mondays 09:00</td><td>13 May</td><td>PDF + email</td><td><button class="btn btn-sm btn-outline">Run</button></td></tr>
+          <tr><td><strong>FY GST · GSTR-2A reconciliation</strong></td><td>Neha Singh</td><td>Monthly · 1st</td><td>01 May</td><td>CSV</td><td><button class="btn btn-sm btn-outline">Run</button></td></tr>
+          <tr><td><strong>Port-wise GMV breakdown</strong></td><td>Vikram Kapoor</td><td>Manual</td><td>10 May</td><td>XLS</td><td><button class="btn btn-sm btn-outline">Run</button></td></tr>
+          <tr><td><strong>Cohort retention (vendors)</strong></td><td>Aanya Sharma</td><td>Quarterly</td><td>01 Apr</td><td>PDF</td><td><button class="btn btn-sm btn-outline">Run</button></td></tr>
+          <tr><td><strong>KYC TAT &amp; SLA breaches</strong></td><td>Priya Goenka</td><td>Weekly · Fri</td><td>10 May</td><td>CSV + email</td><td><button class="btn btn-sm btn-outline">Run</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+<script>AdminShell.mount('analytics');</script>
+</body>
+</html>

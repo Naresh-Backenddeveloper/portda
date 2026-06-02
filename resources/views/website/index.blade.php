@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PORTDA — The World's First Marine Services Marketplace</title>
+<meta name="description" content="PORTDA connects shipping companies with verified marine service vendors across leading global ports." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">⚓</span>
+      <span class="logo-text">PORTDA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-vendors">For Vendors</a>
+      <a href="/for-buyers">For Buyers</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="/login" class="btn btn-ghost">Sign in</a>
+      <a href="/signup" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Live across 14 global ports
+      </div>
+      <h1>The world's first marketplace for <span class="text-gradient">port &amp; marine services</span></h1>
+      <p class="lede">Ship agents post requests for pilotage, towage, bunkering and more. Verified vendors send instant quotes. Settle in INR or USD — in hours, not weeks.</p>
+      <div class="hero-ctas">
+        <a href="/signup" class="btn btn-primary btn-lg">Register as Vendor</a>
+        <a href="/login" class="btn btn-outline btn-lg">Open the app →</a>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><strong>1,200+</strong><span>Verified vendors</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><strong>14</strong><span>Global ports live</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><strong>₹42 Cr</strong><span>Settled this FY</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mock">
+        <div class="phone-island"></div>
+        <div class="phone-screen">
+          <div class="screen-status">9:41</div>
+          <div class="screen-topbar">Request Inbox</div>
+          <div class="screen-card glow">
+            <div class="screen-row"><span class="screen-tag">#PORT-48512</span><span class="screen-warn">⏱ 28m</span></div>
+            <div class="screen-title">OceanLink Shipping</div>
+            <div class="screen-sub">MV Pacific Bridge · JNPT</div>
+            <div class="screen-amount">₹1.5 L – ₹2.5 L</div>
+            <div class="screen-actions"><span class="screen-btn ghost">Decline</span><span class="screen-btn primary">Send Quote</span></div>
+          </div>
+          <div class="screen-card">
+            <div class="screen-row"><span class="screen-tag">#PORT-48510</span><span class="screen-time">2h</span></div>
+            <div class="screen-title">Saffron Fleet Mgmt</div>
+            <div class="screen-sub">MV Star Voyager · 18 May</div>
+          </div>
+          <div class="screen-card premium">
+            <div class="premium-ribbon">★ BEST LEAD</div>
+            <div class="screen-row" style="margin-top:18px;"><span class="screen-tag">#PORT-48503</span><span class="screen-time">12h</span></div>
+            <div class="screen-blur">
+              <div class="screen-title">Bharat Shipping Ltd</div>
+              <div class="screen-amount">₹1.8 L – ₹2.4 L</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floater floater-1">
+        <div class="floater-icon green">✓</div>
+        <div><div class="floater-title">Payment received</div><div class="floater-sub">+₹1,74,640 · #PORT-48217</div></div>
+      </div>
+      <div class="floater floater-2">
+        <div class="floater-icon blue">📥</div>
+        <div><div class="floater-title">New request matched</div><div class="floater-sub">2 vendors notified</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logos">
+  <div class="container">
+    <p class="logos-label">Trusted by ship-agents &amp; marine service providers across</p>
+    <div class="logos-row">
+      <span>JNPT</span><span>Mumbai Port</span><span>Mundra</span><span>Hazira</span><span>Kandla</span><span>Pipavav</span><span>Cochin</span><span>Chennai</span><span>Visakhapatnam</span><span>Paradip</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Why PORTDA</div>
+      <h2>One platform. Three big wins.</h2>
+      <p>Built specifically for global marine ops — multi-currency, multi-region compliance, vendor licensing all native.</p>
+    </div>
+    <div class="features-grid">
+      <a href="/how-it-works" class="feature-tile link-tile">
+        <div class="feature-tile-icon">⚡</div>
+        <h4>Quotes in 30 minutes</h4>
+        <p>What used to take 2 days of email threads now happens before lunch. Multiple verified vendors quote on a single post.</p>
+        <span class="link-arrow">See the flow →</span>
+      </a>
+      <a href="/for-vendors" class="feature-tile link-tile">
+        <div class="feature-tile-icon">💰</div>
+        <h4>Settled to bank in &lt; 2 hrs</h4>
+        <p>IMPS withdrawal after order completion. Built-in GST invoicing. UTR reconciliation for NEFT/RTGS offline payments.</p>
+        <span class="link-arrow">For Vendors →</span>
+      </a>
+      <a href="/for-buyers" class="feature-tile link-tile">
+        <div class="feature-tile-icon">🛡</div>
+        <h4>Every vendor verified</h4>
+        <p>DGS licence, GST, P&amp;I insurance, IRS certificates — all checked before a vendor can quote on your request.</p>
+        <span class="link-arrow">For Buyers →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES WE COVER -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">What we cover</div>
+      <h2>Every marine service in one app</h2>
+      <p>From port agency to insurance — every marine service your vessel call needs, in one app.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-pill"><span class="service-icon">🚢</span><div><strong>Ship Agents</strong><span>Port · Husbandry · Transit</span></div></div>
+      <div class="service-pill"><span class="service-icon">📦</span><div><strong>Stevedores / Cargo Handling</strong><span>Stevedoring · Lashing · Tally</span></div></div>
+      <div class="service-pill"><span class="service-icon">⚓</span><div><strong>Ship Management</strong><span>Technical · Crew · ISM</span></div></div>
+      <div class="service-pill"><span class="service-icon">🔧</span><div><strong>Ship Repairs</strong><span>Hull · Engine · Electrical</span></div></div>
+      <div class="service-pill"><span class="service-icon">🛒</span><div><strong>Ship Chandlers</strong><span>Provisions · Stores · Spares</span></div></div>
+      <div class="service-pill"><span class="service-icon">⛽</span><div><strong>Bunkering</strong><span>VLSFO · HSFO · MGO · LNG</span></div></div>
+      <div class="service-pill"><span class="service-icon">🚛</span><div><strong>Multi Modal Transportation</strong><span>Haulage · Rail · Coastal feeder</span></div></div>
+      <div class="service-pill"><span class="service-icon">🏭</span><div><strong>Storage / Warehousing</strong><span>CFS · Bonded · Cold storage</span></div></div>
+      <div class="service-pill"><span class="service-icon">⚖</span><div><strong>Legal / Lawyers</strong><span>Charter party · P&amp;I claims</span></div></div>
+      <div class="service-pill"><span class="service-icon">🛡</span><div><strong>Insurance</strong><span>H&amp;M · P&amp;I · Cargo · War risk</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">How it works</div>
+      <h2>Four steps, end-to-end</h2>
+      <p>From request to settled — same app, same audit trail, same invoice number.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><h3>Post a request</h3><p>Vessel, port, dates, scope. Matched to verified vendors instantly.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Receive quotes</h3><p>Branded PDFs with milestones. Most quotes in under 30 minutes.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Approve &amp; pay</h3><p>Online, UPI, or NEFT/RTGS offline with UTR auto-reconciliation.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Track &amp; settle</h3><p>Live milestones. Vendor settles to bank in under 2 hours via IMPS.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="/how-it-works" class="btn btn-link">See the full flow →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TWO-SIDED PLATFORM -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Two sides, one platform</div>
+      <h2>Built for vendors and buyers — equally</h2>
+      <p>Both sides get the workflow that matches how they actually operate. No compromise version for either.</p>
+    </div>
+    <div class="dual-grid">
+      <a href="/for-vendors" class="dual-card vendor">
+        <div class="dual-badge">For vendors</div>
+        <h3>Grow your marine business</h3>
+        <p>Receive requests from KYC'd ship agents in your service categories. Quote in minutes. Settle to bank the same day.</p>
+        <ul class="dual-list">
+          <li>Verified buyers only</li>
+          <li>0% commission on Subscription plans</li>
+          <li>Settlement in &lt; 2 hours (IMPS)</li>
+          <li>Built-in GST invoicing</li>
+        </ul>
+        <span class="dual-cta">Register as Vendor →</span>
+      </a>
+      <a href="/for-buyers" class="dual-card buyer">
+        <div class="dual-badge">For ship agents</div>
+        <h3>Procure at vessel speed</h3>
+        <p>Post once, receive multiple quotes from licensed vendors. Cut procurement cycles from days to hours.</p>
+        <ul class="dual-list">
+          <li>Vendor compliance pre-verified</li>
+          <li>Side-by-side quote comparison</li>
+          <li>Always free for buyers</li>
+          <li>Live milestone tracking</li>
+        </ul>
+        <span class="dual-cta">Sign up as Buyer →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT / STATS -->
+<section class="section impact-section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="color:rgba(255,255,255,.7);">By the numbers</div>
+      <h2>Built for the global marine industry</h2>
+      <p>Since launch, PORTDA has become the default procurement channel for marine services across 14 leading global ports.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-cell">
+        <div class="impact-num">1,200+</div>
+        <div class="impact-label">Verified vendors</div>
+        <div class="impact-sub">DGS, GST, P&amp;I, IRS docs all checked</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">14</div>
+        <div class="impact-label">Global ports live</div>
+        <div class="impact-sub">JNPT, Mumbai, Mundra, Hazira + 10 more</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">₹42 Cr</div>
+        <div class="impact-label">Settled this FY</div>
+        <div class="impact-sub">INR &amp; USD transactions combined</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">28 min</div>
+        <div class="impact-label">Median quote time</div>
+        <div class="impact-sub">From request post to first quote</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">&lt; 2 hr</div>
+        <div class="impact-label">Vendor settlement</div>
+        <div class="impact-sub">IMPS to bank after order completion</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">99.4%</div>
+        <div class="impact-label">Compliance pass rate</div>
+        <div class="impact-sub">GST invoice + UTR match accuracy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonial-section">
+  <div class="container">
+    <blockquote class="testimonial">
+      <div class="quote-mark">"</div>
+      <p>We used to spend two days getting quotes for a single pilotage job. With PORTDA, we get four quotes within 30 minutes and the job is invoiced and paid before the vessel sails. It's changed how we operate.</p>
+      <footer>
+        <div class="avatar">RK</div>
+        <div><strong>Capt. Rajesh Kapoor</strong><span>Operations Director, OceanLink Shipping</span></div>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- FAQ TEASER -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Common questions</div>
+      <h2>Things people ask before signing up</h2>
+    </div>
+    <div class="faq">
+      <details class="faq-item" open>
+        <summary>Is PORTDA free for buyers?</summary>
+        <p>Yes — sign up, post requests, compare quotes and pay vendors with no platform fee. The buyer side is free forever.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does a vendor pay?</summary>
+        <p>Two models: Commission (5% per confirmed order, no subscription) or Subscription (flat quarterly fee starting at ₹4,999 with 0% commission). Switch anytime in two taps.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does verification take?</summary>
+        <p>Vendor KYC (DGS licence, GST, P&amp;I insurance) is reviewed in 4–24 hours. You can browse requests immediately after signup and only need full verification to send quotes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which ports are covered?</summary>
+        <p>JNPT, Mumbai, Mundra, Hazira, Kandla, Pipavav, Dahej, Cochin, Chennai, Visakhapatnam, Paradip, Tuticorin, Mangalore and Krishnapatnam. New ports added monthly based on demand.</p>
+      </details>
+    </div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="/pricing" class="btn btn-link">See full pricing FAQ →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2>Ready to grow your marine business?</h2>
+    <p>Join 1,200+ verified vendors. Get your first request in under 24 hours.</p>
+    <div class="cta-buttons">
+      <a href="/for-vendors" class="btn btn-primary btn-lg">Register as Vendor</a>
+      <a href="/for-buyers" class="btn btn-light btn-lg">Sign up as Buyer</a>
+    </div>
+    <div class="cta-note">Free to register · KYC verified in 4–24 hours · Vendors pick a subscription tier after verification · 5% commission on conversions</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo"><span class="logo-mark">⚓</span><span class="logo-text">PORTDA</span></a>
+      <p>The world's first marketplace for port &amp; marine services.</p>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.7-.7-1.7-1.7s.7-1.7 1.8-1.7 1.7.7 1.7 1.7-.7 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.4-.6-1.9-1.4-1.9s-1.6.5-1.6 1.9V19h-3V8h3v1.3c.3-.6 1.3-1.5 2.8-1.5 1.6 0 3.2 1 3.2 3.5V19z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 7s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C17 3.4 12 3.4 12 3.4s-5 0-8.1.3c-.4 0-1.3.1-2.1 1C1.2 5.4 1 7 1 7S.8 8.8.8 10.7v1.8c0 1.9.2 3.7.2 3.7s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.8.3 7.8.3s5 0 8.1-.3c.4 0 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.7v-1.8c0-1.9-.2-3.7-.2-3.7zM9.7 14.5V8.2l6.5 3.2-6.5 3.1z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Product</h5><a href="/how-it-works">How it works</a><a href="/for-vendors">For Vendors</a><a href="/for-buyers">For Buyers</a><a href="/pricing">Pricing</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Blog</a><a href="/contact">Contact</a></div>
+    <div class="footer-col"><h5>Resources</h5><a href="#">Help centre</a><a href="#">Vendor handbook</a><a href="#">Compliance &amp; KYC</a><a href="#">API docs</a><a href="#">Status</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">Refund policy</a><a href="#">GST &amp; compliance</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 PORTDA Technologies Pvt Ltd</span>
+    <span>Made for the global marine industry ⚓</span>
+  </div>
+</footer>
+
+</body>
+</html>
